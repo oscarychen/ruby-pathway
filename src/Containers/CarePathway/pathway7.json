@@ -1,0 +1,285 @@
+{
+  "group_ancestors": {
+    "group2": "group1",
+    "group3": "group2",
+    "group4": "group2",
+    "group5": "group2",
+    "group6": "group1",
+    "group7": "group6",
+    "group8": "group6",
+    "group9": "group1",
+    "group10": "group9",
+    "group11": "group9"
+  },
+  "data_elements": [
+    {
+      "id": "1",
+      "type": "custom",
+      "data": { "group": "group1", "labels": ["Pregnancy-Associated", "Breast Cancer"] },
+      "position": { "x": 0, "y": 0 }
+    },
+    {
+      "id": "e1-2",
+      "source": "1",
+      "target": "2",
+      "arrowHeadType": "arrow",
+      "type": "custom",
+      "data": { "group": "group1" }
+    },
+    {
+      "id": "2",
+      "type": "custom",
+      "data": { "group": "group1", "labels": ["Multi-Disciplinary", "Team Care"] },
+      "position": { "x": 220, "y": 0 }
+    },
+    {
+      "id": "e2-3",
+      "source": "2",
+      "target": "3",
+      "arrowHeadType": "arrow",
+      "type": "custom",
+      "data": { "group": "group2" }
+    },
+    {
+      "id": "3",
+      "type": "custom",
+      "data": { "group": "group2", "labels": ["Diagnosis in", "First Trimester"] },
+      "position": { "x": 445, "y": -200 }
+    },
+    {
+      "id": "e3-4",
+      "source": "3",
+      "target": "4",
+      "arrowHeadType": "arrow",
+      "type": "custom",
+      "data": { "group": "group3" }
+    },
+    {
+      "id": "4",
+      "type": "custom",
+      "data": { "group": "group3", "labels": ["First Trimester Surgery"] },
+      "position": { "x": 645, "y": -300 }
+    },
+    {
+      "id": "e4-5",
+      "source": "4",
+      "target": "5",
+      "arrowHeadType": "arrow",
+      "type": "custom",
+      "data": { "group": "group3" }
+    },
+    {
+      "id": "5",
+      "type": "custom",
+      "data": {
+        "group": "group3",
+        "labels": ["Mastectomy and Axillary", "Node Sample or Axillary", "Nymph Node Dissection", "(ALND)"]
+      },
+      "position": { "x": 860, "y": -333 }
+    },
+    {
+      "id": "e3-6",
+      "source": "3",
+      "target": "6",
+      "arrowHeadType": "arrow",
+      "type": "custom",
+      "data": { "group": "group4" }
+    },
+    {
+      "id": "6",
+      "type": "custom",
+      "data": { "group": "group4", "labels": ["Delay treatment untiol", "Second Trimester"] },
+      "position": { "x": 645, "y": -200 }
+    },
+    {
+      "id": "e3-7",
+      "source": "3",
+      "target": "7",
+      "arrowHeadType": "arrow",
+      "type": "custom",
+      "data": { "group": "group5" }
+    },
+    {
+      "id": "7",
+      "type": "custom",
+      "data": { "group": "group5", "labels": ["Patient choice to end", "pregnancy and proceed to", "standard care"] },
+      "position": { "x": 645, "y": -100 }
+    },
+    {
+      "id": "e7-8",
+      "source": "7",
+      "target": "8",
+      "arrowHeadType": "arrow",
+      "type": "custom",
+      "data": { "group": "group5" }
+    },
+    {
+      "id": "8",
+      "type": "custom",
+      "data": { "group": "group5", "labels": ["Go to 'New Diagnosis of", "Breast Cancer in the", "Younger Patient'"] },
+      "position": { "x": 880, "y": -100 }
+    },
+    {
+      "id": "e2-9",
+      "source": "2",
+      "target": "9",
+      "arrowHeadType": "arrow",
+      "type": "custom",
+      "data": { "group": "group6" }
+    },
+    {
+      "id": "9",
+      "type": "custom",
+      "data": { "group": "group6", "labels": ["Diagnosis in", "Second Trimester"] },
+      "position": { "x": 445, "y": 80 }
+    },
+    {
+      "id": "e9-10",
+      "source": "9",
+      "target": "10",
+      "arrowHeadType": "arrow",
+      "type": "custom",
+      "data": { "group": "group7" }
+    },
+    {
+      "id": "10",
+      "type": "custom",
+      "data": { "group": "group7", "labels": ["Adjuvant", "Chemotherapy"] },
+      "position": { "x": 645, "y": 20 }
+    },
+    {
+      "id": "e9-11",
+      "source": "9",
+      "target": "11",
+      "arrowHeadType": "arrow",
+      "type": "custom",
+      "data": { "group": "group8" }
+    },
+    {
+      "id": "11",
+      "type": "custom",
+      "data": { "group": "group8", "labels": ["Surgery"] },
+      "position": { "x": 645, "y": 120 }
+    },
+    {
+      "id": "e11-12",
+      "source": "11",
+      "target": "12",
+      "arrowHeadType": "arrow",
+      "type": "custom",
+      "data": { "group": "group8" }
+    },
+    {
+      "id": "12",
+      "type": "custom",
+      "data": { "group": "group8", "labels": ["Mastectomy"] },
+      "position": { "x": 825, "y": 95 }
+    },
+    {
+      "id": "e11-13",
+      "source": "11",
+      "target": "13",
+      "arrowHeadType": "arrow",
+      "type": "custom",
+      "data": { "group": "group8" }
+    },
+    {
+      "id": "13",
+      "type": "custom",
+      "data": { "group": "group8", "labels": ["Breast Conservation", "Surgery (BCS)"] },
+      "position": { "x": 800, "y": 160 }
+    },
+    {
+      "id": "e12-14",
+      "source": "12",
+      "target": "14",
+      "arrowHeadType": "arrow",
+      "type": "custom",
+      "data": { "group": "group8" }
+    },
+    {
+      "id": "e13-14",
+      "source": "13",
+      "target": "14",
+      "arrowHeadType": "arrow",
+      "type": "custom",
+      "data": { "group": "group8" }
+    },
+    {
+      "id": "14",
+      "type": "custom",
+      "data": { "group": "group8", "labels": ["Combined", "with"] },
+      "position": { "x": 1000, "y": 110 }
+    },
+    {
+      "id": "e14-15",
+      "source": "14",
+      "target": "15",
+      "arrowHeadType": "arrow",
+      "type": "custom",
+      "data": { "group": "group8" }
+    },
+    {
+      "id": "15",
+      "type": "custom",
+      "data": { "group": "group8", "labels": ["Sentinel Lymph", "Node Biopsy"] },
+      "position": { "x": 1140, "y": 80 }
+    },
+    {
+      "id": "e14-16",
+      "source": "14",
+      "target": "16",
+      "arrowHeadType": "arrow",
+      "type": "custom",
+      "data": { "group": "group8" }
+    },
+    {
+      "id": "16",
+      "type": "custom",
+      "data": { "group": "group8", "labels": ["Axillary Lymph Node", "Dissection"] },
+      "position": { "x": 1140, "y": 160 }
+    },
+    {
+      "id": "e2-17",
+      "source": "2",
+      "target": "17",
+      "arrowHeadType": "arrow",
+      "type": "custom",
+      "data": { "group": "group9" }
+    },
+    {
+      "id": "17",
+      "type": "custom",
+      "data": { "group": "group9", "labels": ["Diagnosis in", "Third Trimester"] },
+      "position": { "x": 445, "y": 290 }
+    },
+    {
+      "id": "e17-18",
+      "source": "17",
+      "target": "18",
+      "arrowHeadType": "arrow",
+      "type": "custom",
+      "data": { "group": "group10" }
+    },
+    {
+      "id": "18",
+      "type": "custom",
+      "data": { "group": "group10", "labels": ["Radiotherapy", "(post-delivery)"] },
+      "position": { "x": 650, "y": 230 }
+    },
+    {
+      "id": "e17-19",
+      "source": "17",
+      "target": "19",
+      "arrowHeadType": "arrow",
+      "type": "custom",
+      "data": { "group": "group11" }
+    },
+    {
+      "id": "19",
+      "type": "custom",
+      "data": { "group": "group11", "labels": ["Adjuvant Hormone", "Therapy", "(post-delivery)"] },
+      "position": { "x": 650, "y": 340 }
+    }
+  ]
+}
