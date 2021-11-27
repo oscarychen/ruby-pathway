@@ -4,7 +4,7 @@ import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import YoutubeSearchedForIcon from "@mui/icons-material/YoutubeSearchedFor";
 import LocalHospitalOutlinedIcon from "@mui/icons-material/LocalHospitalOutlined";
 import HealingIcon from "@mui/icons-material/Healing";
-import { CustomBreadcrumb, CustomBreadcrumbWithDropdown } from "Containers/Navigation/ControlBreadcrumb";
+import { CustomBreadcrumb, CustomBreadcrumbWithDropdown } from "Containers/Navigation/ControlButtons";
 
 import { useAppDispatch, useAppSelector } from "Store/appStore";
 
@@ -55,7 +55,7 @@ export default function Controls() {
   };
 
   return (
-    <Breadcrumbs aria-label="breadcrumb" separator="››">
+    <Breadcrumbs aria-label="breadcrumb" separator="›">
       <CustomBreadcrumb
         activated={isChipActivated(0)}
         label="Risk Assessment"

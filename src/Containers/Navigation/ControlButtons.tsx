@@ -79,11 +79,11 @@ export const CustomBreadcrumbWithDropdown = (
     dispatch(setPathwayAgeDropdownOpen(true));
   };
   const handleDropdownClose = () => {
-    dispatch(setPathwayAgeDropdownOpen(true));
+    dispatch(setPathwayAgeDropdownOpen(false));
   };
   return (
     <div>
-      <Chip className={clsx(classes.button, classes.buttonLeft)} />
+      <Chip className={clsx(classes.button, classes.buttonLeft)} {...other} />
       <Select
         className={clsx(classes.button, classes.buttonRight)}
         {...other}
