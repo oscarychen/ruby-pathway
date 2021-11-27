@@ -1,13 +1,11 @@
-import React, { Dispatch } from "react";
-import PathwayDiagram from "./PathwayDiagram";
-import CustomControls from "./Controls";
+import React from "react";
+import PathwayDiagram from "Containers/FlowDiagram/PathwayDiagram";
+import CustomControls from "Containers/Navigation/Controls";
 import { Carousel } from "antd";
 import { CarouselRef } from "antd/lib/carousel";
-// import * as APIUtility from "../../Util/api";
-import * as actions from "Store/Actions/index";
-import { connect, RootStateOrAny, ConnectedProps } from "react-redux";
-import { AgeRange, CarePathwayActionTypes } from "Store/Actions/carePathway";
-import { CarePathwayData } from "Store/Reducers/carePathway";
+
+import { useAppDispatch, useAppSelector } from "Store/appStore";
+import { selectPathwayAgeRange, selectPathwayActiveChapter, setPathwayChapter } from "Store/slices/carePathway";
 
 const riskAsessStyle = {
   background: "linear-gradient(70deg, #66CCE7 1%, #434FA1 99% )",
@@ -25,13 +23,15 @@ const pregCancerStyle = {
   background: "linear-gradient(70deg, #f3f5a6 1%, #c8a6f5 99% )",
 };
 
-type PropsType = ConnectedProps<typeof connector>;
-
-const Pathway = (props: PropsType) => {
+export default function Pathway() {
   const carouselRef = React.useRef<CarouselRef>(null);
 
+  const dispatch = useAppDispatch();
+  const activeChapter = useAppSelector(selectPathwayActiveChapter);
+  const ageRange = useAppSelector(selectPathwayAgeRange);
+
   const afterChapterChange = (current: number) => {
-    props.setActiveChapter(current);
+    dispatch(setPathwayChapter(current));
   };
 
   //TODO: Uncomment if data is fetched from API
@@ -40,8 +40,8 @@ const Pathway = (props: PropsType) => {
   // }, []);
 
   React.useEffect(() => {
-    carouselRef.current?.goTo(props.activeChapter);
-  }, [props.activeChapter]);
+    carouselRef.current?.goTo(activeChapter);
+  }, [activeChapter]);
 
   //TODO: Uncomment if data is fetched from API
   // if (props.pathwayData === undefined) {
@@ -66,7 +66,7 @@ const Pathway = (props: PropsType) => {
               data={require("./pathway1.json")}
               dataKey="data_elements"
               // dataSetter={props.setPathwayData}
-              setChapterFunc={props.setActiveChapter}
+              // setChapterFunc={props.setActiveChapter}
             />
           </div>
         </div>
@@ -77,7 +77,7 @@ const Pathway = (props: PropsType) => {
               data={require("./pathway2.json")}
               dataKey="data_elements"
               // dataSetter={props.setPathwayData}
-              setChapterFunc={props.setActiveChapter}
+              // setChapterFunc={props.setActiveChapter}
             />
           </div>
         </div>
@@ -88,19 +88,19 @@ const Pathway = (props: PropsType) => {
               data={require("./pathway3.json")}
               dataKey="data_elements"
               // dataSetter={props.setPathwayData}
-              setChapterFunc={props.setActiveChapter}
+              // setChapterFunc={props.setActiveChapter}
             />
           </div>
         </div>
         <div>
           <div style={breastCancerStyle}>
-            {props.ageRange ? (
+            {ageRange ? (
               <PathwayDiagram
                 // data={props.pathwayData}
                 data={require("./pathway4.json")}
                 dataKey="data_elements"
                 // dataSetter={props.setPathwayData}
-                setChapterFunc={props.setActiveChapter}
+                // setChapterFunc={props.setActiveChapter}
                 transform={{ x: 100, y: 250, zoom: 1 }}
               />
             ) : (
@@ -110,13 +110,13 @@ const Pathway = (props: PropsType) => {
         </div>
         <div>
           <div style={breastCancerStyle}>
-            {props.ageRange ? (
+            {ageRange ? (
               <PathwayDiagram
                 // data={props.pathwayData}
                 data={require("./pathway5.json")}
                 dataKey="data_elements"
                 // dataSetter={props.setPathwayData}
-                setChapterFunc={props.setActiveChapter}
+                // setChapterFunc={props.setActiveChapter}
                 transform={{ x: 100, y: 250, zoom: 1 }}
               />
             ) : (
@@ -126,13 +126,13 @@ const Pathway = (props: PropsType) => {
         </div>
         <div>
           <div style={breastCancerStyle}>
-            {props.ageRange ? (
+            {ageRange ? (
               <PathwayDiagram
                 // data={props.pathwayData}
                 data={require("./pathway6.json")}
                 dataKey="data_elements"
                 // dataSetter={props.setPathwayData}
-                setChapterFunc={props.setActiveChapter}
+                // setChapterFunc={props.setActiveChapter}
                 transform={{ x: 100, y: 250, zoom: 1 }}
               />
             ) : (
@@ -147,33 +147,11 @@ const Pathway = (props: PropsType) => {
               data={require("./pathway7.json")}
               dataKey="data_elements"
               // dataSetter={props.setPathwayData}
-              setChapterFunc={props.setActiveChapter}
+              // setChapterFunc={props.setActiveChapter}
             />
           </div>
         </div>
       </Carousel>
     </div>
   );
-};
-
-const mapStateToProps = (state: RootStateOrAny) => {
-  return {
-    pathwayData: state.carePathway.data,
-    activeChapter: state.carePathway.activeChapter,
-    ageRange: state.carePathway.ageRange,
-    ageRangeDropdownOpen: state.carePathway.ageRangeDropdownOpen,
-  };
-};
-
-const mapDispatchToProps = (dispatch: Dispatch<CarePathwayActionTypes>) => {
-  return {
-    setPathwayData: (data: CarePathwayData) => dispatch(actions.setDataCarePathway(data)),
-    setActiveChapter: (chapter: number) => dispatch(actions.setActiveChapterCarePathway(chapter)),
-    setAgeRange: (ageRange: AgeRange) => dispatch(actions.setAgeRangeCarePathway(ageRange)),
-    setAgeRangeDropdownOpen: (open: boolean) => dispatch(actions.setAgeRangeDropdownOpenCarePathway(open)),
-  };
-};
-
-const connector = connect(mapStateToProps, mapDispatchToProps);
-
-export default connector(Pathway);
+}

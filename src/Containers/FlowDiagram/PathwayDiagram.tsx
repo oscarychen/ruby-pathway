@@ -1,4 +1,4 @@
-import React, { Dispatch } from "react";
+import React from "react";
 import ReactFlow, {
   Elements,
   Node,
@@ -11,20 +11,20 @@ import ReactFlow, {
   Controls,
 } from "react-flow-renderer";
 // import { StandardDiamond } from "./DiamondNode";
-import { InvisibleNode } from "./InvisibleNode";
-import { CustomNode } from "./CustomNodes";
-import { IconNode } from "./IconNode";
-import CustomEdge from "./CustomEdge";
+import { InvisibleNode } from "Containers/FlowDiagram/InvisibleNode";
+import { CustomNode } from "Containers/FlowDiagram/CustomNodes";
+import { IconNode } from "Containers/FlowDiagram/IconNode";
+import CustomEdge from "Containers/FlowDiagram/CustomEdge";
 import {
   getElementsWithUpdatedVisibilityOnUserAction as getElementsWithUpdatedVisibilityOnNodeFocus,
   getShowAllElements,
-} from "./helpers";
+} from "Containers/FlowDiagram/helpers";
 import { Easing, Tween, update } from "@tweenjs/tween.js";
-import * as actions from "Store/Actions/index";
-import { connect, ConnectedProps, RootStateOrAny } from "react-redux";
 import { debounce } from "lodash";
-// import useCursorPosition from "Components/Hooks/cursor";
-// import useWindowResize from "Components/Hooks/viewport";
+
+import { useAppDispatch } from "Store/appStore";
+
+import { setPathwayChapter } from "Store/slices/carePathway";
 
 const nodeTypes = {
   // diamond: StandardDiamond,
@@ -43,17 +43,15 @@ const edgeTypes = {
   custom: CustomEdge,
 };
 
-type PropsType = ConnectedProps<typeof connector> & {
+interface PropsType {
   data: any;
   dataKey?: string;
   groupRelationsKey?: string;
-  // dataSetter: (data: any) => void;
-  setChapterFunc?: (chapter: number) => void;
   transform?: { x: number; y: number; zoom: number };
   autoscroll?: boolean;
-};
+}
 
-function PathwayDiagram(props: PropsType) {
+export default function PathwayDiagram(props: PropsType) {
   const [elements, setElements] = React.useState<Elements>([]);
   const [rfInstance, setRfInstance] = React.useState<OnLoadParams>();
   const onLoad = (reactFlowInstance: OnLoadParams) => {
@@ -61,25 +59,7 @@ function PathwayDiagram(props: PropsType) {
     // refocus(null);
   };
 
-  // const [width, height] = useWindowResize();
-  // const cursorPosition = useCursorPosition();
-  // React.useEffect(() => {
-  //   console.log("Window w/h: ", width, height);
-  //   console.log(cursorPosition);
-  //   const panLeft = cursorPosition.x < 200;
-  //   const panRight = width - cursorPosition.x < 200;
-
-  //   if (rfInstance) {
-  //     const [curX, curY] = rfInstance.toObject().position;
-  //     let newX: number = 0;
-  //     if (panLeft) {
-  //       newX = curX + 200;
-  //     } else if (panRight) {
-  //       newX = curX - 200;
-  //     }
-  //     transform({ x: newX });
-  //   }
-  // }, [cursorPosition, width, height]);
+  const dispatch = useAppDispatch();
 
   /**
    * Set up tweenjs
@@ -123,9 +103,9 @@ function PathwayDiagram(props: PropsType) {
       // clicking on a node with behavior to open a link on-click
       window.open(element.data.onClickLink, "_blank");
       setElements(getElementsWithUpdatedVisibilityOnNodeFocus(elements, element, groupRelations, false, true));
-    } else if (element.data?.onClickGoTo && props.setChapterFunc) {
+    } else if (element.data?.onClickGoTo) {
       // clicking on a node that switches chapter
-      props.setChapterFunc(element.data.onClickGoTo);
+      dispatch(setPathwayChapter(element.data.onClickGoTo));
       setElements(getElementsWithUpdatedVisibilityOnNodeFocus(elements, element, groupRelations, false, true));
     } else if (element.type === "icon") {
       setElements(getElementsWithUpdatedVisibilityOnNodeFocus(elements, element, groupRelations, false, true));
@@ -211,19 +191,3 @@ function PathwayDiagram(props: PropsType) {
     </div>
   );
 }
-
-const mapStateToProps = (state: RootStateOrAny) => {
-  return {
-    pathwayData: state.carePathway.data,
-  };
-};
-
-const mapDispatchToProps = (dispatch: Dispatch<any>) => {
-  return {
-    setPathwayData: (data: any) => dispatch(actions.setDataCarePathway(data)),
-  };
-};
-
-const connector = connect(mapStateToProps, mapDispatchToProps);
-
-export default connector(PathwayDiagram);

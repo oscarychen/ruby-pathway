@@ -1,4 +1,3 @@
-import React from "react";
 import { useStore, useZoomPanHelper } from "react-flow-renderer";
 
 export default function SideBar() {

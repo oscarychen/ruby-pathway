@@ -1,10 +1,9 @@
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import { Provider } from "react-redux";
 
-import React from "react";
-import store from "Store/configureStore";
+import { store } from "Store/appStore";
 
-import Pathway from "Containers/CarePathway/Pathway";
+import Pathway from "Pages/CarePathway/Pathway";
 
 const router = (
   <Provider store={store}>
