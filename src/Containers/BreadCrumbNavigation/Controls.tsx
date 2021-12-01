@@ -6,7 +6,6 @@ import HealingIcon from "@mui/icons-material/Healing";
 import { CustomBreadcrumb, CustomBreadcrumbWithDropdown } from "Containers/BreadCrumbNavigation/ControlButtons";
 
 import { useAppDispatch, useAppSelector } from "Store/appStore";
-
 import { selectPathwayActiveChapter, setPathwayChapter } from "Store/slices/carePathway";
 
 export default function Controls() {
