@@ -182,7 +182,14 @@
     {
       "id": "3",
       "type": "custom",
-      "data": { "group": "group2", "labels": ["Evidence of spread to", "axillary lymph nodes", "at diagnosis?"] },
+      "data": {
+        "group": "group2",
+        "labels": ["Evidence of spread to", "axillary lymph nodes", "at diagnosis?"],
+        "popover": {
+          "header": "Evidence of spread to axillary lymph nodes at diagnosis",
+          "body": "This will be assessed by both clinical examination and an axillary ultrasound (usually at time of breast ultrasound).<br/><br/>If there is any suspicion of lymph nodes being abnormal, a biopsy will be performed - the biopsy result will determine whether you are treated as if you have spread of the breast cancer to the lymph nodes or not.<br/><br/>If the ultrasound (USS) and clinical examination are normal then 70% of the time this will be correct and the Sentinel Lymph Node Biopsy will also be normal. Thirty percent of the time we will find unexpected spread to the lymph nodes on Sentinel Lymph Node Biopsy despite the lymph nodes appearing normal.<br/><br/>If spread to the lymph nodes is found on biopsy prior to any treatment, its management will be based on whether initial treatment is surgery (straight to Axillary Lymph Node Dissection) or systemic therapy (if there is a good response to this treatment there is the possibility to have a Sentinel Lymph Node Biopsy with or without radiotherapy, and avoid ALND)."
+        }
+      },
       "position": { "x": 340, "y": -11 }
     },
     {
@@ -242,7 +249,14 @@
     {
       "id": "9",
       "type": "custom",
-      "data": { "group": "group4", "labels": ["Neo-adjuvant", "Chemotherapy"] },
+      "data": {
+        "group": "group4",
+        "labels": ["Neo-adjuvant", "Chemotherapy"],
+        "popover": {
+          "header": "Neo-adjuvant Systemic Therapy",
+          "body": "This can be used prior to surgical treatment when it is termed '<b>neoadjuvant</b>'. For young women this is typically in the form of chemotherapy, for older age groups this can either be chemotherapy or hormone therapy. There is no evidence that systemic treatment prior to surgery either benefits or worsens long-term survival outcomes compared to systemic treatment following surgery. <br/> Neo-adjuvant Systemic Therapy benefits therefore include:<br/> <ul><li>Increased feasibility of breast conservation surgery over mastectomy.</li> <li>Increased time from diagnosis to surgery to allow for genetic testing to be completed (for women who would be offered systemic treatment anyway) to help surgical decision making.</li><li>Provides an opportunity to assess how responsive an individual's breast cancer is to the chosen systemic therapy by measuring tumour (+- lymph node metastases) shrinkage.</li><li>For Breast cancers that undergo a <b>'Complete Pathological Response'</b> - meaning that the Neo-Adjuvant Systemic Therapy removes all trace of breast cancer, this is an indicator for an excellent prognosis.</li></ul><br/>A clip will be placed in the breast cancer prior to starting Neo-adjuvant systemic therapy in case of a complete pathological response, so that the breast cancer site can still be localised and removed at surgery."
+        }
+      },
       "position": { "x": 890, "y": 50 }
     },
     {
@@ -314,7 +328,14 @@
     {
       "id": "21",
       "type": "custom",
-      "data": { "group": "group4", "labels": ["Clear Surgical Margins?"] },
+      "data": {
+        "group": "group4",
+        "labels": ["Clear Surgical Margins?"],
+        "popover": {
+          "header": "Clear Surgical Margins",
+          "body": "The margins of any breast cancer are formally assessed under a microscope following surgery, and your surgeon will discuss at your post-operative consultation whether 'clear markings' were achieved.<br/><br/>Guidelines generally state that further surgery (either re-excision of margins re-attempting breast conservation surgery, or completion mastectomy) is required for:<ul><li>An invasive breast cancer that is <b>not</b> 'clear of ink' at its margin</li><li>A purely DCIS lesion that has a margin less than 2mm</li></ul>An invasive breast cancer that has associated DCIS and has <b>multiple</b> 'close' DCIS margins of less than 2mm <b>may</b> require discussion of further surgery."
+        }
+      },
       "position": { "x": 1330, "y": 91 }
     },
     {
@@ -409,7 +430,14 @@
     {
       "id": "12",
       "type": "custom",
-      "data": { "group": "group7", "labels": ["Discuss Fertility", "Preservation"] },
+      "data": {
+        "group": "group7",
+        "labels": ["Discuss Fertility", "Preservation"],
+        "popover": {
+          "header": "Discuss Fertility Preservation",
+          "body": "Chemotherapy can have a significant impact on fertility long-term, putting up to 20% of young women into permanent menopause, preventing the opportunity for future natural conception (without IVF).<br/><br/>This is a very difficult situation for young women - simultaneously considering a significant diagnosis of breast cancer whilst also considering one's inner desire to have a child. Therefore reflect on this carefully, understanding that the majority of women with breast cancer will go onto live long and healthy lives.<br/><br/>For some women, the discovery of carrying a genetic mutation during their breast cancer experience may lean them towards opting for IVF with genetic therapy to the embryos (choosing only embryos to implant that do not carry the genetic mutation) even if they are not post-menopausal following treatment.<br/><br/>There are now many safe options for fertility preservation for young women newly diagnosed with breast cancer who are yet to complete their family.This includes oocyte cryo-preservation (your eggs only) or embryo cryo-preservation (your eggs fertilised with partner's sperm). These fertility options will continue to expand over time as research and fertility progress continues.<br/><br/>These treatment options can now be offered without delay to cancer treatment, by using random start protocols that allow eggs to be harvested at any point during the menstrual cycle, however must be performed prior to commencement of all breast cancer treatment."
+        }
+      },
       "position": { "x": 1000, "y": 240 }
     },
 
@@ -658,7 +686,14 @@
     {
       "id": "31",
       "type": "custom",
-      "data": { "group": "group13", "labels": ["Surgical Margins", "Clear?"] },
+      "data": {
+        "group": "group13",
+        "labels": ["Surgical Margins", "Clear?"],
+        "popover": {
+          "header": "Clear Surgical Margins",
+          "body": "The margins of any breast cancer are formally assessed under a microscope following surgery, and your surgeon will discuss at your post-operative consultation whether 'clear markings' were achieved.<br/><br/>Guidelines generally state that further surgery (either re-excision of margins re-attempting breast conservation surgery, or completion mastectomy) is required for:<ul><li>An invasive breast cancer that is <b>not</b> 'clear of ink' at its margin</li><li>A purely DCIS lesion that has a margin less than 2mm</li></ul>An invasive breast cancer that has associated DCIS and has <b>multiple</b> 'close' DCIS margins of less than 2mm <b>may</b> require discussion of further surgery."
+        }
+      },
       "position": { "x": 2120, "y": 270 }
     },
     {
@@ -727,7 +762,14 @@
     {
       "id": "33",
       "type": "custom",
-      "data": { "group": "group16", "labels": ["Discuss Adjuvant", "Radiotherapy to breast", "or chest wall"] },
+      "data": {
+        "group": "group16",
+        "labels": ["Discuss Adjuvant", "Radiotherapy to breast", "or chest wall"],
+        "popover": {
+          "header": "Discuss Post-operative Radiotherapy",
+          "body": "Post-operative Radiotherapy is required for the vast majority of patients who have undergone Breast Conservation Surgery, and can be advantageous for some women who have undergone Mastectomy, even if there is no evidence of lymph node involvement."
+        }
+      },
       "position": { "x": 2850, "y": 0 }
     },
 
@@ -803,7 +845,14 @@
     {
       "id": "39",
       "type": "custom",
-      "data": { "group": "group19", "labels": ["Consider Genetic", "Profile Testing"] },
+      "data": {
+        "group": "group19",
+        "labels": ["Consider Genetic", "Profile Testing"],
+        "popover": {
+          "header": "Consider Tumour Profile Testing",
+          "body": "Tumour profile tests such as Oncotype DX can be performed for hormone receptor positive, HER-2 negative breast cancers to assess the benefit of chemotherapy in addition to hormone therapy, in terms of risk of breast cancer recurrence and long-term survival. <br/><br/> It is suitable for those breast cancers as described above that have no evidence of spread to lymph nodes and are at least 10mm in diameter (occasionally suitable for 5-9mm tumours with other poor prognostic signs). <br/><br/>Oncotype DX produces a recurrence score 0-100:<ul><li>Women aged < 50 with a recurrence score of 0-15 have no benefit from the addition of chemotherapy.</li><li>Women aged < 50 with a recurrence score of 16-25 have some benefit from the addition of chemotherapy.</li><li>Women aged <50 with a recurrence score of 26-100 do benefit from the addition of chemotherapy.</li></ul>This test can be performed either on the tumour biopsy if Neo-adjuvant chemotherapy is being consider or (more commonly) on the post-surgery tumour specimen.<br/><br/>Your oncologist will discuss this test with you if it is suitable to your specific type of breast cancer."
+        }
+      },
       "position": { "x": 2900, "y": 170 }
     },
     {
@@ -935,7 +984,11 @@
       "type": "custom",
       "data": {
         "group": "group22",
-        "labels": ["5-years", "Mammographic", "Surveillance"]
+        "labels": ["5-years", "Mammographic", "Surveillance"],
+        "popover": {
+          "header": "5 years mammography surveillance",
+          "body": "For those patients who have not undergone bilateral mastectomy. <br/><br/> Consider alternative imaging (for example Annual  Breast MRI) if original breast cancer was not visible on standard imaging or breast tissue is very dense.. <br/><br/>Women will continue to be offered surveillance imaging annually beyond five years post-diagnosis until they are aged 50 and suitable to commence national breast screening every two years."
+        }
       },
       "position": { "x": 3400, "y": 55 }
     },

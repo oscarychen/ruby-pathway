@@ -43,7 +43,7 @@
         "labels": ["Patient diagnosed with", "new breast cancer"],
         "popover": {
           "header": "Patient diagnosed with new breast cancer",
-          "body": "Risk of underlying genetic mutation: Increased - younger age at breast cancer diagnosis, strong family history of breast or associated cancers, triple negative breast cancer diagnosis, higher grade breast cancer."
+          "body": "Risk of underlying genetic mutation:<br/>Increased - younger age at breast cancer diagnosis, strong family history of breast or associated cancers, triple negative breast cancer diagnosis, higher grade breast cancer."
         }
       },
       "position": { "x": -20, "y": 250 }
@@ -64,7 +64,7 @@
         "labels": ["Patient presents to", "high risk clinic"],
         "popover": {
           "header": "Patient presents to high risk clinic",
-          "body": "Patient factors: Increased breast cancer risk - previous mantle radiotherapy to chest wall, family history of breast cancer or associated cancer, known genetic mutation predisposing to breast cancer, previous LCIS. Decreased breast cancer risk - age menopause < 45, bilateral saplingo-oophorectomy < 40 years, no family history of breast or associated cancers."
+          "body": "Patient factors:<br/> Increased breast cancer risk - previous mantle radiotherapy to chest wall, family history of breast cancer or associated cancer, known genetic mutation predisposing to breast cancer, previous LCIS.<br/><br/>Decreased breast cancer risk - age menopause < 45, bilateral saplingo-oophorectomy < 40 years, no family history of breast or associated cancers."
         }
       },
       "position": { "x": 0, "y": 500 }
@@ -148,7 +148,7 @@
         "labels": ["Breast aware"],
         "popover": {
           "header": "Breast aware",
-          "body": "custom self-examination same time each menstrual cycle"
+          "body": "Regular self-examination same time each menstrual cycle"
         }
       },
       "position": { "x": 1000, "y": 600 }
@@ -177,7 +177,7 @@
         "labels": ["Imaging", "surveillance"],
         "popover": {
           "header": "Imaging surveillance",
-          "body": "Annual breast MRI  from age 30  (TP53 mutation carriers - from age 20) up to minimum age 40. Annual Mammogram from age 40 for a minimum of ten years until qualify for National Screening Programme (excluding TP53 mutation carriers)."
+          "body": "Annual breast MRI from age 30 (TP53 mutation carriers - from age 20) up to minimum age 40.<br/><br/>Annual Mammogram from age 40 for a minimum of ten years until qualify for National Screening Programme (excluding TP53 mutation carriers)."
         }
       },
       "position": { "x": 1000, "y": 220 },
@@ -215,7 +215,7 @@
         "labels": ["Risk reduction", "surgery"],
         "popover": {
           "header": "Risk reduction surgery",
-          "body": "Discussion with your breast and plastics surgeon the options of risk reduction surgery with or without reconstruction. This is a long process that requires careful work up, including a minimum of two appointments with your operating surgeon, an appointment with a clinical psychochologist as well as approval from the entire breast surgery multi-disciplinary team."
+          "body": "Discussion with your breast and plastics surgeon the options of risk reduction surgery with or without reconstruction.<br/><br/>This is a long process that requires careful work up, including a minimum of two appointments with your operating surgeon, an appointment with a clinical psychochologist as well as approval from the entire breast surgery multi-disciplinary team."
         }
       },
       "position": { "x": 1000, "y": 400 },
