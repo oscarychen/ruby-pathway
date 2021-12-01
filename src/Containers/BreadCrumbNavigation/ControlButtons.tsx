@@ -10,6 +10,7 @@ import { useAppDispatch, useAppSelector } from "Store/appStore";
 import {
   selectPathwayAgeRange,
   setPathwayAge,
+  setPathwayChapter,
   selectPathwayAgeDropdownOpen,
   setPathwayAgeDropdownOpen,
   AgeRange,
@@ -19,6 +20,8 @@ interface BreadcrumbPropsType {
   activated: boolean;
 }
 
+interface BreadcumbWithDropdownPropsType extends BreadcrumbPropsType {}
+
 const useStyles = makeStyles({
   button: {
     background: (props: BreadcrumbPropsType) =>
@@ -26,7 +29,7 @@ const useStyles = makeStyles({
         ? "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)"
         : "linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)",
     border: 0,
-    borderRadius: 5,
+    borderRadius: 0,
     boxShadow: (props: BreadcrumbPropsType) =>
       props.activated ? "0 3px 5px 2px rgba(255, 105, 135, .3)" : "0 3px 5px 2px rgba(33, 203, 243, .3)",
     color: "white",
@@ -62,7 +65,8 @@ export const CustomBreadcrumb = (
 };
 
 export const CustomBreadcrumbWithDropdown = (
-  props: BreadcrumbPropsType & DistributiveOmit<SelectProps & ChipProps, keyof BreadcrumbPropsType>
+  props: BreadcumbWithDropdownPropsType &
+    DistributiveOmit<SelectProps & ChipProps, keyof BreadcumbWithDropdownPropsType>
 ) => {
   const { activated, ...other } = props;
   const classes = useStyles(props);
@@ -71,9 +75,22 @@ export const CustomBreadcrumbWithDropdown = (
   const ageRange = useAppSelector(selectPathwayAgeRange) as string;
   const ageSelectDropdownOpen = useAppSelector(selectPathwayAgeDropdownOpen);
 
+  const onDropdownSelect = (selectedAge: string | null = null) => {
+    const age = selectedAge ? selectedAge : ageRange;
+
+    if (age === AgeRange.YOUNG) {
+      dispatch(setPathwayChapter(3));
+    } else if (age === AgeRange.AVERAGE) {
+      dispatch(setPathwayChapter(4));
+    } else if (age === AgeRange.OLDER) {
+      dispatch(setPathwayChapter(5));
+    }
+  };
+
   const handleAgeRangeChange = (event: SelectChangeEvent) => {
     const age = event.target.value as AgeRange;
     dispatch(setPathwayAge(age));
+    onDropdownSelect(age);
   };
   const handleDropdownOpen = () => {
     dispatch(setPathwayAgeDropdownOpen(true));
@@ -81,9 +98,15 @@ export const CustomBreadcrumbWithDropdown = (
   const handleDropdownClose = () => {
     dispatch(setPathwayAgeDropdownOpen(false));
   };
+
+  const handleClick = (event: React.MouseEvent<Element, MouseEvent>) => {
+    event.preventDefault();
+    onDropdownSelect();
+  };
+
   return (
     <div>
-      <Chip className={clsx(classes.button, classes.buttonLeft)} {...other} />
+      <Chip className={clsx(classes.button, classes.buttonLeft)} onClick={handleClick} {...other} />
       <Select
         className={clsx(classes.button, classes.buttonRight)}
         {...other}

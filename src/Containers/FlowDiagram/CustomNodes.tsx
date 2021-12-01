@@ -1,8 +1,7 @@
-import React, { memo } from "react";
+import { memo, CSSProperties } from "react";
 import { Handle, Position, NodeComponentProps } from "react-flow-renderer";
-import { Popover, Card } from "antd";
 import Interweave from "interweave";
-
+import PopCard from "Containers/PopCard/PopCard";
 /**
  * Inject two new attributes to the NodeComponentProps
  * isActive: is switched true/false when user clicks on the node
@@ -13,7 +12,7 @@ interface CustomNodeComponentProps extends NodeComponentProps {
   preview: boolean;
 }
 
-const makeNodeStyle = (style: React.CSSProperties | undefined) => {
+const makeNodeStyle = (style: CSSProperties | undefined) => {
   const defaultStyle = {
     borderStyle: "solid",
     borderColor: "#6C8EBF",
@@ -24,12 +23,6 @@ const makeNodeStyle = (style: React.CSSProperties | undefined) => {
     textAlign: "center" as const,
   };
   return { ...defaultStyle, ...style };
-};
-
-const popoverContentStyles = {
-  maxWidth: 600,
-  padding: 0,
-  margin: -12,
 };
 
 const handleStyle = {
@@ -43,25 +36,6 @@ const makeMultiLineLabels = (labels?: Array<string>) =>
       <Interweave content={label} />
     </div>
   ));
-
-const popoverContent = (popover: { header?: string; body?: string; link?: string; coverImg?: string }) => (
-  <Card
-    title={popover.header}
-    bordered={false}
-    size="small"
-    extra={
-      popover.link && (
-        <a target="_blank" rel="noopener noreferrer nofollow" href={popover.link}>
-          More info
-        </a>
-      )
-    }
-    style={popoverContentStyles}
-    cover={<img alt="" src={popover.coverImg} />}
-  >
-    <Interweave content={popover.body} />
-  </Card>
-);
 
 const makeNodeContent = (props: CustomNodeComponentProps) => (
   <div
@@ -88,7 +62,7 @@ const makeNodeContent = (props: CustomNodeComponentProps) => (
 
 export const CustomNode = memo((props: CustomNodeComponentProps) => {
   return props.data?.popover ? (
-    <Popover content={popoverContent(props.data.popover)}>{makeNodeContent(props)}</Popover>
+    <PopCard popover={props.data.popover}>{makeNodeContent(props)}</PopCard>
   ) : (
     makeNodeContent(props)
   );

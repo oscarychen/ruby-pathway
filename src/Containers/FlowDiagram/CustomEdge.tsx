@@ -1,4 +1,3 @@
-import React from "react";
 import { ArrowHeadType, EdgeProps, getBezierPath } from "react-flow-renderer";
 
 export default function CustomEdge({

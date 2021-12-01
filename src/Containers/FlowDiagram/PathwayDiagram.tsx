@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, useState, MouseEvent as ReactMouseEvent } from "react";
 import ReactFlow, {
   Elements,
   Node,
@@ -52,8 +52,8 @@ interface PropsType {
 }
 
 export default function PathwayDiagram(props: PropsType) {
-  const [elements, setElements] = React.useState<Elements>([]);
-  const [rfInstance, setRfInstance] = React.useState<OnLoadParams>();
+  const [elements, setElements] = useState<Elements>([]);
+  const [rfInstance, setRfInstance] = useState<OnLoadParams>();
   const onLoad = (reactFlowInstance: OnLoadParams) => {
     setRfInstance(reactFlowInstance);
     // refocus(null);
@@ -64,7 +64,7 @@ export default function PathwayDiagram(props: PropsType) {
   /**
    * Set up tweenjs
    */
-  React.useEffect(() => {
+  useEffect(() => {
     const animate = (time: number) => {
       requestAnimationFrame(animate);
       update(time);
@@ -75,14 +75,14 @@ export default function PathwayDiagram(props: PropsType) {
     };
   }, []);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (props.data) {
       const data = props.dataKey ? props.data[props.dataKey] : props.data["data_elements"];
       setElements(getShowAllElements(data) || []);
     }
   }, [props]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (rfInstance && elements) {
       rfInstance.fitView();
       if (props.transform) {
@@ -96,7 +96,7 @@ export default function PathwayDiagram(props: PropsType) {
   /**
    * Action when element is clicked on
    */
-  const onElementClicked = (event: React.MouseEvent<Element, MouseEvent>, element: FlowElement) => {
+  const onElementClicked = (event: ReactMouseEvent<Element, MouseEvent>, element: FlowElement) => {
     console.info(`Clicked on element "${element.id}" of "${element.data?.group}"`);
 
     if (element.data?.onClickLink) {
@@ -115,7 +115,7 @@ export default function PathwayDiagram(props: PropsType) {
     }
   };
 
-  const onNodeMouseEnter = (event: React.MouseEvent<Element, MouseEvent>, node: Node) => {
+  const onNodeMouseEnter = (event: ReactMouseEvent<Element, MouseEvent>, node: Node) => {
     if (!node.data?.isActive) {
       setElements(getElementsWithUpdatedVisibilityOnNodeFocus(elements, node, groupRelations, true, true));
     }
@@ -123,7 +123,7 @@ export default function PathwayDiagram(props: PropsType) {
 
   const debounceMouseEnter = debounce(onNodeMouseEnter, 250);
 
-  const onNodeMouseLeave = (event: React.MouseEvent<Element, MouseEvent>, node: Node) => {
+  const onNodeMouseLeave = (event: ReactMouseEvent<Element, MouseEvent>, node: Node) => {
     debounceMouseEnter.cancel();
     if (!node.data?.isActive && node.data?.preview) {
       setElements(getElementsWithUpdatedVisibilityOnNodeFocus(elements, node, groupRelations, true, false));

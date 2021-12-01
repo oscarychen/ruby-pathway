@@ -1,6 +1,6 @@
-import React, { memo } from "react";
+import { memo } from "react";
 import { Handle, Position, Node } from "react-flow-renderer";
-import { Popover } from "antd";
+import PopCard from "Containers/PopCard/PopCard";
 
 const nodeStyles = {};
 
@@ -26,14 +26,8 @@ const textStyles = {
 };
 
 export const StandardDiamond = memo((props: Node) => {
-  const popoverContent = (
-    <div>
-      <p>{props.data?.content}</p>
-    </div>
-  );
-
   return (
-    <Popover content={popoverContent} title={props.data?.label}>
+    <PopCard popover={props.data.popover}>
       <div style={nodeStyles}>
         <div style={diamondShapeStyles}>
           <div style={textStyles}>{props.data.label}</div>
@@ -48,6 +42,6 @@ export const StandardDiamond = memo((props: Node) => {
         <Handle type="source" position={Position.Right} id="source-right" style={{ right: -16 }} />
         <Handle type="source" position={Position.Bottom} id="source-bottom" style={{ bottom: -16 }} />
       </div>
-    </Popover>
+    </PopCard>
   );
 });

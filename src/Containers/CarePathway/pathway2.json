@@ -18,7 +18,7 @@
         "labels": ["New breast change/", "abnormal imagine"],
         "group": "group1"
       },
-      "position": { "x": 40, "y": 250 }
+      "position": { "x": 0, "y": 250 }
     },
     {
       "id": "e1-2",
@@ -34,7 +34,7 @@
         "labels": ["Clinical examination and imaging", "(USS +/- Mammogram)"],
         "group": "group1"
       },
-      "position": { "x": 220, "y": 250 }
+      "position": { "x": 190, "y": 250 }
     },
     {
       "id": "e2-3",

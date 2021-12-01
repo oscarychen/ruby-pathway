@@ -18,7 +18,7 @@ type CarePathwayState = {
 export const carePathwayinitialState: CarePathwayState = {
   data: undefined,
   activeChapter: 0,
-  ageRange: null,
+  ageRange: AgeRange.YOUNG,
   ageRangeDropdownOpen: false,
 };
 

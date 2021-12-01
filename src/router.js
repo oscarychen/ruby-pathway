@@ -3,7 +3,7 @@ import { Provider } from "react-redux";
 
 import { store } from "Store/appStore";
 
-import Pathway from "Pages/CarePathway/Pathway";
+import Pathway from "Containers/CarePathway/Pathway";
 
 const router = (
   <Provider store={store}>

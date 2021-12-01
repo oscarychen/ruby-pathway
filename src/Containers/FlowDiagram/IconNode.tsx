@@ -1,15 +1,8 @@
-import React, { memo } from "react";
-import { Node, NodeComponentProps } from "react-flow-renderer";
-import { Card, Popover } from "antd";
-import Interweave from "interweave";
+import { memo } from "react";
+import { NodeComponentProps } from "react-flow-renderer";
+import PopCard from "Containers/PopCard/PopCard";
 
 const nodeStyles = {};
-
-const popoverContentStyles = {
-  maxWidth: 600,
-  padding: 0,
-  margin: -12,
-};
 
 /**
  * Inject two new attributes to the NodeComponentProps
@@ -34,30 +27,5 @@ export const IconNode = memo((props: CustomNodeComponentProps) => {
     </div>
   );
 
-  const popoverContent = (popover: { header?: string; body?: string; link?: string; coverImg?: string }) => (
-    <Card
-      title={popover.header}
-      bordered={false}
-      size="small"
-      extra={
-        popover.link && (
-          <a target="_blank" rel="noopener noreferrer nofollow" href={popover.link}>
-            More info
-          </a>
-        )
-      }
-      style={popoverContentStyles}
-      cover={<img alt="" src={popover.coverImg} />}
-    >
-      <Interweave content={popover.body} />
-    </Card>
-  );
-
-  return props.data && props.data.popover ? (
-    <Popover content={popoverContent(props.data.popover)} title={props.data?.label}>
-      {nodeContent}
-    </Popover>
-  ) : (
-    nodeContent
-  );
+  return props.data && props.data.popover ? <PopCard popover={props.data.popover}>{nodeContent}</PopCard> : nodeContent;
 });

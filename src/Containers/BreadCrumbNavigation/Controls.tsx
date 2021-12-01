@@ -1,47 +1,21 @@
-import React from "react";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import YoutubeSearchedForIcon from "@mui/icons-material/YoutubeSearchedFor";
 import LocalHospitalOutlinedIcon from "@mui/icons-material/LocalHospitalOutlined";
 import HealingIcon from "@mui/icons-material/Healing";
-import { CustomBreadcrumb, CustomBreadcrumbWithDropdown } from "Containers/Navigation/ControlButtons";
+import { CustomBreadcrumb, CustomBreadcrumbWithDropdown } from "Containers/BreadCrumbNavigation/ControlButtons";
 
 import { useAppDispatch, useAppSelector } from "Store/appStore";
 
-import {
-  selectPathwayAgeRange,
-  selectPathwayActiveChapter,
-  setPathwayChapter,
-  AgeRange,
-} from "Store/slices/carePathway";
+import { selectPathwayActiveChapter, setPathwayChapter } from "Store/slices/carePathway";
 
 export default function Controls() {
   const dispatch = useAppDispatch();
-  const ageRange = useAppSelector(selectPathwayAgeRange);
   const activeChapter = useAppSelector(selectPathwayActiveChapter);
-
-  const updateActiveChapterOnAgeChange = () => {
-    if (ageRange === AgeRange.YOUNG) {
-      dispatch(setPathwayChapter(3));
-    } else if (ageRange === AgeRange.AVERAGE) {
-      dispatch(setPathwayChapter(4));
-    } else if (ageRange === AgeRange.OLDER) {
-      dispatch(setPathwayChapter(5));
-    }
-  };
-
-  React.useEffect(() => {
-    updateActiveChapterOnAgeChange();
-  }, [ageRange]);
 
   const handleClick = (chapter: number) => (event: React.MouseEvent<Element, MouseEvent>) => {
     event.preventDefault();
     dispatch(setPathwayChapter(chapter));
-  };
-
-  const handleClickForAgeSelection = (event: React.MouseEvent<Element, MouseEvent>) => {
-    event.preventDefault();
-    updateActiveChapterOnAgeChange();
   };
 
   const isChipActivated = (chipNumber: number | Array<Number>) => {
@@ -81,7 +55,6 @@ export default function Controls() {
         activated={isChipActivated([3, 4, 5])}
         label={"New Diagnosis of Breast Cancer"}
         icon={<LocalHospitalOutlinedIcon fontSize="small" />}
-        onClick={handleClickForAgeSelection}
       />
 
       <CustomBreadcrumb
