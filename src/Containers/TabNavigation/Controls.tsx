@@ -36,9 +36,9 @@ export default function Controls() {
         <Tab label="Risk Asessment" style={tabStyles} />
         <Tab label="Clinical Assessment" style={tabStyles} />
         <Tab label="New Diagnosis of DCIS" style={tabStyles} />
-        <Tab label="New Diagnosis of Breast Cancer - Young Age" style={tabStyles} />
-        <Tab label="New Diagnosis of Breast Cancer - Average Age" style={tabStyles} />
-        <Tab label="New Diagnosis of Breast Cancer - Older Age" style={tabStyles} />
+        <Tab label="New Diagnosis of Young Age Breast Cancer" style={tabStyles} />
+        <Tab label="New Diagnosis of Average Age Breast Cancer" style={tabStyles} />
+        <Tab label="New Diagnosis of Older Age Breast Cancer" style={tabStyles} />
         <Tab label="Pregnancy-Associated Breast Cancer" style={tabStyles} />
       </Tabs>
     </Box>

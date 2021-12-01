@@ -22,6 +22,136 @@
   },
   "data_elements": [
     {
+      "id": "i1",
+      "type": "icon",
+      "data": {
+        "group": "group1",
+        "popover": {
+          "header": "research",
+          "body": "Developing an artificially intelligent referral system to fulfill the informational needs of women diagnosed with breast cancer."
+        }
+      },
+      "position": { "x": 0, "y": -40 }
+    },
+    {
+      "id": "i2",
+      "type": "icon",
+      "data": {
+        "group": "group1",
+        "popover": {
+          "header": "research",
+          "title": "RUBY-Preparing to Survive",
+          "body": "Improving outcomes for young women with breast cancer",
+          "link": "https://spherecalgary.ca/abstract-ruby-tool"
+        }
+      },
+      "position": { "x": 40, "y": -40 }
+    },
+    {
+      "id": "i3",
+      "type": "icon",
+      "data": {
+        "group": "group1",
+        "popover": {
+          "header": "research",
+          "title": "IN-SYNC",
+          "body": "A pilot study to establish research tools for understanding the biology of breast cancer in women 40 years of age and under.",
+          "link": "https://spherecalgary.ca/abstract-insync"
+        }
+      },
+      "position": { "x": 80, "y": -40 }
+    },
+    {
+      "id": "i4",
+      "type": "icon",
+      "data": {
+        "group": "group1",
+        "popover": {
+          "header": "research",
+          "title": "RUBY - Knowledge to Action",
+          "body": "Improving local therapy for young women with breast cancer across Canada."
+        }
+      },
+      "position": { "x": 120, "y": -40 }
+    },
+    {
+      "id": "i5",
+      "type": "icon",
+      "data": {
+        "group": "group4",
+        "popover": {
+          "header": "research",
+          "title": "RUBY",
+          "body": "Studies to encourage early fertility preservation referral and to predict effects of treatment on fertility of young women with breast cancer.",
+          "link": "https://spherecalgary.ca/abstract-ruby"
+        }
+      },
+      "position": { "x": 680, "y": -40 }
+    },
+    {
+      "id": "i6",
+      "type": "icon",
+      "data": {
+        "group": "group4",
+        "popover": {
+          "header": "research",
+          "title": "RUBY - Expanded Genetic Testing in Women with Young Onset Breast Cancer",
+          "link": "https://spherecalgary.ca/abstract-ruby"
+        }
+      },
+      "position": { "x": 835, "y": -50 }
+    },
+    {
+      "id": "i7",
+      "type": "icon",
+      "data": {
+        "group": "group4",
+        "popover": {
+          "header": "research",
+          "title": "RUBY - PCR",
+          "body": "A prediction model for pathological complete response following neoadjuvant chemotheraphy in breast cancer.",
+          "link": "https://spherecalgary.ca/abstract-predicting-pcr"
+        }
+      },
+      "position": { "x": 990, "y": 120 }
+    },
+    {
+      "id": "i8",
+      "type": "icon",
+      "data": {
+        "group": "group4",
+        "popover": {
+          "header": "research",
+          "title": "Validating the Breast-Q for Use in Relatively Younger Women Diagnosed with Breast Cancer."
+        }
+      },
+      "position": { "x": 1320, "y": -40 }
+    },
+    {
+      "id": "i9",
+      "type": "icon",
+      "data": {
+        "group": "group4",
+        "popover": {
+          "header": "research",
+          "title": "Validating the Breast-Q for Use in Relatively Younger Women Diagnosed with Breast Cancer."
+        }
+      },
+      "position": { "x": 1290, "y": 150 }
+    },
+    {
+      "id": "i10",
+      "type": "icon",
+      "data": {
+        "group": "group22",
+        "popover": {
+          "title": "Research",
+          "body": "The impact of modifiable lifestyle factors in breast cancer survival in young women."
+        }
+      },
+      "position": { "x": 3480, "y": 240 }
+    },
+    {
       "id": "1",
       "type": "custom",
       "data": { "group": "group1", "labels": ["New Diagnosis of", "Breast Cancer"] },

@@ -11,6 +11,18 @@
   },
   "data_elements": [
     {
+      "id": "i1",
+      "type": "icon",
+      "data": {
+        "group": "group1",
+        "popover": {
+          "title": "Research",
+          "body": "Developing an artificially intelligent referral system to fulfill the informational needs of women diagnosed with breast cancer."
+        }
+      },
+      "position": { "x": 70, "y": 500 }
+    },
+    {
       "id": "1",
       "type": "custom",
       "data": { "labels": ["New DCIS", "Diagnosis"], "group": "group1" },

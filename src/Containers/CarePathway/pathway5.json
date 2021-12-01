@@ -30,6 +30,32 @@
   },
   "data_elements": [
     {
+      "id": "i1",
+      "type": "icon",
+      "data": {
+        "group": "group1",
+        "popover": {
+          "header": "research",
+          "body": "Developing an artificially intelligent referral system to fulfill the informational needs of women diagnosed with breast cancer."
+        }
+      },
+      "position": { "x": 120, "y": -40 }
+    },
+    {
+      "id": "i2",
+      "type": "icon",
+      "data": {
+        "group": "group2",
+        "popover": {
+          "header": "research",
+          "title": "RUBY",
+          "body": "Studies to encourage early fertility preservation referral and to predict effects of treatment on fertility of young women with breast cancer.",
+          "link": "https://spherecalgary.ca/abstract-ruby"
+        }
+      },
+      "position": { "x": 850, "y": 20 }
+    },
+    {
       "id": "1",
       "type": "custom",
       "data": { "group": "group1", "labels": ["New Diagnosis of", "Breast Cancer"] },

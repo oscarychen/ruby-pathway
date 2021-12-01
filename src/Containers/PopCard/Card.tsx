@@ -7,7 +7,7 @@ import Interweave from "interweave";
 
 export interface CardProps {
   header?: string;
-  title: string;
+  title?: string;
   subtitle?: string;
   body?: string;
   link?: string;

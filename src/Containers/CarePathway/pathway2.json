@@ -12,6 +12,18 @@
   },
   "data_elements": [
     {
+      "id": "i1",
+      "type": "icon",
+      "data": {
+        "group": "group4",
+        "popover": {
+          "header": "research",
+          "body": "Developing an artificially intelligent referral system to fulfill the informational needs of women diagnosed with breast cancer."
+        }
+      },
+      "position": { "x": 1150, "y": 140 }
+    },
+    {
       "id": "1",
       "type": "custom",
       "data": {
@@ -66,19 +78,7 @@
       "data": { "labels": ["Core Biopsy"], "group": "group2" },
       "position": { "x": 690, "y": 172 }
     },
-    {
-      "id": "i5",
-      "type": "icon",
-      "data": {
-        "group": "group2",
-        "popover": {
-          "header": "Research project name",
-          "body": "Short description of ths research project"
-        },
-        "onClickLink": "https://spherecalgary.ca"
-      },
-      "position": { "x": 770, "y": 145 }
-    },
+
     {
       "id": "p2-e5-7",
       "source": "5",
@@ -163,20 +163,6 @@
       "data": { "labels": ["Atypical"], "group": "group5" },
       "position": { "x": 1085, "y": 270 }
     },
-    {
-      "id": "i9",
-      "type": "icon",
-      "data": {
-        "group": "group5",
-        "popover": {
-          "header": "Research project name",
-          "coverImg": "https://img1.wsimg.com/isteam/stock/24026/:/rs=w:388px,h:194px,cg:true,m/cr=w:388px,h:194px",
-          "body": "Short description of ths research project",
-          "link": "https://spherecalgary.ca"
-        }
-      },
-      "position": { "x": 1140, "y": 243 }
-    },
     { "id": "e9-12", "source": "9", "target": "12", "type": "custom", "data": { "group": "group5" } },
     {
       "id": "12",
@@ -257,8 +243,7 @@
       "data": {
         "group": "group9",
         "labels": ["Go To", "'New Diagnosis of", "Locally Advanced or", "Inflammatory Breast", "Cancer'"],
-        "style": { "background": "linear-gradient(70deg, #91edab 1%, #f3f5a6 99% )", "color": "#000000" },
-        "onClickGoTo": "2"
+        "style": { "background": "linear-gradient(70deg, #91edab 1%, #f3f5a6 99% )", "color": "#000000" }
       },
       "position": { "x": 1620, "y": 10 }
     },
@@ -276,9 +261,9 @@
       "type": "custom",
       "data": {
         "group": "group10",
-        "labels": ["Go To", "'New Diagnosis of", "Breast Cancer'"],
+        "labels": ["Go To", "'New Diagnosis of", "DCIS'"],
         "style": { "background": "linear-gradient(70deg, #f3f5a6 1%, #c8a6f5 99% )", "color": "#000000" },
-        "onClickGoTo": "3"
+        "onClickGoTo": 2
       },
       "position": { "x": 1620, "y": 180 }
     }

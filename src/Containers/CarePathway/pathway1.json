@@ -11,6 +11,31 @@
   },
   "data_elements": [
     {
+      "id": "i1",
+      "type": "icon",
+      "data": {
+        "group": "group1",
+        "popover": {
+          "header": "research",
+          "body": "Developing an artificially intelligent referral system to fulfill the informational needs of women diagnosed with breast cancer."
+        }
+      },
+      "position": { "x": 140, "y": 210 }
+    },
+    {
+      "id": "i2",
+      "type": "icon",
+      "data": {
+        "group": "group1",
+        "popover": {
+          "header": "research",
+          "title": "RUBY - Expanded Genetic Testing in Women with Young Onset Breast Cancer",
+          "link": "https://spherecalgary.ca/abstract-ruby"
+        }
+      },
+      "position": { "x": 320, "y": 365 }
+    },
+    {
       "id": "1",
       "type": "custom",
       "data": {
@@ -18,8 +43,7 @@
         "labels": ["Patient diagnosed with", "new breast cancer"],
         "popover": {
           "header": "Patient diagnosed with new breast cancer",
-          "body": "Risk of underlying genetic mutation: Increased - younger age at breast cancer diagnosis, strong family history of breast or associated cancers, triple negative breast cancer diagnosis, higher grade breast cancer.",
-          "link": "https://spherecalgary.ca"
+          "body": "Risk of underlying genetic mutation: Increased - younger age at breast cancer diagnosis, strong family history of breast or associated cancers, triple negative breast cancer diagnosis, higher grade breast cancer."
         }
       },
       "position": { "x": -20, "y": 250 }

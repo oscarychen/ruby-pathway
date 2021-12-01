@@ -22,6 +22,44 @@
   },
   "data_elements": [
     {
+      "id": "i1",
+      "type": "icon",
+      "data": {
+        "group": "group1",
+        "popover": {
+          "header": "research",
+          "body": "Developing an artificially intelligent referral system to fulfill the informational needs of women diagnosed with breast cancer."
+        }
+      },
+      "position": { "x": 40, "y": -40 }
+    },
+    {
+      "id": "i2",
+      "type": "icon",
+      "data": {
+        "group": "group1",
+        "popover": {
+          "header": "research",
+          "title": "Improving CARE in Ederly Breast Cancer Patients",
+          "link": "https://spherecalgary.ca/abstract-i-care"
+        }
+      },
+      "position": { "x": 80, "y": -40 }
+    },
+    {
+      "id": "i3",
+      "type": "icon",
+      "data": {
+        "group": "group1",
+        "popover": {
+          "header": "research",
+          "title": "Mutational Landscape Differences Between Young-Onset and Older-onset Breast Cancer Patients",
+          "link": "https://spherecalgary.ca/abstract-etiology"
+        }
+      },
+      "position": { "x": 120, "y": -40 }
+    },
+    {
       "id": "1",
       "type": "custom",
       "data": { "group": "group1", "labels": ["New Diagnosis of", "Breast Cancer"] },
