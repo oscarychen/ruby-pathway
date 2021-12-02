@@ -242,8 +242,7 @@
       "type": "custom",
       "data": {
         "group": "group9",
-        "labels": ["Go To", "'New Diagnosis of", "Locally Advanced or", "Inflammatory Breast", "Cancer'"],
-        "style": { "background": "linear-gradient(70deg, #91edab 1%, #f3f5a6 99% )", "color": "#000000" }
+        "labels": ["Locally Advanced or", "Inflammatory Breast", "Cancer"]
       },
       "position": { "x": 1620, "y": 10 }
     },

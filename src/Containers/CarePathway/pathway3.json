@@ -145,7 +145,7 @@
       "data": {
         "labels": ["SLNB and Go TO", "'New Diagnosis of", "Breast Cancer'"],
         "style": { "background": "linear-gradient(70deg, #f3f5a6 1%, #c8a6f5 99% )", "color": "#000000" },
-        "onClickGoTo": "3",
+        "onClickGoTo": 3,
         "group": "group5"
       },
       "position": { "x": 1000, "y": 430 }
@@ -156,7 +156,7 @@
       "data": {
         "labels": ["Furthur breast surgery, SLNB", "and Go To 'New Diagnosis of", "Breast Cancer'"],
         "style": { "background": "linear-gradient(70deg, #f3f5a6 1%, #c8a6f5 99% )", "color": "#000000" },
-        "onClickGoTo": "3",
+        "onClickGoTo": 3,
         "group": "group5"
       },
       "position": { "x": 1000, "y": 530 }
@@ -174,7 +174,7 @@
       "data": {
         "labels": ["Go To", "'New Diagnosis of", "Breast Cancer'"],
         "style": { "background": "linear-gradient(70deg, #f3f5a6 1%, #c8a6f5 99% )", "color": "#000000" },
-        "onClickGoTo": "3",
+        "onClickGoTo": 3,
         "group": "group6"
       },
       "position": { "x": 750, "y": 600 }

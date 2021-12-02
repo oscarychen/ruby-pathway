@@ -310,7 +310,7 @@
       "id": "16",
       "type": "custom",
       "data": { "group": "group9", "labels": ["Breast Conservation", "Surgery"] },
-      "position": { "x": 1350, "y": 150 }
+      "position": { "x": 1370, "y": 150 }
     },
     {
       "id": "e16-17",
@@ -324,7 +324,7 @@
       "id": "17",
       "type": "custom",
       "data": { "group": "group9", "labels": ["Surgical Margins", "Clear?"] },
-      "position": { "x": 1540, "y": 150 }
+      "position": { "x": 1580, "y": 150 }
     },
     {
       "id": "e17-17A",
@@ -338,7 +338,7 @@
       "id": "17A",
       "type": "invisible",
       "data": { "group": "group9" },
-      "position": { "x": 1740, "y": 220 }
+      "position": { "x": 1780, "y": 220 }
     },
     {
       "id": "e17A-20",
@@ -360,7 +360,7 @@
       "id": "19",
       "type": "custom",
       "data": { "group": "group9", "labels": ["Consider further", "breast surgery"] },
-      "position": { "x": 1720, "y": 120 }
+      "position": { "x": 1780, "y": 120 }
     },
     {
       "id": "e15-18",
@@ -374,7 +374,7 @@
       "id": "18",
       "type": "custom",
       "data": { "group": "group10", "labels": ["Mastectomy (+-", "Reconstruction)"] },
-      "position": { "x": 1350, "y": 250 }
+      "position": { "x": 1370, "y": 250 }
     },
     {
       "id": "e18-20",
@@ -545,7 +545,7 @@
     {
       "id": "28",
       "type": "custom",
-      "data": { "group": "group18", "labels": ["Go to 'New Diagnosis of", "Stage IV Breast Cancer'"] },
+      "data": { "group": "group18", "labels": ["Stage IV Breast Cancer"] },
       "position": { "x": 1000, "y": 300 }
     },
     {
@@ -822,7 +822,11 @@
     {
       "id": "41",
       "type": "custom",
-      "data": { "group": "group25", "labels": ["5-years", "Mammographic", "Surveillance"] },
+      "data": {
+        "group": "group25",
+        "labels": ["5-years", "Mammographic", "Surveillance"],
+        "style": { "backgroundColor": "#179c67", "color": "#e8ebea" }
+      },
       "position": { "x": 3700, "y": 0 }
     },
     {
@@ -836,7 +840,11 @@
     {
       "id": "42",
       "type": "custom",
-      "data": { "group": "group25", "labels": ["Regular self-", "examination"] },
+      "data": {
+        "group": "group25",
+        "labels": ["Regular self-", "examination"],
+        "style": { "backgroundColor": "#179c67", "color": "#e8ebea" }
+      },
       "position": { "x": 3700, "y": 128 }
     },
     {
@@ -850,7 +858,11 @@
     {
       "id": "43",
       "type": "custom",
-      "data": { "group": "group25", "labels": ["Optimize Lifestyle", "Factors"] },
+      "data": {
+        "group": "group25",
+        "labels": ["Optimize Lifestyle", "Factors"],
+        "style": { "backgroundColor": "#179c67", "color": "#e8ebea" }
+      },
       "position": { "x": 3700, "y": 230 }
     }
   ]

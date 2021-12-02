@@ -316,7 +316,7 @@
       "type": "custom",
       "data": {
         "group": "group8",
-        "labels": ["Go To 'New Diagnosis of", "Stage IV Breast Cancer'"]
+        "labels": ["Stage IV Breast Cancer"]
       },
       "position": { "x": 1000, "y": 220 }
     },
@@ -943,6 +943,7 @@
       "data": {
         "group": "group30",
         "labels": ["5-years", "Mammographic", "Survveillance"],
+        "style": { "backgroundColor": "#179c67", "color": "#e8ebea" },
         "popover": {
           "header": "5 years mammography surveillance",
           "body": "For those patients who have not undergone bilateral mastectomy. <br/><br/>Consider alternative imaging (for example Annual Breast MRI) if original breast cancer was not visible on standard imaging."
@@ -963,7 +964,8 @@
       "type": "custom",
       "data": {
         "group": "group30",
-        "labels": ["Regular", "self-", "examination"]
+        "labels": ["Regular", "self-", "examination"],
+        "style": { "backgroundColor": "#179c67", "color": "#e8ebea" }
       },
       "position": { "x": 3650, "y": -35 }
     },
@@ -980,7 +982,8 @@
       "type": "custom",
       "data": {
         "group": "group30",
-        "labels": ["Optimise", "Lifestyle", "Factors"]
+        "labels": ["Optimise", "Lifestyle", "Factors"],
+        "style": { "backgroundColor": "#179c67", "color": "#e8ebea" }
       },
       "position": { "x": 3650, "y": 70 }
     }

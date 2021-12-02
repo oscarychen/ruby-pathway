@@ -162,7 +162,12 @@
     {
       "id": "8",
       "type": "custom",
-      "data": { "group": "group5", "labels": ["Go to 'New Diagnosis of", "Breast Cancer in the", "Younger Patient'"] },
+      "data": {
+        "group": "group5",
+        "labels": ["Go to 'New Diagnosis of", "Breast Cancer in the", "Younger Patient'"],
+        "style": { "background": "linear-gradient(70deg, #f3f5a6 1%, #c8a6f5 99% )", "color": "#000000" },
+        "onClickGoTo": 3
+      },
       "position": { "x": 880, "y": -100 }
     },
     {

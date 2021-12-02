@@ -206,7 +206,8 @@
       "data": {
         "group": "group3",
         "labels": ["Go to", "'New Diagnosis of", "Pregnancy Associated", "Breast Cancer'"],
-        "style": { "background": "linear-gradient(70deg, #96deff 1%, #96ff9f 99% )", "color": "#000000" }
+        "style": { "background": "linear-gradient(70deg, #96deff 1%, #96ff9f 99% )", "color": "#000000" },
+        "onClickGoTo": 6
       },
       "position": { "x": 340, "y": 120 }
     },
@@ -412,8 +413,7 @@
       "type": "custom",
       "data": {
         "group": "group6",
-        "labels": ["Go To", "'New Diagnosis of", "Stage IV Breast Cancer'"],
-        "style": { "background": "linear-gradient(70deg, #ff96ad 1%, #d899ff 99% )", "color": "#000000" }
+        "labels": ["Stage IV Breast Cancer"]
       },
       "position": { "x": 1000, "y": 330 }
     },
@@ -587,7 +587,7 @@
       "id": "25",
       "type": "custom",
       "data": { "group": "group10", "labels": ["Surgical treatment", "complete"] },
-      "position": { "x": 2060, "y": -20 }
+      "position": { "x": 2080, "y": -20 }
     },
     {
       "id": "e25-33",
@@ -627,7 +627,7 @@
         "group": "group11",
         "labels": ["Consider", "Staging CT Chest/", "Abdomen/ Pelvis and", "Whole Body Bone Scan"]
       },
-      "position": { "x": 2220, "y": 59 }
+      "position": { "x": 2240, "y": 59 }
     },
     {
       "id": "p4-e28-33",
@@ -694,7 +694,7 @@
           "body": "The margins of any breast cancer are formally assessed under a microscope following surgery, and your surgeon will discuss at your post-operative consultation whether 'clear markings' were achieved.<br/><br/>Guidelines generally state that further surgery (either re-excision of margins re-attempting breast conservation surgery, or completion mastectomy) is required for:<ul><li>An invasive breast cancer that is <b>not</b> 'clear of ink' at its margin</li><li>A purely DCIS lesion that has a margin less than 2mm</li></ul>An invasive breast cancer that has associated DCIS and has <b>multiple</b> 'close' DCIS margins of less than 2mm <b>may</b> require discussion of further surgery."
         }
       },
-      "position": { "x": 2120, "y": 270 }
+      "position": { "x": 2140, "y": 270 }
     },
     {
       "id": "e31-32",
@@ -708,7 +708,7 @@
       "id": "32",
       "type": "custom",
       "data": { "group": "group13", "labels": ["Consider furthur", "breast surgery"] },
-      "position": { "x": 2280, "y": 220 }
+      "position": { "x": 2300, "y": 220 }
     },
     {
       "id": "e31-c2",
@@ -746,7 +746,7 @@
     {
       "id": "c2",
       "type": "custom",
-      "position": { "x": 2420, "y": 192 },
+      "position": { "x": 2480, "y": 192 },
       "data": { "group": "group15" }
     },
 
@@ -795,7 +795,7 @@
       "id": "34",
       "type": "custom",
       "data": { "group": "group17", "labels": ["Discuss Adjuvant", "Systemic Therapy"] },
-      "position": { "x": 2500, "y": 222 }
+      "position": { "x": 2530, "y": 222 }
     },
     {
       "id": "e34-35",
@@ -808,7 +808,7 @@
       "id": "35",
       "type": "custom",
       "data": { "group": "group18", "labels": ["Hormone Positive", "Her-2 Negative", "Breast Cancer"] },
-      "position": { "x": 2700, "y": 105 }
+      "position": { "x": 2720, "y": 105 }
     },
     {
       "id": "e35-38",
@@ -875,7 +875,7 @@
       "id": "36",
       "type": "custom",
       "data": { "group": "group20", "labels": ["Tripple Negative", "Breast Cancer"] },
-      "position": { "x": 2700, "y": 225 }
+      "position": { "x": 2720, "y": 225 }
     },
 
     {
@@ -911,7 +911,7 @@
       "id": "37",
       "type": "custom",
       "data": { "group": "group21", "labels": ["HER-2 positive", "Breast Cancer"] },
-      "position": { "x": 2700, "y": 325 }
+      "position": { "x": 2720, "y": 325 }
     },
 
     {
@@ -985,6 +985,7 @@
       "data": {
         "group": "group22",
         "labels": ["5-years", "Mammographic", "Surveillance"],
+        "style": { "backgroundColor": "#179c67", "color": "#e8ebea" },
         "popover": {
           "header": "5 years mammography surveillance",
           "body": "For those patients who have not undergone bilateral mastectomy. <br/><br/> Consider alternative imaging (for example Annual  Breast MRI) if original breast cancer was not visible on standard imaging or breast tissue is very dense.. <br/><br/>Women will continue to be offered surveillance imaging annually beyond five years post-diagnosis until they are aged 50 and suitable to commence national breast screening every two years."
@@ -1004,7 +1005,8 @@
       "type": "custom",
       "data": {
         "group": "group22",
-        "labels": ["Regular self-", "examination"]
+        "labels": ["Regular self-", "examination"],
+        "style": { "backgroundColor": "#179c67", "color": "#e8ebea" }
       },
       "position": { "x": 3400, "y": 270 }
     },
@@ -1020,7 +1022,8 @@
       "type": "custom",
       "data": {
         "group": "group22",
-        "labels": ["Optimise Lifestyle", "Factors"]
+        "labels": ["Optimise Lifestyle", "Factors"],
+        "style": { "backgroundColor": "#179c67", "color": "#e8ebea" }
       },
       "position": { "x": 3400, "y": 173 }
     }
