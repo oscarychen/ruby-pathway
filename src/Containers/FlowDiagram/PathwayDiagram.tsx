@@ -45,8 +45,6 @@ const edgeTypes = {
 
 interface PropsType {
   data: any;
-  dataKey?: string;
-  groupRelationsKey?: string;
   transform?: { x: number; y: number; zoom: number };
   autoscroll?: boolean;
 }
@@ -77,7 +75,7 @@ export default function PathwayDiagram(props: PropsType) {
 
   useEffect(() => {
     if (props.data) {
-      const data = props.dataKey ? props.data[props.dataKey] : props.data["data_elements"];
+      const data = props.data.data_elements;
       setElements(getShowAllElements(data) || []);
     }
   }, [props]);
@@ -91,7 +89,7 @@ export default function PathwayDiagram(props: PropsType) {
     }
   }, [rfInstance]);
 
-  const groupRelations = props.groupRelationsKey ? props.data[props.groupRelationsKey] : props.data["group_ancestors"];
+  const groupRelations = props.data.group_ancestors;
 
   /**
    * Action when element is clicked on

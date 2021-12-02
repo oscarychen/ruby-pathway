@@ -1,0 +1,4157 @@
+{
+  "risk_assessment": {
+    "group_ancestors": {
+      "group2": "group1",
+      "group3": "group1",
+      "group4": "group2",
+      "group5": "group2",
+      "group6": "group2",
+      "group7": "group2",
+      "group8": "group2",
+      "group9": ["group4", "group5", "group3"]
+    },
+    "data_elements": [
+      {
+        "id": "i1",
+        "type": "icon",
+        "data": {
+          "group": "group1",
+          "popover": {
+            "header": "research",
+            "body": "Developing an artificially intelligent referral system to fulfill the informational needs of women diagnosed with breast cancer."
+          }
+        },
+        "position": { "x": 140, "y": 210 }
+      },
+      {
+        "id": "i2",
+        "type": "icon",
+        "data": {
+          "group": "group1",
+          "popover": {
+            "header": "research",
+            "title": "RUBY - Expanded Genetic Testing in Women with Young Onset Breast Cancer",
+            "link": "https://spherecalgary.ca/abstract-ruby"
+          }
+        },
+        "position": { "x": 320, "y": 365 }
+      },
+      {
+        "id": "1",
+        "type": "custom",
+        "data": {
+          "group": "group1",
+          "labels": ["Patient diagnosed with", "new breast cancer"],
+          "popover": {
+            "header": "Patient diagnosed with new breast cancer",
+            "body": "Risk of underlying genetic mutation:<br/>Increased - younger age at breast cancer diagnosis, strong family history of breast or associated cancers, triple negative breast cancer diagnosis, higher grade breast cancer."
+          }
+        },
+        "position": { "x": -20, "y": 250 }
+      },
+      {
+        "id": "e1-3",
+        "arrowHeadType": "arrow",
+        "source": "1",
+        "target": "3",
+        "type": "custom",
+        "data": { "group": "group1" }
+      },
+      {
+        "id": "2",
+        "type": "custom",
+        "data": {
+          "group": "group1",
+          "labels": ["Patient presents to", "high risk clinic"],
+          "popover": {
+            "header": "Patient presents to high risk clinic",
+            "body": "Patient factors:<br/> Increased breast cancer risk - previous mantle radiotherapy to chest wall, family history of breast cancer or associated cancer, known genetic mutation predisposing to breast cancer, previous LCIS.<br/><br/>Decreased breast cancer risk - age menopause < 45, bilateral saplingo-oophorectomy < 40 years, no family history of breast or associated cancers."
+          }
+        },
+        "position": { "x": 0, "y": 500 }
+      },
+      {
+        "id": "e2-3",
+        "source": "2",
+        "target": "3",
+        "type": "custom",
+        "data": { "group": "group1" }
+      },
+      {
+        "id": "3",
+        "type": "custom",
+        "data": {
+          "group": "group1",
+          "labels": ["Risk assessment"]
+        },
+        "position": { "x": 200, "y": 400 }
+      },
+      {
+        "id": "e3-4",
+        "source": "3",
+        "target": "4",
+        "type": "custom",
+        "data": { "group": "group1" }
+      },
+      {
+        "id": "4",
+        "type": "custom",
+        "data": {
+          "group": "group1",
+          "labels": ["Patient, family history &", "breast disease factors"]
+        },
+        "position": { "x": 370, "y": 389 }
+      },
+      { "id": "e4-5", "source": "4", "target": "5", "type": "custom", "data": { "group": "group2" } },
+      {
+        "id": "5",
+        "type": "custom",
+        "data": {
+          "group": "group2",
+          "labels": ["High risk"],
+          "popover": {
+            "header": "High risk",
+            "body": "Lifetime risk of new breast cancer diagnosis >30%"
+          }
+        },
+        "position": { "x": 600, "y": 250 }
+      },
+      { "id": "e5-7", "source": "5", "target": "7", "type": "custom", "data": { "group": "group2" } },
+      {
+        "id": "7",
+        "type": "custom",
+        "data": {
+          "group": "group2",
+          "labels": ["Discuss following options", "with medical oncologist", "and/ or breast surgeon"]
+        },
+        "position": { "x": 740, "y": 228 }
+      },
+      { "id": "e4-6", "source": "4", "target": "6", "type": "custom", "data": { "group": "group3" } },
+      {
+        "id": "6",
+        "type": "custom",
+        "data": {
+          "group": "group3",
+          "labels": ["Average risk"],
+          "popover": {
+            "header": "Average risk",
+            "body": "Lifetime risk of new breast cancer diagnosis <17%"
+          }
+        },
+        "position": { "x": 600, "y": 600 }
+      },
+      { "id": "e6-8", "source": "6", "target": "8", "type": "custom", "data": { "group": "group3" } },
+      {
+        "id": "8",
+        "type": "custom",
+        "data": {
+          "group": "group3",
+          "labels": ["Breast aware"],
+          "popover": {
+            "header": "Breast aware",
+            "body": "Regular self-examination same time each menstrual cycle"
+          }
+        },
+        "position": { "x": 1000, "y": 600 }
+      },
+      { "id": "e7-9", "source": "7", "target": "9", "type": "custom", "data": { "group": "group4" } },
+      {
+        "id": "9",
+        "type": "custom",
+        "data": {
+          "group": "group4",
+          "labels": ["Breast aware"],
+          "popover": {
+            "header": "Breast aware",
+            "body": "Regular self-examination same time each menstrual cycle"
+          }
+        },
+        "position": { "x": 1000, "y": 140 }
+      },
+
+      { "id": "e7-10", "source": "7", "target": "10", "type": "custom", "data": { "group": "group5" } },
+      {
+        "id": "10",
+        "type": "custom",
+        "data": {
+          "group": "group5",
+          "labels": ["Imaging", "surveillance"],
+          "popover": {
+            "header": "Imaging surveillance",
+            "body": "Annual breast MRI from age 30 (TP53 mutation carriers - from age 20) up to minimum age 40.<br/><br/>Annual Mammogram from age 40 for a minimum of ten years until qualify for National Screening Programme (excluding TP53 mutation carriers)."
+          }
+        },
+        "position": { "x": 1000, "y": 220 },
+        "targetPosition": "left",
+        "sourcePosition": "right"
+      },
+
+      { "id": "e7-11", "source": "7", "target": "11", "type": "custom", "data": { "group": "group6" } },
+      {
+        "id": "11",
+        "type": "custom",
+        "data": {
+          "group": "group6",
+          "labels": ["Chemoprevention"],
+          "popover": {
+            "header": "Chemoprevention",
+            "body": "Discuss risks and benefits of maximum 5 years hormone therapy (tamoxifen) which may reduce hormone sensitive breast cancer risk by up to 50% for those at high risk of breast cancer. Side-effect profile of this must be discussed prior to commencing."
+          }
+        },
+        "position": { "x": 1000, "y": 320 }
+      },
+
+      {
+        "id": "e7-12",
+        "source": "7",
+        "target": "12",
+        "type": "custom",
+        "data": { "group": "group7" }
+      },
+      {
+        "id": "12",
+        "type": "custom",
+        "data": {
+          "group": "group7",
+          "labels": ["Risk reduction", "surgery"],
+          "popover": {
+            "header": "Risk reduction surgery",
+            "body": "Discussion with your breast and plastics surgeon the options of risk reduction surgery with or without reconstruction.<br/><br/>This is a long process that requires careful work up, including a minimum of two appointments with your operating surgeon, an appointment with a clinical psychochologist as well as approval from the entire breast surgery multi-disciplinary team."
+          }
+        },
+        "position": { "x": 1000, "y": 400 },
+        "targetPosition": "left",
+        "sourcePosition": "right"
+      },
+
+      { "id": "p1-e7-13", "source": "7", "target": "13", "type": "custom", "data": { "group": "group8" } },
+      {
+        "id": "13",
+        "type": "custom",
+        "data": {
+          "group": "group8",
+          "labels": ["Genetic testing"],
+          "popover": {
+            "header": "Genetic testing",
+            "body": "Genetic counselling will be offered with no obligation, but the option, to undergo genetic testing on completion of this, should the patient wish it. This is not required to proceed to the next tabs."
+          }
+        },
+        "position": { "x": 1000, "y": 500 },
+        "targetPosition": "left",
+        "sourcePosition": "right"
+      },
+      { "id": "e8-14", "source": "8", "target": "14", "arrowHeadType": "arrow", "type": "custom" },
+      {
+        "id": "e9-14",
+        "source": "9",
+        "target": "14",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group4" }
+      },
+      {
+        "id": "e10-14",
+        "source": "10",
+        "target": "14",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group5" }
+      },
+      {
+        "id": "14",
+        "type": "custom",
+        "data": {
+          "group": "group9",
+          "labels": ["New breast change/", "abnormal imaging"]
+        },
+        "position": { "x": 1200, "y": 400 }
+      },
+      {
+        "id": "e14-15",
+        "source": "14",
+        "target": "15",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group9" }
+      },
+      {
+        "id": "15",
+        "type": "custom",
+        "data": {
+          "group": "group9",
+          "labels": ["Go to", "'Clinical Assessment'"],
+          "style": { "background": "linear-gradient(70deg, #66CCE7 1%, #91edab 99% )", "color": "#000000" },
+          "onClickGoTo": 1
+        },
+        "position": { "x": 1400, "y": 400 },
+        "targetPosition": "left",
+        "sourcePosition": "right"
+      }
+    ]
+  },
+  "clinical_assessment": {
+    "group_ancestors": {
+      "group2": "group1",
+      "group3": "group1",
+      "group4": "group2",
+      "group5": "group2",
+      "group6": "group2",
+      "group7": "group4",
+      "group8": "group4",
+      "group9": "group7",
+      "group10": "group7"
+    },
+    "data_elements": [
+      {
+        "id": "i1",
+        "type": "icon",
+        "data": {
+          "group": "group4",
+          "popover": {
+            "header": "research",
+            "body": "Developing an artificially intelligent referral system to fulfill the informational needs of women diagnosed with breast cancer."
+          }
+        },
+        "position": { "x": 1150, "y": 140 }
+      },
+      {
+        "id": "1",
+        "type": "custom",
+        "data": {
+          "labels": ["New breast change/", "abnormal imagine"],
+          "group": "group1"
+        },
+        "position": { "x": 0, "y": 250 }
+      },
+      {
+        "id": "e1-2",
+        "source": "1",
+        "target": "2",
+        "type": "custom",
+        "data": { "group": "group1" }
+      },
+      {
+        "id": "2",
+        "type": "custom",
+        "data": {
+          "labels": ["Clinical examination and imaging", "(USS +/- Mammogram)"],
+          "group": "group1"
+        },
+        "position": { "x": 190, "y": 250 }
+      },
+      {
+        "id": "e2-3",
+        "source": "2",
+        "target": "3",
+        "type": "custom",
+        "data": { "group": "group2" }
+      },
+
+      {
+        "id": "3",
+        "type": "custom",
+        "data": {
+          "labels": ["Clinical exam <b>and/ or</b>", "imaging concerning for", "breast cancer"],
+          "group": "group2"
+        },
+        "position": { "x": 480, "y": 150 }
+      },
+      {
+        "id": "e3-5",
+        "source": "3",
+        "target": "5",
+        "type": "custom",
+        "data": { "group": "group2" }
+      },
+      {
+        "id": "5",
+        "type": "custom",
+        "data": { "labels": ["Core Biopsy"], "group": "group2" },
+        "position": { "x": 690, "y": 172 }
+      },
+
+      {
+        "id": "p2-e5-7",
+        "source": "5",
+        "target": "7",
+        "type": "custom",
+        "data": { "group": "group2" }
+      },
+      {
+        "id": "7",
+        "type": "custom",
+        "data": { "labels": ["Multidisciplinary Discussion"], "group": "group2" },
+        "position": { "x": 830, "y": 270 }
+      },
+      {
+        "id": "e2-4",
+        "source": "2",
+        "target": "4",
+        "type": "custom",
+        "data": { "group": "group3" }
+      },
+      {
+        "id": "4",
+        "type": "custom",
+        "data": { "labels": ["Clinical exam <b>and</b>", "imaging benign or", "normal"], "group": "group3" },
+        "position": { "x": 500, "y": 350 }
+      },
+      {
+        "id": "e4-6",
+        "source": "4",
+        "target": "6",
+        "type": "custom",
+        "data": { "group": "group3" }
+      },
+      {
+        "id": "6",
+        "type": "custom",
+        "data": {
+          "labels": ["Reassure and", "discharge"],
+          "style": { "backgroundColor": "#0db572", "color": "#e8ebea" },
+          "group": "group3"
+        },
+        "position": { "x": 690, "y": 361 }
+      },
+
+      {
+        "id": "e7-8",
+        "source": "7",
+        "target": "8",
+        "type": "custom",
+        "data": { "group": "group4" }
+      },
+      {
+        "id": "8",
+        "type": "custom",
+        "data": { "labels": ["Malignant"], "group": "group4" },
+        "position": { "x": 1080, "y": 172 }
+      },
+      {
+        "id": "e8-11",
+        "source": "8",
+        "target": "11",
+        "type": "custom",
+        "data": { "group": "group4" }
+      },
+      {
+        "id": "11",
+        "type": "custom",
+        "data": { "labels": ["Invasive Breast", "Cancer present?"], "group": "group4" },
+        "position": { "x": 1200, "y": 161 }
+      },
+
+      {
+        "id": "e7-9",
+        "source": "7",
+        "target": "9",
+        "type": "custom",
+        "data": { "group": "group5" }
+      },
+      {
+        "id": "9",
+        "type": "custom",
+        "data": { "labels": ["Atypical"], "group": "group5" },
+        "position": { "x": 1085, "y": 270 }
+      },
+      { "id": "e9-12", "source": "9", "target": "12", "type": "custom", "data": { "group": "group5" } },
+      {
+        "id": "12",
+        "type": "custom",
+        "data": { "labels": ["Surveillance imaging", "or surgical excision", "biopsy"], "group": "group5" },
+        "position": { "x": 1190, "y": 248 }
+      },
+
+      {
+        "id": "e7-10",
+        "source": "7",
+        "target": "10",
+        "type": "custom",
+        "data": { "group": "group6" }
+      },
+
+      {
+        "id": "10",
+        "type": "custom",
+        "data": { "labels": ["Benign"], "group": "group6" },
+        "position": { "x": 1090, "y": 370 }
+      },
+      {
+        "id": "e10-13",
+        "source": "10",
+        "target": "13",
+        "type": "custom",
+        "data": { "group": "group6" }
+      },
+      {
+        "id": "13",
+        "type": "custom",
+        "data": {
+          "group": "group6",
+          "labels": ["Reassure and", "discharge"],
+          "style": { "backgroundColor": "#0db572", "color": "#e8ebea" }
+        },
+        "position": { "x": 1215, "y": 359 }
+      },
+      {
+        "id": "e11-14",
+        "source": "11",
+        "target": "14",
+        "type": "custom",
+        "data": { "text": "Yes", "group": "group7" }
+      },
+      {
+        "id": "14",
+        "type": "custom",
+        "data": { "labels": ["Is the Breast Cancer", "'Locally Advanced' or", "Inflammatory?"], "group": "group7" },
+        "position": { "x": 1400, "y": 100 }
+      },
+
+      {
+        "id": "e11-15",
+        "source": "11",
+        "target": "15",
+        "type": "custom",
+        "data": { "text": "No", "group": "group8" }
+      },
+
+      {
+        "id": "15",
+        "type": "custom",
+        "data": { "labels": ["Go to", "'New Diagnosis", "of DCIS'"], "group": "group8" },
+        "position": { "x": 1400, "y": 220 }
+      },
+      {
+        "id": "e14-16",
+        "source": "14",
+        "target": "16",
+        "type": "custom",
+        "data": { "text": "Yes", "group": "group9" }
+      },
+      {
+        "id": "16",
+        "type": "custom",
+        "data": {
+          "group": "group9",
+          "labels": ["Locally Advanced or", "Inflammatory Breast", "Cancer"]
+        },
+        "position": { "x": 1620, "y": 10 }
+      },
+
+      {
+        "id": "e14-17",
+        "source": "14",
+        "target": "17",
+        "type": "custom",
+        "data": { "text": "No", "group": "group10" }
+      },
+
+      {
+        "id": "17",
+        "type": "custom",
+        "data": {
+          "group": "group10",
+          "labels": ["Go To", "'New Diagnosis of", "DCIS'"],
+          "style": { "background": "linear-gradient(70deg, #f3f5a6 1%, #c8a6f5 99% )", "color": "#000000" },
+          "onClickGoTo": 2
+        },
+        "position": { "x": 1620, "y": 180 }
+      }
+    ]
+  },
+  "new_diagnosis_dcis": {
+    "group_ancestors": {
+      "group9": "group4",
+      "group8": "group4",
+      "group4": "group2",
+      "group5": "group2",
+      "group2": "group1",
+      "group7": "group3",
+      "group6": "group3",
+      "group3": "group1"
+    },
+    "data_elements": [
+      {
+        "id": "i1",
+        "type": "icon",
+        "data": {
+          "group": "group1",
+          "popover": {
+            "title": "Research",
+            "body": "Developing an artificially intelligent referral system to fulfill the informational needs of women diagnosed with breast cancer."
+          }
+        },
+        "position": { "x": 70, "y": 500 }
+      },
+      {
+        "id": "1",
+        "type": "custom",
+        "data": { "labels": ["New DCIS", "Diagnosis"], "group": "group1" },
+        "position": { "x": 0, "y": 534 }
+      },
+      {
+        "id": "e1-2",
+        "source": "1",
+        "target": "2",
+        "type": "custom",
+        "data": { "group": "group1" }
+      },
+      {
+        "id": "2",
+        "type": "custom",
+        "data": { "labels": ["Surgery Offered"], "group": "group1" },
+        "position": { "x": 130, "y": 545 }
+      },
+      {
+        "id": "e2-3",
+        "source": "2",
+        "target": "3",
+        "type": "custom",
+        "data": { "group": "group2" }
+      },
+      {
+        "id": "3",
+        "type": "custom",
+        "data": { "labels": ["Breast Conservation", "Surgery (BCS)"], "group": "group2" },
+        "position": { "x": 300, "y": 400 }
+      },
+      {
+        "id": "e3-5",
+        "source": "3",
+        "target": "5",
+        "targetHandle": "left",
+        "type": "custom",
+        "data": { "group": "group2" }
+      },
+      {
+        "id": "5",
+        "type": "custom",
+        "data": {
+          "labels": ["Evidence post-operatively", "of invasive Breast Cancer?"],
+          "decision": true,
+          "group": "group2"
+        },
+        "position": { "x": 500, "y": 400 }
+      },
+      {
+        "id": "e2-4",
+        "source": "2",
+        "target": "4",
+        "type": "custom",
+        "data": { "group": "group3" }
+      },
+      {
+        "id": "4",
+        "type": "custom",
+        "data": { "labels": ["Mastectomy and", "Sentinel Lymph Node", "Biopsy (SLNB)"], "group": "group3" },
+        "position": { "x": 300, "y": 650 }
+      },
+      {
+        "id": "e4-6",
+        "source": "4",
+        "target": "6",
+        "type": "custom",
+        "data": { "group": "group3" }
+      },
+      {
+        "id": "6",
+        "type": "custom",
+        "data": { "labels": ["Evidence post-operatively", "of invasive Breast Cancer?"], "group": "group3" },
+        "position": { "x": 500, "y": 661 }
+      },
+      {
+        "id": "e5-7",
+        "source": "5",
+        "sourceHandle": "top",
+        "target": "7",
+        "type": "custom",
+        "data": { "text": "No", "group": "group4" }
+      },
+      {
+        "id": "7",
+        "type": "custom",
+        "data": { "labels": ["Clear Surgical", "Margins?"], "decision": true, "group": "group4" },
+        "position": { "x": 750, "y": 300 }
+      },
+      {
+        "id": "e5-8",
+        "source": "5",
+        "target": "8",
+        "type": "custom",
+        "data": { "text": "Yes", "group": "group5" }
+      },
+      {
+        "id": "8",
+        "type": "custom",
+        "data": { "labels": ["Clear Surgical", "Margins?"], "group": "group5" },
+        "position": { "x": 750, "y": 500 }
+      },
+      {
+        "id": "e8-13",
+        "source": "8",
+        "target": "13",
+        "type": "custom",
+        "data": { "group": "group5" }
+      },
+      {
+        "id": "e8-14",
+        "source": "8",
+        "target": "14",
+        "type": "custom",
+        "data": { "group": "group5" }
+      },
+      {
+        "id": "13",
+        "type": "custom",
+        "data": {
+          "labels": ["SLNB and Go TO", "'New Diagnosis of", "Breast Cancer'"],
+          "style": { "background": "linear-gradient(70deg, #f3f5a6 1%, #c8a6f5 99% )", "color": "#000000" },
+          "onClickGoTo": 3,
+          "group": "group5"
+        },
+        "position": { "x": 1000, "y": 430 }
+      },
+      {
+        "id": "14",
+        "type": "custom",
+        "data": {
+          "labels": ["Furthur breast surgery, SLNB", "and Go To 'New Diagnosis of", "Breast Cancer'"],
+          "style": { "background": "linear-gradient(70deg, #f3f5a6 1%, #c8a6f5 99% )", "color": "#000000" },
+          "onClickGoTo": 3,
+          "group": "group5"
+        },
+        "position": { "x": 1000, "y": 530 }
+      },
+      {
+        "id": "e6-9",
+        "source": "6",
+        "target": "9",
+        "type": "custom",
+        "data": { "text": "Yes", "group": "group6" }
+      },
+      {
+        "id": "9",
+        "type": "custom",
+        "data": {
+          "labels": ["Go To", "'New Diagnosis of", "Breast Cancer'"],
+          "style": { "background": "linear-gradient(70deg, #f3f5a6 1%, #c8a6f5 99% )", "color": "#000000" },
+          "onClickGoTo": 3,
+          "group": "group6"
+        },
+        "position": { "x": 750, "y": 600 }
+      },
+      {
+        "id": "e6-10",
+        "source": "6",
+        "target": "10",
+        "type": "custom",
+        "data": { "text": "No", "decision": true, "group": "group7" }
+      },
+      {
+        "id": "10",
+        "type": "custom",
+        "data": { "labels": ["Surgical Treatment", "Complete"], "group": "group7" },
+        "position": { "x": 750, "y": 720 }
+      },
+      {
+        "id": "e10-15",
+        "source": "10",
+        "target": "15",
+        "type": "custom",
+        "data": { "group": "group7" }
+      },
+      {
+        "id": "e10-16",
+        "source": "10",
+        "target": "16",
+        "type": "custom",
+        "data": { "group": "group7" }
+      },
+      {
+        "id": "15",
+        "type": "custom",
+        "data": {
+          "labels": ["5 years Annual", "Mammographic", "Surveillance"],
+          "style": { "backgroundColor": "#179c67", "color": "#e8ebea" },
+          "group": "group7"
+        },
+        "position": { "x": 1000, "y": 650 }
+      },
+      {
+        "id": "16",
+        "type": "custom",
+        "data": {
+          "labels": ["Doctor may discuss", "risk: benefit of", "Hormone Therapy"],
+          "style": { "backgroundColor": "#179c67", "color": "#e8ebea" },
+          "group": "group7"
+        },
+        "position": { "x": 1000, "y": 750 }
+      },
+      {
+        "id": "e7-12",
+        "source": "7",
+        "target": "12",
+        "type": "custom",
+        "data": { "text": "No", "group": "group8" }
+      },
+      {
+        "id": "12",
+        "type": "custom",
+        "data": { "labels": ["Furthur Breast", "Surgery"], "group": "group8" },
+        "position": { "x": 900, "y": 350 }
+      },
+
+      {
+        "id": "e7-11",
+        "source": "7",
+        "target": "11",
+        "type": "custom",
+        "data": { "text": "Yes", "group": "group9" }
+      },
+      {
+        "id": "11",
+        "type": "custom",
+        "data": { "labels": ["Surgical Treatment", "Complete"], "group": "group9" },
+        "position": { "x": 900, "y": 250 }
+      },
+      {
+        "id": "e11-17",
+        "source": "11",
+        "target": "17",
+        "type": "custom",
+        "data": { "group": "group9" }
+      },
+      {
+        "id": "17",
+        "type": "custom",
+        "data": { "labels": ["Consider", "Radiotherapy to", "Breast"], "group": "group9" },
+        "position": { "x": 1080, "y": 239 }
+      },
+      {
+        "id": "e17-18",
+        "source": "17",
+        "target": "18",
+        "type": "custom",
+        "data": { "group": "group9" }
+      },
+      {
+        "id": "18",
+        "type": "custom",
+        "data": {
+          "labels": ["5 years Annual", "Mammographic", "Surveillance"],
+          "style": { "backgroundColor": "#179c67", "color": "#e8ebea" },
+          "group": "group9"
+        },
+        "position": { "x": 1290, "y": 200 }
+      },
+      {
+        "id": "e17-19",
+        "source": "17",
+        "target": "19",
+        "type": "custom",
+        "data": { "group": "group9" }
+      },
+      {
+        "id": "19",
+        "type": "custom",
+        "data": {
+          "labels": ["Doctor may discuss", "risk: benefit of", "Hormone Therapy"],
+          "style": { "backgroundColor": "#179c67", "color": "#e8ebea" },
+          "group": "group9"
+        },
+        "position": { "x": 1290, "y": 300 }
+      }
+    ]
+  },
+  "new_diagnosis_young": {
+    "group_ancestors": {
+      "group2": "group1",
+      "group3": "group1",
+      "group4": "group2",
+      "group5": "group2",
+      "group6": "group5",
+      "group7": "group5",
+      "group8": "group7",
+      "group9": "group4",
+      "group10": "group4",
+      "group11": "group9",
+      "group12": "group9",
+      "group13": "group8",
+      "group14": "group8",
+      "group16": "group15",
+      "group17": "group15",
+      "group18": "group17",
+      "group19": "group18",
+      "group20": "group17",
+      "group21": "group17"
+    },
+    "data_elements": [
+      {
+        "id": "i1",
+        "type": "icon",
+        "data": {
+          "group": "group1",
+          "popover": {
+            "header": "research",
+            "body": "Developing an artificially intelligent referral system to fulfill the informational needs of women diagnosed with breast cancer."
+          }
+        },
+        "position": { "x": 0, "y": -40 }
+      },
+      {
+        "id": "i2",
+        "type": "icon",
+        "data": {
+          "group": "group1",
+          "popover": {
+            "header": "research",
+            "title": "RUBY-Preparing to Survive",
+            "body": "Improving outcomes for young women with breast cancer",
+            "link": "https://spherecalgary.ca/abstract-ruby-tool"
+          }
+        },
+        "position": { "x": 40, "y": -40 }
+      },
+      {
+        "id": "i3",
+        "type": "icon",
+        "data": {
+          "group": "group1",
+          "popover": {
+            "header": "research",
+            "title": "IN-SYNC",
+            "body": "A pilot study to establish research tools for understanding the biology of breast cancer in women 40 years of age and under.",
+            "link": "https://spherecalgary.ca/abstract-insync"
+          }
+        },
+        "position": { "x": 80, "y": -40 }
+      },
+      {
+        "id": "i4",
+        "type": "icon",
+        "data": {
+          "group": "group1",
+          "popover": {
+            "header": "research",
+            "title": "RUBY - Knowledge to Action",
+            "body": "Improving local therapy for young women with breast cancer across Canada."
+          }
+        },
+        "position": { "x": 120, "y": -40 }
+      },
+      {
+        "id": "i5",
+        "type": "icon",
+        "data": {
+          "group": "group4",
+          "popover": {
+            "header": "research",
+            "title": "RUBY",
+            "body": "Studies to encourage early fertility preservation referral and to predict effects of treatment on fertility of young women with breast cancer.",
+            "link": "https://spherecalgary.ca/abstract-ruby"
+          }
+        },
+        "position": { "x": 680, "y": -40 }
+      },
+      {
+        "id": "i6",
+        "type": "icon",
+        "data": {
+          "group": "group4",
+          "popover": {
+            "header": "research",
+            "title": "RUBY - Expanded Genetic Testing in Women with Young Onset Breast Cancer",
+            "link": "https://spherecalgary.ca/abstract-ruby"
+          }
+        },
+        "position": { "x": 835, "y": -50 }
+      },
+      {
+        "id": "i7",
+        "type": "icon",
+        "data": {
+          "group": "group4",
+          "popover": {
+            "header": "research",
+            "title": "RUBY - PCR",
+            "body": "A prediction model for pathological complete response following neoadjuvant chemotheraphy in breast cancer.",
+            "link": "https://spherecalgary.ca/abstract-predicting-pcr"
+          }
+        },
+        "position": { "x": 990, "y": 120 }
+      },
+      {
+        "id": "i8",
+        "type": "icon",
+        "data": {
+          "group": "group4",
+          "popover": {
+            "header": "research",
+            "title": "Validating the Breast-Q for Use in Relatively Younger Women Diagnosed with Breast Cancer."
+          }
+        },
+        "position": { "x": 1320, "y": -40 }
+      },
+      {
+        "id": "i9",
+        "type": "icon",
+        "data": {
+          "group": "group4",
+          "popover": {
+            "header": "research",
+            "title": "Validating the Breast-Q for Use in Relatively Younger Women Diagnosed with Breast Cancer."
+          }
+        },
+        "position": { "x": 1290, "y": 150 }
+      },
+      {
+        "id": "i10",
+        "type": "icon",
+        "data": {
+          "group": "group22",
+          "popover": {
+            "title": "Research",
+            "body": "The impact of modifiable lifestyle factors in breast cancer survival in young women."
+          }
+        },
+        "position": { "x": 3480, "y": 240 }
+      },
+      {
+        "id": "1",
+        "type": "custom",
+        "data": { "group": "group1", "labels": ["New Diagnosis of", "Breast Cancer"] },
+        "position": { "x": 0, "y": 0 }
+      },
+      {
+        "id": "e1-2",
+        "source": "1",
+        "target": "2",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group1" }
+      },
+      {
+        "id": "2",
+        "type": "custom",
+        "data": { "group": "group1", "labels": ["Pregnant?"] },
+        "position": { "x": 180, "y": 11 }
+      },
+      {
+        "id": "e2-3",
+        "source": "2",
+        "target": "3",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group2", "text": "No" }
+      },
+      {
+        "id": "3",
+        "type": "custom",
+        "data": {
+          "group": "group2",
+          "labels": ["Evidence of spread to", "axillary lymph nodes", "at diagnosis?"],
+          "popover": {
+            "header": "Evidence of spread to axillary lymph nodes at diagnosis",
+            "body": "This will be assessed by both clinical examination and an axillary ultrasound (usually at time of breast ultrasound).<br/><br/>If there is any suspicion of lymph nodes being abnormal, a biopsy will be performed - the biopsy result will determine whether you are treated as if you have spread of the breast cancer to the lymph nodes or not.<br/><br/>If the ultrasound (USS) and clinical examination are normal then 70% of the time this will be correct and the Sentinel Lymph Node Biopsy will also be normal. Thirty percent of the time we will find unexpected spread to the lymph nodes on Sentinel Lymph Node Biopsy despite the lymph nodes appearing normal.<br/><br/>If spread to the lymph nodes is found on biopsy prior to any treatment, its management will be based on whether initial treatment is surgery (straight to Axillary Lymph Node Dissection) or systemic therapy (if there is a good response to this treatment there is the possibility to have a Sentinel Lymph Node Biopsy with or without radiotherapy, and avoid ALND)."
+          }
+        },
+        "position": { "x": 340, "y": -11 }
+      },
+      {
+        "id": "e2-4",
+        "source": "2",
+        "target": "4",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group3", "text": "Yes" }
+      },
+      {
+        "id": "4",
+        "type": "custom",
+        "data": {
+          "group": "group3",
+          "labels": ["Go to", "'New Diagnosis of", "Pregnancy Associated", "Breast Cancer'"],
+          "style": { "background": "linear-gradient(70deg, #96deff 1%, #96ff9f 99% )", "color": "#000000" },
+          "onClickGoTo": 6
+        },
+        "position": { "x": 340, "y": 120 }
+      },
+      {
+        "id": "e3-5",
+        "source": "3",
+        "target": "5",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group4", "text": "No" }
+      },
+      {
+        "id": "5",
+        "type": "custom",
+        "data": { "group": "group4", "labels": ["Discuss Fertility", "Preservation"] },
+        "position": { "x": 580, "y": 0 }
+      },
+      {
+        "id": "e5-7",
+        "source": "5",
+        "target": "7",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group4" }
+      },
+      {
+        "id": "7",
+        "type": "custom",
+        "data": { "group": "group4", "labels": ["Discuss", "Genetic Risk", "Assessment"] },
+        "position": { "x": 750, "y": -11 }
+      },
+      {
+        "id": "e7-9",
+        "source": "7",
+        "target": "9",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group4" }
+      },
+      {
+        "id": "9",
+        "type": "custom",
+        "data": {
+          "group": "group4",
+          "labels": ["Neo-adjuvant", "Chemotherapy"],
+          "popover": {
+            "header": "Neo-adjuvant Systemic Therapy",
+            "body": "This can be used prior to surgical treatment when it is termed '<b>neoadjuvant</b>'. For young women this is typically in the form of chemotherapy, for older age groups this can either be chemotherapy or hormone therapy. There is no evidence that systemic treatment prior to surgery either benefits or worsens long-term survival outcomes compared to systemic treatment following surgery. <br/> Neo-adjuvant Systemic Therapy benefits therefore include:<br/> <ul><li>Increased feasibility of breast conservation surgery over mastectomy.</li> <li>Increased time from diagnosis to surgery to allow for genetic testing to be completed (for women who would be offered systemic treatment anyway) to help surgical decision making.</li><li>Provides an opportunity to assess how responsive an individual's breast cancer is to the chosen systemic therapy by measuring tumour (+- lymph node metastases) shrinkage.</li><li>For Breast cancers that undergo a <b>'Complete Pathological Response'</b> - meaning that the Neo-Adjuvant Systemic Therapy removes all trace of breast cancer, this is an indicator for an excellent prognosis.</li></ul><br/>A clip will be placed in the breast cancer prior to starting Neo-adjuvant systemic therapy in case of a complete pathological response, so that the breast cancer site can still be localised and removed at surgery."
+          }
+        },
+        "position": { "x": 890, "y": 50 }
+      },
+      {
+        "id": "e7-10",
+        "source": "7",
+        "target": "10",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group4" }
+      },
+      {
+        "id": "e9-10",
+        "source": "9",
+        "target": "10",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group4" }
+      },
+      {
+        "id": "10",
+        "type": "custom",
+        "data": { "group": "group4", "labels": ["Surgery"] },
+        "position": { "x": 1040, "y": 10 }
+      },
+      {
+        "id": "e10-19",
+        "source": "10",
+        "target": "19",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group4" }
+      },
+      {
+        "id": "e10-20",
+        "source": "10",
+        "target": "20",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group4" }
+      },
+      {
+        "id": "19",
+        "type": "custom",
+        "data": { "group": "group4", "labels": ["Mastectomy (+-", "Reconstruction) & SLNB"] },
+        "position": { "x": 1150, "y": -1 }
+      },
+      {
+        "id": "e19-23",
+        "source": "19",
+        "target": "23",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group4" }
+      },
+      {
+        "id": "20",
+        "type": "custom",
+        "data": { "group": "group4", "labels": ["Breast Conservation", "Surgery & SLNB"] },
+        "position": { "x": 1150, "y": 80 }
+      },
+      {
+        "id": "e20-21",
+        "source": "20",
+        "target": "21",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group4" }
+      },
+      {
+        "id": "21",
+        "type": "custom",
+        "data": {
+          "group": "group4",
+          "labels": ["Clear Surgical Margins?"],
+          "popover": {
+            "header": "Clear Surgical Margins",
+            "body": "The margins of any breast cancer are formally assessed under a microscope following surgery, and your surgeon will discuss at your post-operative consultation whether 'clear markings' were achieved.<br/><br/>Guidelines generally state that further surgery (either re-excision of margins re-attempting breast conservation surgery, or completion mastectomy) is required for:<ul><li>An invasive breast cancer that is <b>not</b> 'clear of ink' at its margin</li><li>A purely DCIS lesion that has a margin less than 2mm</li></ul>An invasive breast cancer that has associated DCIS and has <b>multiple</b> 'close' DCIS margins of less than 2mm <b>may</b> require discussion of further surgery."
+          }
+        },
+        "position": { "x": 1330, "y": 91 }
+      },
+      {
+        "id": "e21-23",
+        "source": "21",
+        "target": "23",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group4", "text": "yes" }
+      },
+      {
+        "id": "e21-22",
+        "source": "21",
+        "target": "22",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group4", "text": "no" }
+      },
+      {
+        "id": "22",
+        "type": "custom",
+        "data": { "group": "group4", "labels": ["Consider furthur", "Breast Surgery"] },
+        "position": { "x": 1550, "y": 91 }
+      },
+      {
+        "id": "23",
+        "type": "custom",
+        "data": {
+          "group": "group4",
+          "labels": ["Post-operative evidence", "of cancer spread to", "axillary lymph nodes?"]
+        },
+        "position": { "x": 1550, "y": -12 }
+      },
+      {
+        "id": "3-6",
+        "source": "3",
+        "target": "6",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group5", "text": "Yes" }
+      },
+
+      {
+        "id": "6",
+        "type": "custom",
+        "data": {
+          "group": "group5",
+          "labels": ["Consider", "Staging CT Chest/", "Abdomen/ Pelvis", "&", "Bone Scan"]
+        },
+        "position": { "x": 580, "y": 250 }
+      },
+
+      {
+        "id": "e6-8",
+        "source": "6",
+        "target": "8",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group5" }
+      },
+      {
+        "id": "8",
+        "type": "custom",
+        "data": {
+          "group": "group5",
+          "labels": ["Evidence of breast", "cancer spread beyond", "axillary lymph nodes?"]
+        },
+        "position": { "x": 750, "y": 272 }
+      },
+      {
+        "id": "e8-11",
+        "source": "8",
+        "target": "11",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group6", "text": "Yes" }
+      },
+      {
+        "id": "11",
+        "type": "custom",
+        "data": {
+          "group": "group6",
+          "labels": ["Stage IV Breast Cancer"]
+        },
+        "position": { "x": 1000, "y": 330 }
+      },
+
+      {
+        "id": "e8-12",
+        "source": "8",
+        "target": "12",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group7", "text": "No" }
+      },
+
+      {
+        "id": "12",
+        "type": "custom",
+        "data": {
+          "group": "group7",
+          "labels": ["Discuss Fertility", "Preservation"],
+          "popover": {
+            "header": "Discuss Fertility Preservation",
+            "body": "Chemotherapy can have a significant impact on fertility long-term, putting up to 20% of young women into permanent menopause, preventing the opportunity for future natural conception (without IVF).<br/><br/>This is a very difficult situation for young women - simultaneously considering a significant diagnosis of breast cancer whilst also considering one's inner desire to have a child. Therefore reflect on this carefully, understanding that the majority of women with breast cancer will go onto live long and healthy lives.<br/><br/>For some women, the discovery of carrying a genetic mutation during their breast cancer experience may lean them towards opting for IVF with genetic therapy to the embryos (choosing only embryos to implant that do not carry the genetic mutation) even if they are not post-menopausal following treatment.<br/><br/>There are now many safe options for fertility preservation for young women newly diagnosed with breast cancer who are yet to complete their family.This includes oocyte cryo-preservation (your eggs only) or embryo cryo-preservation (your eggs fertilised with partner's sperm). These fertility options will continue to expand over time as research and fertility progress continues.<br/><br/>These treatment options can now be offered without delay to cancer treatment, by using random start protocols that allow eggs to be harvested at any point during the menstrual cycle, however must be performed prior to commencement of all breast cancer treatment."
+          }
+        },
+        "position": { "x": 1000, "y": 240 }
+      },
+
+      {
+        "id": "e12-13",
+        "source": "12",
+        "target": "13",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group7" }
+      },
+
+      {
+        "id": "13",
+        "type": "custom",
+        "data": { "group": "group7", "labels": ["Discuss", "Genetic Risk", "Assessment"] },
+        "position": { "x": 1180, "y": 229 }
+      },
+      {
+        "id": "p4-e13-14",
+        "source": "13",
+        "target": "14",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group8" }
+      },
+
+      {
+        "id": "14",
+        "type": "custom",
+        "data": { "group": "group8", "labels": ["Surgery"] },
+        "position": { "x": 1450, "y": 210 }
+      },
+      {
+        "id": "p4-e13-15",
+        "source": "13",
+        "target": "15",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group8" }
+      },
+      {
+        "id": "15",
+        "type": "custom",
+        "data": { "group": "group8", "labels": ["Neo-adjuvant", "Chemotherapy"] },
+        "position": { "x": 1320, "y": 290 }
+      },
+
+      {
+        "id": "e15-16",
+        "source": "15",
+        "target": "16",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group8" }
+      },
+      {
+        "id": "16",
+        "type": "custom",
+        "data": { "group": "group8", "labels": ["Good response to", "Neo-adjuvant", "Systemic Therapy?"] },
+        "position": { "x": 1460, "y": 279 }
+      },
+      {
+        "id": "e16-17",
+        "source": "16",
+        "target": "17",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group8", "text": "no" }
+      },
+      {
+        "id": "e14-17",
+        "source": "14",
+        "target": "17",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group8" }
+      },
+      {
+        "id": "17",
+        "type": "custom",
+        "data": { "group": "group8", "labels": ["Axillary Lymph Node", "Dissection combined with:"] },
+        "position": { "x": 1650, "y": 240 }
+      },
+      {
+        "id": "e16-18",
+        "source": "16",
+        "target": "18",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group8", "text": "yes" }
+      },
+      {
+        "id": "18",
+        "type": "custom",
+        "data": { "group": "group8", "labels": ["Discuss options of", "SLNB vs ALND", "combined with:"] },
+        "position": { "x": 1650, "y": 330 }
+      },
+      {
+        "id": "17-c1",
+        "source": "17",
+        "target": "c1",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "targetHandle": "top",
+        "data": { "group": "group8" }
+      },
+      {
+        "id": "e18-c1",
+        "source": "18",
+        "target": "c1",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "targetHandle": "bottom",
+        "data": { "group": "group8" }
+      },
+      {
+        "id": "c1",
+        "type": "custom",
+        "data": { "group": "group8", "labels": [" "] },
+        "position": { "x": 1880, "y": 310 }
+      },
+
+      {
+        "id": "e23-24",
+        "source": "23",
+        "target": "24",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group9", "text": "yes" }
+      },
+      {
+        "id": "24",
+        "type": "custom",
+        "data": { "group": "group9", "labels": ["Lymph node involvement", "low (1-2 positive lymph", "nodes only)"] },
+        "position": { "x": 1770, "y": 70 }
+      },
+      {
+        "id": "e23-25",
+        "source": "23",
+        "target": "25",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group10", "text": "no" }
+      },
+      {
+        "id": "25",
+        "type": "custom",
+        "data": { "group": "group10", "labels": ["Surgical treatment", "complete"] },
+        "position": { "x": 2080, "y": -20 }
+      },
+      {
+        "id": "e25-33",
+        "source": "25",
+        "target": "c2",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "targetHandle": "top",
+        "data": { "group": "group10" }
+      },
+      {
+        "id": "e24-26",
+        "source": "24",
+        "target": "26",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group11", "text": "no" }
+      },
+      {
+        "id": "26",
+        "type": "custom",
+        "data": { "group": "group11", "labels": ["Discuss completion Axillary", "Lymph Node Dissection", "(ALND)"] },
+        "position": { "x": 2000, "y": 70 }
+      },
+      {
+        "id": "e26-28",
+        "source": "26",
+        "target": "28",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group11" }
+      },
+      {
+        "id": "28",
+        "type": "custom",
+        "data": {
+          "group": "group11",
+          "labels": ["Consider", "Staging CT Chest/", "Abdomen/ Pelvis and", "Whole Body Bone Scan"]
+        },
+        "position": { "x": 2240, "y": 59 }
+      },
+      {
+        "id": "p4-e28-33",
+        "source": "28",
+        "target": "c2",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "targetHandle": "top",
+        "data": { "group": "group11" }
+      },
+      {
+        "id": "p4-e24-27",
+        "source": "24",
+        "target": "27",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group12", "text": "yes" }
+      },
+      {
+        "id": "27",
+        "type": "custom",
+        "data": { "group": "group12", "labels": ["Discuss options of", "Radiotherapy vs ALND"] },
+        "position": { "x": 2020, "y": 170 }
+      },
+      {
+        "id": "p4-e27-33",
+        "source": "27",
+        "target": "c2",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "targetHandle": "left",
+        "data": { "group": "group12" }
+      },
+      {
+        "id": "ec1-29",
+        "source": "c1",
+        "target": "29",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group13" }
+      },
+      {
+        "id": "29",
+        "type": "custom",
+        "data": { "group": "group13", "labels": ["Breast Conservation", "Surgery"] },
+        "position": { "x": 1950, "y": 270 }
+      },
+      {
+        "id": "e29-31",
+        "source": "29",
+        "target": "31",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group13" }
+      },
+      {
+        "id": "31",
+        "type": "custom",
+        "data": {
+          "group": "group13",
+          "labels": ["Surgical Margins", "Clear?"],
+          "popover": {
+            "header": "Clear Surgical Margins",
+            "body": "The margins of any breast cancer are formally assessed under a microscope following surgery, and your surgeon will discuss at your post-operative consultation whether 'clear markings' were achieved.<br/><br/>Guidelines generally state that further surgery (either re-excision of margins re-attempting breast conservation surgery, or completion mastectomy) is required for:<ul><li>An invasive breast cancer that is <b>not</b> 'clear of ink' at its margin</li><li>A purely DCIS lesion that has a margin less than 2mm</li></ul>An invasive breast cancer that has associated DCIS and has <b>multiple</b> 'close' DCIS margins of less than 2mm <b>may</b> require discussion of further surgery."
+          }
+        },
+        "position": { "x": 2140, "y": 270 }
+      },
+      {
+        "id": "e31-32",
+        "source": "31",
+        "target": "32",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group13", "text": "no" }
+      },
+      {
+        "id": "32",
+        "type": "custom",
+        "data": { "group": "group13", "labels": ["Consider furthur", "breast surgery"] },
+        "position": { "x": 2300, "y": 220 }
+      },
+      {
+        "id": "e31-c2",
+        "source": "31",
+        "target": "c2",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "targetHandle": "bottom",
+        "data": { "group": "group13", "text": "yes" }
+      },
+      {
+        "id": "ec1-30",
+        "source": "c1",
+        "target": "30",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group14" }
+      },
+      {
+        "id": "30",
+        "type": "custom",
+        "data": { "group": "group14", "labels": ["Mastectomy (+-", "Reconstruction)"] },
+        "position": { "x": 1950, "y": 350 }
+      },
+      {
+        "id": "e30-c2",
+        "source": "30",
+        "target": "c2",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "targetHandle": "bottom",
+        "data": { "group": "group14" }
+      },
+
+      {
+        "id": "c2",
+        "type": "custom",
+        "position": { "x": 2480, "y": 192 },
+        "data": { "group": "group15" }
+      },
+
+      {
+        "id": "c2-33",
+        "source": "c2",
+        "target": "33",
+        "type": "custom",
+        "sourceHandle": "right",
+        "data": { "group": "group16" }
+      },
+
+      {
+        "id": "33",
+        "type": "custom",
+        "data": {
+          "group": "group16",
+          "labels": ["Discuss Adjuvant", "Radiotherapy to breast", "or chest wall"],
+          "popover": {
+            "header": "Discuss Post-operative Radiotherapy",
+            "body": "Post-operative Radiotherapy is required for the vast majority of patients who have undergone Breast Conservation Surgery, and can be advantageous for some women who have undergone Mastectomy, even if there is no evidence of lymph node involvement."
+          }
+        },
+        "position": { "x": 2850, "y": 0 }
+      },
+
+      {
+        "id": "e33-c3",
+        "source": "33",
+        "target": "c3",
+        "type": "custom",
+        "targetHandle": "top",
+        "data": { "group": "group16" }
+      },
+
+      {
+        "id": "c2-34",
+        "source": "c2",
+        "target": "34",
+        "type": "custom",
+        "sourceHandle": "right",
+        "data": { "group": "group17" }
+      },
+
+      {
+        "id": "34",
+        "type": "custom",
+        "data": { "group": "group17", "labels": ["Discuss Adjuvant", "Systemic Therapy"] },
+        "position": { "x": 2530, "y": 222 }
+      },
+      {
+        "id": "e34-35",
+        "source": "34",
+        "target": "35",
+        "type": "custom",
+        "data": { "group": "group18" }
+      },
+      {
+        "id": "35",
+        "type": "custom",
+        "data": { "group": "group18", "labels": ["Hormone Positive", "Her-2 Negative", "Breast Cancer"] },
+        "position": { "x": 2720, "y": 105 }
+      },
+      {
+        "id": "e35-38",
+        "source": "35",
+        "target": "38",
+        "type": "custom",
+        "targetHandle": "left",
+        "data": { "group": "group18" }
+      },
+      {
+        "id": "38",
+        "type": "custom",
+        "data": {
+          "group": "group18",
+          "labels": ["Discuss Adjuvant", "Hormone Therapy"]
+        },
+        "position": { "x": 3100, "y": 115 }
+      },
+      {
+        "id": "e38-c3",
+        "source": "38",
+        "target": "c3",
+        "type": "custom",
+        "targetHandle": "left",
+        "data": { "group": "group18" }
+      },
+      {
+        "id": "e35-39",
+        "source": "35",
+        "target": "39",
+        "type": "custom",
+        "data": { "group": "group19" }
+      },
+      {
+        "id": "39",
+        "type": "custom",
+        "data": {
+          "group": "group19",
+          "labels": ["Consider Genetic", "Profile Testing"],
+          "popover": {
+            "header": "Consider Tumour Profile Testing",
+            "body": "Tumour profile tests such as Oncotype DX can be performed for hormone receptor positive, HER-2 negative breast cancers to assess the benefit of chemotherapy in addition to hormone therapy, in terms of risk of breast cancer recurrence and long-term survival. <br/><br/> It is suitable for those breast cancers as described above that have no evidence of spread to lymph nodes and are at least 10mm in diameter (occasionally suitable for 5-9mm tumours with other poor prognostic signs). <br/><br/>Oncotype DX produces a recurrence score 0-100:<ul><li>Women aged < 50 with a recurrence score of 0-15 have no benefit from the addition of chemotherapy.</li><li>Women aged < 50 with a recurrence score of 16-25 have some benefit from the addition of chemotherapy.</li><li>Women aged <50 with a recurrence score of 26-100 do benefit from the addition of chemotherapy.</li></ul>This test can be performed either on the tumour biopsy if Neo-adjuvant chemotherapy is being consider or (more commonly) on the post-surgery tumour specimen.<br/><br/>Your oncologist will discuss this test with you if it is suitable to your specific type of breast cancer."
+          }
+        },
+        "position": { "x": 2900, "y": 170 }
+      },
+      {
+        "id": "e39-40",
+        "source": "39",
+        "target": "40",
+        "type": "custom",
+        "data": { "group": "group19" }
+      },
+
+      {
+        "id": "e34-36",
+        "source": "34",
+        "target": "36",
+        "type": "custom",
+        "data": { "group": "group20" }
+      },
+
+      {
+        "id": "36",
+        "type": "custom",
+        "data": { "group": "group20", "labels": ["Tripple Negative", "Breast Cancer"] },
+        "position": { "x": 2720, "y": 225 }
+      },
+
+      {
+        "id": "e36-40",
+        "source": "36",
+        "target": "40",
+        "type": "custom",
+        "data": { "group": "group20" }
+      },
+
+      {
+        "id": "40",
+        "type": "custom",
+        "data": { "group": "group20", "labels": ["Discuss Adjuvant", "Chemotherapy"] },
+        "position": { "x": 3100, "y": 225 }
+      },
+      {
+        "id": "e40-c3",
+        "source": "40",
+        "target": "c3",
+        "type": "custom",
+        "data": { "group": "group20" }
+      },
+
+      {
+        "id": "e34-37",
+        "source": "34",
+        "target": "37",
+        "type": "custom",
+        "data": { "group": "group21" }
+      },
+      {
+        "id": "37",
+        "type": "custom",
+        "data": { "group": "group21", "labels": ["HER-2 positive", "Breast Cancer"] },
+        "position": { "x": 2720, "y": 325 }
+      },
+
+      {
+        "id": "e37-41",
+        "source": "37",
+        "target": "41",
+        "type": "custom",
+        "data": { "group": "group21" }
+      },
+      {
+        "id": "41",
+        "type": "custom",
+        "data": { "group": "group21", "labels": ["Discuss HER-2", "Targeted Therapy"] },
+        "position": { "x": 2900, "y": 325 }
+      },
+
+      {
+        "id": "e41-40",
+        "source": "41",
+        "target": "40",
+        "type": "custom",
+        "targetHandle": "left",
+        "data": { "group": "group21" }
+      },
+      {
+        "id": "e41-43",
+        "source": "41",
+        "target": "43",
+        "type": "custom",
+        "data": { "group": "group21" }
+      },
+
+      {
+        "id": "43",
+        "type": "custom",
+        "data": {
+          "group": "group21",
+          "labels": ["HER-2 Positive", "Hormone Positive", "Breast Cancer"]
+        },
+        "position": { "x": 3100, "y": 314 }
+      },
+
+      {
+        "id": "e43-c3",
+        "source": "43",
+        "target": "c3",
+        "type": "custom",
+        "targetHandle": "bottom",
+        "data": { "group": "group21" }
+      },
+
+      {
+        "id": "c3",
+        "type": "custom",
+        "data": {
+          "group": "group22",
+          "labels": [" "]
+        },
+        "position": { "x": 3300, "y": 195 }
+      },
+      {
+        "id": "ec3-44",
+        "source": "c3",
+        "target": "44",
+        "type": "custom",
+        "data": { "group": "group22" }
+      },
+      {
+        "id": "44",
+        "type": "custom",
+        "data": {
+          "group": "group22",
+          "labels": ["5-years", "Mammographic", "Surveillance"],
+          "style": { "backgroundColor": "#179c67", "color": "#e8ebea" },
+          "popover": {
+            "header": "5 years mammography surveillance",
+            "body": "For those patients who have not undergone bilateral mastectomy. <br/><br/> Consider alternative imaging (for example Annual  Breast MRI) if original breast cancer was not visible on standard imaging or breast tissue is very dense.. <br/><br/>Women will continue to be offered surveillance imaging annually beyond five years post-diagnosis until they are aged 50 and suitable to commence national breast screening every two years."
+          }
+        },
+        "position": { "x": 3400, "y": 55 }
+      },
+      {
+        "id": "ec3-45",
+        "source": "c3",
+        "target": "45",
+        "type": "custom",
+        "data": { "group": "group22" }
+      },
+      {
+        "id": "45",
+        "type": "custom",
+        "data": {
+          "group": "group22",
+          "labels": ["Regular self-", "examination"],
+          "style": { "backgroundColor": "#179c67", "color": "#e8ebea" }
+        },
+        "position": { "x": 3400, "y": 270 }
+      },
+      {
+        "id": "ec3-46",
+        "source": "c3",
+        "target": "46",
+        "type": "custom",
+        "data": { "group": "group22" }
+      },
+      {
+        "id": "46",
+        "type": "custom",
+        "data": {
+          "group": "group22",
+          "labels": ["Optimise Lifestyle", "Factors"],
+          "style": { "backgroundColor": "#179c67", "color": "#e8ebea" }
+        },
+        "position": { "x": 3400, "y": 173 }
+      }
+    ]
+  },
+  "new_diagnosis_average": {
+    "group_ancestors": {
+      "group2": "group1",
+      "group3": "group1",
+      "group4": "group2",
+      "group5": "group2",
+      "group6": "group4",
+      "group7": "group3",
+      "group8": "group3",
+      "group9": "group7",
+      "group10": "group7",
+      "group11": "group10",
+      "group12": "group11",
+      "group13": "group11",
+      "group14": "group12",
+      "group16": "group6",
+      "group17": "group16",
+      "group18": "group16",
+      "group19": "group6",
+      "group20": "group15",
+      "group21": "group15",
+      "group22": "group21",
+      "group23": "group22",
+      "group24": "group22",
+      "group25": "group22",
+      "group26": "group21",
+      "group27": "group26",
+      "group28": "group27",
+      "group29": "group21"
+    },
+    "data_elements": [
+      {
+        "id": "i1",
+        "type": "icon",
+        "data": {
+          "group": "group1",
+          "popover": {
+            "header": "research",
+            "body": "Developing an artificially intelligent referral system to fulfill the informational needs of women diagnosed with breast cancer."
+          }
+        },
+        "position": { "x": 120, "y": -40 }
+      },
+      {
+        "id": "i2",
+        "type": "icon",
+        "data": {
+          "group": "group2",
+          "popover": {
+            "header": "research",
+            "title": "RUBY",
+            "body": "Studies to encourage early fertility preservation referral and to predict effects of treatment on fertility of young women with breast cancer.",
+            "link": "https://spherecalgary.ca/abstract-ruby"
+          }
+        },
+        "position": { "x": 850, "y": 20 }
+      },
+      {
+        "id": "1",
+        "type": "custom",
+        "data": { "group": "group1", "labels": ["New Diagnosis of", "Breast Cancer"] },
+        "position": { "x": 0, "y": 0 }
+      },
+      {
+        "id": "e1-2",
+        "source": "1",
+        "target": "2",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group1" }
+      },
+      {
+        "id": "2",
+        "type": "custom",
+        "data": { "group": "group1", "labels": ["Evidence of spread to", "axillary lmyph nodes", "at diagnosis?"] },
+        "position": { "x": 180, "y": -11 }
+      },
+      {
+        "id": "e2-3",
+        "source": "2",
+        "target": "3",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group2", "text": "No" }
+      },
+      {
+        "id": "3",
+        "type": "invisible",
+        "data": { "group": "group2" },
+        "position": { "x": 450, "y": -18 }
+      },
+      {
+        "id": "e3-4",
+        "source": "3",
+        "target": "4",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group2" }
+      },
+      {
+        "id": "4",
+        "type": "custom",
+        "data": { "group": "group2", "labels": ["Surgery"] },
+        "position": { "x": 870, "y": -120 }
+      },
+      {
+        "id": "e3-5",
+        "source": "3",
+        "target": "5",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group2" }
+      },
+      {
+        "id": "5",
+        "type": "custom",
+        "data": {
+          "group": "group2",
+          "labels": ["Consider Genetic", "Profile Testing"],
+          "popover": {
+            "header": "Consider Tumour Profile Testing",
+            "body": "Tumour profile tests such as Oncotype DX can be performed for hormone receptor positive, HER-2 negative breast cancers to assess the benefit of chemotherapy in addition to hormone therapy, in terms of risk of breast cancer recurrence and long-term survival. <br/><br/>It is suitable for those breast cancers as described above that have no evidence of spread to lymph nodes and are at least 10mm in diameter (occasionally suitable for 5-9mm tumours with other poor prognostic signs). <br/><br/>Oncotype DX produces a recurrence score 0-100: <ul><li>Women aged > 50 with a recurrence score of 0-25 have no benefit from the addition of chemotherapy.</li><li>Women aged >50 with a recurrence score of 26-100 do benefit from the addition of chemotherapy.</li></ul>This test can be performed either on the tumour biopsy if Neo-adjuvant chemotherapy is being consider or (more commonly) on the post-surgery tumour specimen.<br/><br/>Your oncologist will discuss this test with you if it is suitable to your specific type of breast cancer."
+          }
+        },
+        "position": { "x": 600, "y": 50 }
+      },
+      {
+        "id": "e5-6",
+        "source": "5",
+        "target": "6",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group2" }
+      },
+      {
+        "id": "6",
+        "type": "custom",
+        "data": { "group": "group2", "labels": ["Neo-adjuvant", "Chemotherapy"] },
+        "position": { "x": 760, "y": 50 }
+      },
+      {
+        "id": "e3-7",
+        "source": "3",
+        "target": "7",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group2" }
+      },
+      {
+        "id": "7",
+        "type": "custom",
+        "data": {
+          "group": "group2",
+          "labels": ["Neo-adjuvant", "Hormone Therapy"],
+          "popover": {
+            "header": "Neo-adjuvant Hormone Therapy",
+            "body": "This can be a successful treatment option for those with larger breast cancers, in a bid to reduce their size and make breast conservation surgery possible. <br/><br/>Typical duration of treatment is 3-6 months, and whilst a 'complete pathological response' is rarely seen (when all of the tumour regresses due to treatment), around 50% of cancers do undergo significant reduction in size making BCS more amenable. <br/><br/>Response to treatment will be assessed regularly during the 3-6 month period, this is also a useful tool to assess the tumour response to this therapy which would be continued post-operative. <br/><br/>A metal clip will need to be placed in the breast cancer prior to commencing this treatment, so that should the tumour regress to the point it is no longer visible on imaging, the tumour bed site can still be located for surgical excision."
+          }
+        },
+        "position": { "x": 600, "y": -25 }
+      },
+      {
+        "id": "e7-4",
+        "source": "7",
+        "target": "4",
+        "targetHandle": "bottom",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group2" }
+      },
+      {
+        "id": "e6-4",
+        "source": "6",
+        "target": "4",
+        "targetHandle": "bottom",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group2" }
+      },
+      {
+        "id": "e2-8",
+        "source": "2",
+        "target": "8",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group3", "text": "Yes" }
+      },
+      {
+        "id": "8",
+        "type": "custom",
+        "data": { "group": "group3", "labels": ["Consider", "Staging CT Chest/", "Abdomen/Pelvis", "& Bone Scan"] },
+        "position": { "x": 590, "y": 140 }
+      },
+      {
+        "id": "e8-9",
+        "source": "8",
+        "target": "9",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group3" }
+      },
+      {
+        "id": "9",
+        "type": "custom",
+        "data": {
+          "group": "group3",
+          "labels": ["Evidence of breast", "cancer spread beyond", "axillary lmyph nodes?"]
+        },
+        "position": { "x": 770, "y": 151 }
+      },
+      {
+        "id": "e4-10",
+        "source": "4",
+        "target": "10",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group4" }
+      },
+      {
+        "id": "10",
+        "type": "custom",
+        "data": { "group": "group4", "labels": ["Mastectomy (+", "Reconstruction) & SLNB"] },
+        "position": { "x": 1100, "y": -180 }
+      },
+      {
+        "id": "e10-14",
+        "source": "10",
+        "target": "14",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group4" }
+      },
+      {
+        "id": "e4-11",
+        "source": "4",
+        "target": "11",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group5" }
+      },
+      {
+        "id": "11",
+        "type": "custom",
+        "data": { "group": "group5", "labels": ["Breast Conservation", "Surgery & SLNB"] },
+        "position": { "x": 1100, "y": -100 }
+      },
+      {
+        "id": "e11-12",
+        "source": "11",
+        "target": "12",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group5" }
+      },
+      {
+        "id": "12",
+        "type": "custom",
+        "data": { "group": "group5", "labels": ["Clear Surgical Margins"] },
+        "position": { "x": 1300, "y": -89 }
+      },
+      {
+        "id": "e12-13",
+        "source": "12",
+        "target": "13",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group5", "text": "No" }
+      },
+      {
+        "id": "13",
+        "type": "custom",
+        "data": { "group": "group5", "labels": ["Consider further", "Breast Surgery"] },
+        "position": { "x": 1530, "y": -70 }
+      },
+      {
+        "id": "e12-14",
+        "source": "12",
+        "target": "14",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group5", "text": "Yes" }
+      },
+      {
+        "id": "14",
+        "type": "custom",
+        "data": {
+          "group": "group6",
+          "labels": ["Post-operative evidence", "of cancer spread to", "axillary lymph nodes"]
+        },
+        "position": { "x": 1530, "y": -180 }
+      },
+      {
+        "id": "e9-15",
+        "source": "9",
+        "target": "15",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group7", "text": "No" }
+      },
+      {
+        "id": "15",
+        "type": "custom",
+        "data": {
+          "group": "group7",
+          "labels": ["Discuss", "Genetic Risk", "Assessment"]
+        },
+        "position": { "x": 1000, "y": 120 }
+      },
+      {
+        "id": "e9-16",
+        "source": "9",
+        "target": "16",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group8", "text": "Yes" }
+      },
+      {
+        "id": "16",
+        "type": "custom",
+        "data": {
+          "group": "group8",
+          "labels": ["Stage IV Breast Cancer"]
+        },
+        "position": { "x": 1000, "y": 220 }
+      },
+      {
+        "id": "e15-17",
+        "source": "15",
+        "target": "17",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group9" }
+      },
+      {
+        "id": "17",
+        "type": "custom",
+        "data": {
+          "group": "group9",
+          "labels": ["Surgery"]
+        },
+        "position": { "x": 1250, "y": 80 }
+      },
+      {
+        "id": "e17-20",
+        "source": "17",
+        "target": "20",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group9" }
+      },
+
+      {
+        "id": "e15-18",
+        "source": "15",
+        "target": "18",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group10" }
+      },
+      {
+        "id": "18",
+        "type": "custom",
+        "data": {
+          "group": "group10",
+          "labels": ["Neo-adjuvant", "Chemotherapy"]
+        },
+        "position": { "x": 1250, "y": 180 }
+      },
+      {
+        "id": "e18-19",
+        "source": "18",
+        "target": "19",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group10" }
+      },
+      {
+        "id": "19",
+        "type": "custom",
+        "data": {
+          "group": "group10",
+          "labels": ["Good response to Neo-", "adjuvant Systemic", "Therapy"]
+        },
+        "position": { "x": 1400, "y": 170 }
+      },
+      {
+        "id": "e19-20",
+        "source": "19",
+        "target": "20",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group11", "text": "No" }
+      },
+      {
+        "id": "20",
+        "type": "custom",
+        "data": {
+          "group": "group11",
+          "labels": ["Axillary Lymph Node", "Dissection combined with:"]
+        },
+        "position": { "x": 1650, "y": 120 }
+      },
+      {
+        "id": "e19-21",
+        "source": "19",
+        "target": "21",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group11", "text": "Yes" }
+      },
+      {
+        "id": "21",
+        "type": "custom",
+        "data": {
+          "group": "group11",
+          "labels": ["Discuss options of", "SLNB versus ALND", "combined with:"]
+        },
+        "position": { "x": 1650, "y": 200 }
+      },
+      {
+        "id": "e20-22",
+        "source": "20",
+        "target": "22",
+        "arrowHeadType": "arrow",
+        "targetHandle": "top",
+        "type": "custom",
+        "data": { "group": "group11" }
+      },
+      {
+        "id": "e21-22",
+        "source": "21",
+        "target": "22",
+        "arrowHeadType": "arrow",
+        "targetHandle": "bottom",
+        "type": "custom",
+        "data": { "group": "group11" }
+      },
+      {
+        "id": "22",
+        "type": "custom",
+        "data": {
+          "group": "group11",
+          "labels": [" "]
+        },
+        "position": { "x": 1880, "y": 190 }
+      },
+      {
+        "id": "e22-23",
+        "source": "22",
+        "target": "23",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group12" }
+      },
+      {
+        "id": "23",
+        "type": "custom",
+        "data": {
+          "group": "group12",
+          "labels": ["Breast Conservation", "Surgery"]
+        },
+        "position": { "x": 1950, "y": 120 }
+      },
+      {
+        "id": "e23-24",
+        "source": "23",
+        "target": "24",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group12" }
+      },
+      {
+        "id": "24",
+        "type": "custom",
+        "data": {
+          "group": "group12",
+          "labels": ["Surgical Margins", "Clear?"]
+        },
+        "position": { "x": 2150, "y": 120 }
+      },
+      {
+        "id": "e24-25",
+        "source": "24",
+        "target": "25",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group14", "text": "No" }
+      },
+      {
+        "id": "25",
+        "type": "custom",
+        "data": {
+          "group": "group14",
+          "labels": ["Consider furthuer", "breast surgery"]
+        },
+        "position": { "x": 2330, "y": 70 }
+      },
+      {
+        "id": "e25-27",
+        "source": "25",
+        "target": "27",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group14" }
+      },
+      {
+        "id": "e24-27",
+        "source": "24",
+        "target": "27",
+        "arrowHeadType": "arrow",
+        "targetHandle": "bottom",
+        "type": "custom",
+        "data": { "group": "group14", "text": "Yes" }
+      },
+      {
+        "id": "e22-26",
+        "source": "22",
+        "target": "26",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group13" }
+      },
+      {
+        "id": "26",
+        "type": "custom",
+        "data": {
+          "group": "group13",
+          "labels": ["Mastectomy (+-", "Reconstruction)"]
+        },
+        "position": { "x": 1950, "y": 210 }
+      },
+      {
+        "id": "e26-27",
+        "source": "26",
+        "target": "27",
+        "arrowHeadType": "arrow",
+        "targetHandle": "bottom",
+        "type": "custom",
+        "data": { "group": "group13" }
+      },
+      {
+        "id": "27",
+        "type": "custom",
+        "data": {
+          "group": "group15",
+          "labels": [" "]
+        },
+        "position": { "x": 2520, "y": 70 }
+      },
+      {
+        "id": "e14-28",
+        "source": "14",
+        "target": "28",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group16", "text": "Yes" }
+      },
+      {
+        "id": "28",
+        "type": "custom",
+        "data": {
+          "group": "group16",
+          "labels": ["Lymph node involvement", "low (1-2 positive lymph", "nodes only)"]
+        },
+        "position": { "x": 1780, "y": -230 }
+      },
+      {
+        "id": "e28-29",
+        "source": "28",
+        "target": "29",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group17", "text": "No" }
+      },
+      {
+        "id": "29",
+        "type": "custom",
+        "data": {
+          "group": "group17",
+          "labels": ["Discuss completion Axillary", "Lymph Node Dissection", "(ALND)"]
+        },
+        "position": { "x": 2060, "y": -270 }
+      },
+      {
+        "id": "e29-30",
+        "source": "29",
+        "target": "30",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group17" }
+      },
+      {
+        "id": "30",
+        "type": "custom",
+        "data": {
+          "group": "group17",
+          "labels": ["Consider", "Staging CT Chest/", "Abdomen/Pelvis and", "Whole Body Bone Scan"]
+        },
+        "position": { "x": 2300, "y": -280 }
+      },
+      {
+        "id": "e30-27",
+        "source": "30",
+        "target": "27",
+        "arrowHeadType": "arrow",
+        "targetHandle": "top",
+        "type": "custom",
+        "data": { "group": "group17" }
+      },
+      {
+        "id": "e28-31",
+        "source": "28",
+        "target": "31",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group18", "text": "Yes" }
+      },
+      {
+        "id": "31",
+        "type": "custom",
+        "data": {
+          "group": "group18",
+          "labels": ["Discuss options of", "Radiotherapy vs ALND"]
+        },
+        "position": { "x": 2060, "y": -170 }
+      },
+      {
+        "id": "e31-27",
+        "source": "31",
+        "target": "27",
+        "arrowHeadType": "arrow",
+        "targetHandle": "top",
+        "type": "custom",
+        "data": { "group": "group18" }
+      },
+      {
+        "id": "e14-32",
+        "source": "14",
+        "target": "32",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group19", "text": "No" }
+      },
+      {
+        "id": "32",
+        "type": "custom",
+        "data": {
+          "group": "group19",
+          "labels": ["Surgical treatment", "complete"]
+        },
+        "position": { "x": 1780, "y": -120 }
+      },
+      {
+        "id": "e32-27",
+        "source": "32",
+        "target": "27",
+        "arrowHeadType": "arrow",
+        "targetHandle": "top",
+        "type": "custom",
+        "data": { "group": "group19" }
+      },
+      {
+        "id": "e27-33",
+        "source": "27",
+        "target": "33",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group20" }
+      },
+      {
+        "id": "33",
+        "type": "custom",
+        "data": {
+          "group": "group20",
+          "labels": ["Discuss post-operative", "Radiotherapy to breast", "or chest wall"]
+        },
+        "position": { "x": 2600, "y": -280 }
+      },
+      {
+        "id": "e33-45",
+        "source": "33",
+        "target": "45",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "targetHandle": "top",
+        "data": { "group": "group20" }
+      },
+      {
+        "id": "e27-34",
+        "source": "27",
+        "target": "34",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group21" }
+      },
+      {
+        "id": "34",
+        "type": "custom",
+        "data": {
+          "group": "group21",
+          "labels": ["Discuss Adjuvent", "Systemic Therapy"]
+        },
+        "position": { "x": 2600, "y": 100 }
+      },
+      {
+        "id": "35",
+        "type": "custom",
+        "data": {
+          "group": "group21",
+          "labels": ["Discuss Adjuvent", "Systemic Therapy"]
+        },
+        "position": { "x": 2600, "y": 100 }
+      },
+      {
+        "id": "e35-36",
+        "source": "35",
+        "target": "36",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group22" }
+      },
+      {
+        "id": "36",
+        "type": "custom",
+        "data": {
+          "group": "group22",
+          "labels": ["Hormone Positive", "Her-2 Negative", "Breast Cancer"]
+        },
+        "position": { "x": 2800, "y": 0 }
+      },
+      {
+        "id": "e36-37",
+        "source": "36",
+        "target": "37",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group23" }
+      },
+      {
+        "id": "37",
+        "type": "custom",
+        "data": {
+          "group": "group23",
+          "labels": ["Discuss Adjuvant", "Bisphosphonate Therapy"]
+        },
+        "position": { "x": 3300, "y": -70 }
+      },
+      {
+        "id": "e37-45",
+        "source": "37",
+        "target": "45",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group23" }
+      },
+      {
+        "id": "e36-38",
+        "source": "36",
+        "target": "38",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group24" }
+      },
+      {
+        "id": "38",
+        "type": "custom",
+        "data": {
+          "group": "group24",
+          "labels": ["Discuss Adjuvant", "Hormone Therapy"]
+        },
+        "position": { "x": 3300, "y": 0 }
+      },
+      {
+        "id": "e38-45",
+        "source": "38",
+        "target": "45",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group24" }
+      },
+      {
+        "id": "e36-39",
+        "source": "36",
+        "target": "39",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group25" }
+      },
+      {
+        "id": "39",
+        "type": "custom",
+        "data": {
+          "group": "group25",
+          "labels": ["Consider Genetic", "Profile Testing"]
+        },
+        "position": { "x": 2980, "y": 80 }
+      },
+      {
+        "id": "e39-40",
+        "source": "39",
+        "target": "40",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group25" }
+      },
+      {
+        "id": "40",
+        "type": "custom",
+        "data": {
+          "group": "group29",
+          "labels": ["Discuss Adjuvant", "Chemotherapy"]
+        },
+        "position": { "x": 3200, "y": 260 }
+      },
+      {
+        "id": "e40-45",
+        "source": "40",
+        "target": "45",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "targetHandle": "top",
+        "data": { "group": "group29" }
+      },
+      {
+        "id": "e35-41",
+        "source": "35",
+        "target": "41",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group26" }
+      },
+      {
+        "id": "41",
+        "type": "custom",
+        "data": {
+          "group": "group26",
+          "labels": ["HER-2 positive", "Breast Cancer"]
+        },
+        "position": { "x": 2800, "y": 175 }
+      },
+      {
+        "id": "e41-42",
+        "source": "41",
+        "target": "42",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group27" }
+      },
+      {
+        "id": "42",
+        "type": "custom",
+        "data": {
+          "group": "group27",
+          "labels": ["Discuss HER-2", "Targeted Therapy"]
+        },
+        "position": { "x": 2960, "y": 175 }
+      },
+      {
+        "id": "e42-43",
+        "source": "42",
+        "target": "43",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group28" }
+      },
+      {
+        "id": "e42-40",
+        "source": "42",
+        "target": "40",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group27" }
+      },
+      {
+        "id": "43",
+        "type": "custom",
+        "data": {
+          "group": "group28",
+          "labels": ["HER-2 Positive", "Hormone Positive", "Breast Cancer"]
+        },
+        "position": { "x": 3180, "y": 165 }
+      },
+      {
+        "id": "e43-37",
+        "source": "43",
+        "target": "37",
+        "arrowHeadType": "arrow",
+        "sourceHandle": "top",
+        "type": "custom",
+        "data": { "group": "group28" }
+      },
+      {
+        "id": "e43-38",
+        "source": "43",
+        "target": "38",
+        "arrowHeadType": "arrow",
+        "sourceHandle": "top",
+        "type": "custom",
+        "data": { "group": "group28" }
+      },
+      {
+        "id": "e35-44",
+        "source": "35",
+        "target": "44",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group29" }
+      },
+      {
+        "id": "44",
+        "type": "custom",
+        "data": {
+          "group": "group29",
+          "labels": ["Tripple Negative", "Breast Cancer"]
+        },
+        "position": { "x": 2800, "y": 260 }
+      },
+      {
+        "id": "e44-40",
+        "source": "44",
+        "target": "40",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group29" }
+      },
+      {
+        "id": "45",
+        "type": "custom",
+        "data": {
+          "group": "group30",
+          "labels": [" "]
+        },
+        "position": { "x": 3550, "y": 0 }
+      },
+      {
+        "id": "e45-46",
+        "source": "45",
+        "target": "46",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group30" }
+      },
+      {
+        "id": "46",
+        "type": "custom",
+        "data": {
+          "group": "group30",
+          "labels": ["5-years", "Mammographic", "Survveillance"],
+          "style": { "backgroundColor": "#179c67", "color": "#e8ebea" },
+          "popover": {
+            "header": "5 years mammography surveillance",
+            "body": "For those patients who have not undergone bilateral mastectomy. <br/><br/>Consider alternative imaging (for example Annual Breast MRI) if original breast cancer was not visible on standard imaging."
+          }
+        },
+        "position": { "x": 3650, "y": -140 }
+      },
+      {
+        "id": "e45-47",
+        "source": "45",
+        "target": "47",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group30" }
+      },
+      {
+        "id": "47",
+        "type": "custom",
+        "data": {
+          "group": "group30",
+          "labels": ["Regular", "self-", "examination"],
+          "style": { "backgroundColor": "#179c67", "color": "#e8ebea" }
+        },
+        "position": { "x": 3650, "y": -35 }
+      },
+      {
+        "id": "e45-48",
+        "source": "45",
+        "target": "48",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group30" }
+      },
+      {
+        "id": "48",
+        "type": "custom",
+        "data": {
+          "group": "group30",
+          "labels": ["Optimise", "Lifestyle", "Factors"],
+          "style": { "backgroundColor": "#179c67", "color": "#e8ebea" }
+        },
+        "position": { "x": 3650, "y": 70 }
+      }
+    ]
+  },
+  "new_diagnosis_old": {
+    "group_ancestors": {
+      "group2": "group1",
+      "group3": "group2",
+      "group4": "group2",
+      "group5": "group1",
+      "group6": "group5",
+      "group7": "group6",
+      "group8": "group6",
+      "group9": "group8",
+      "group10": "group8",
+      "group13": "group4",
+      "group14": "group13",
+      "group16": "group14",
+      "group18": "group5",
+      "group19": "group12",
+      "group21": "group12",
+      "group22": "group21",
+      "group23": "group21",
+      "group24": "group21",
+      "group25": "group20"
+    },
+    "data_elements": [
+      {
+        "id": "i1",
+        "type": "icon",
+        "data": {
+          "group": "group1",
+          "popover": {
+            "header": "research",
+            "body": "Developing an artificially intelligent referral system to fulfill the informational needs of women diagnosed with breast cancer."
+          }
+        },
+        "position": { "x": 40, "y": -40 }
+      },
+      {
+        "id": "i2",
+        "type": "icon",
+        "data": {
+          "group": "group1",
+          "popover": {
+            "header": "research",
+            "title": "Improving CARE in Ederly Breast Cancer Patients",
+            "link": "https://spherecalgary.ca/abstract-i-care"
+          }
+        },
+        "position": { "x": 80, "y": -40 }
+      },
+      {
+        "id": "i3",
+        "type": "icon",
+        "data": {
+          "group": "group1",
+          "popover": {
+            "header": "research",
+            "title": "Mutational Landscape Differences Between Young-Onset and Older-onset Breast Cancer Patients",
+            "link": "https://spherecalgary.ca/abstract-etiology"
+          }
+        },
+        "position": { "x": 120, "y": -40 }
+      },
+      {
+        "id": "1",
+        "type": "custom",
+        "data": { "group": "group1", "labels": ["New Diagnosis of", "Breast Cancer"] },
+        "position": { "x": 0, "y": 0 }
+      },
+      {
+        "id": "e1-2",
+        "source": "1",
+        "target": "2",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group1" }
+      },
+      {
+        "id": "2",
+        "type": "custom",
+        "data": { "group": "group1", "labels": ["Evidence of spread to", "axillary lmyph nodes", "at diagnosis?"] },
+        "position": { "x": 180, "y": -11 }
+      },
+      {
+        "id": "e2-3",
+        "source": "2",
+        "target": "3",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group2", "text": "No" }
+      },
+      {
+        "id": "3",
+        "type": "invisible",
+        "data": { "group": "group2" },
+        "position": { "x": 450, "y": -18 }
+      },
+      {
+        "id": "e3-4",
+        "source": "3",
+        "target": "4",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group2" }
+      },
+      {
+        "id": "4",
+        "type": "custom",
+        "data": { "group": "group2", "labels": ["Surgery"] },
+        "position": { "x": 650, "y": -50 }
+      },
+      {
+        "id": "e3-5",
+        "source": "3",
+        "target": "5",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group2" }
+      },
+      {
+        "id": "5",
+        "type": "custom",
+        "data": {
+          "group": "group2",
+          "labels": ["Primary Endocrine", "Therapy"],
+          "popover": {
+            "header": "Primary Endocrine Therapy",
+            "body": "<b>For hormone sensitive breast cancers only.</b><br/><br/>This should only be considered for women  who have significant medical health conditions that would make standard surgical treatment for their breast cancer more unsafe than the breast cancer risk posed in itself. <br/><br/>Age alone should <b>not</b> be a factor in omitting breast cancer treatment. <br/><br/>If primary endocrine therapy is agreed, response to treatment is monitored and should there be evidence of disease progression despite hormone treatment, risk: benefit of surgical intervention should be reassessed. <br/><br/>One should emphasise that surgical risks usually increase as one gets older, rather than diminish, therefore if risk of surgery is deemed acceptable at initial diagnosis, then standard treatment pathways should be followed."
+          }
+        },
+        "position": { "x": 650, "y": -150 }
+      },
+      {
+        "id": "e3-6",
+        "source": "3",
+        "target": "6",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group2" }
+      },
+      {
+        "id": "6",
+        "type": "custom",
+        "data": {
+          "group": "group2",
+          "labels": ["Neo-adjuvant", "Hormone Therapy"],
+          "popover": {
+            "header": "Neo-adjuvant Hormone Therapy",
+            "body": "This can be a successful treatment option for those with larger breast cancers, in a bid to reduce their size and make breast conservation surgery possible. <br/><br/>Typical duration of treatment is 3-6 months, and whilst a 'complete pathological response' is rarely seen (when all of the tumour regresses due to treatment), around 50% of cancers do undergo significant reduction in size making BCS more amenable. <br/><br/>Response to treatment will be assessed regularly during the 3-6 month period, this is also a useful tool to assess the tumour response to this therapy which would be continued post-operative. <br/><br/>A metal clip will need to be placed in the breast cancer prior to commencing this treatment, so that should the tumour regress to the point it is no longer visible on imaging, the tumour bed site can still be located for surgical excision."
+          }
+        },
+        "position": { "x": 500, "y": 0 }
+      },
+      {
+        "id": "e6-4",
+        "source": "6",
+        "target": "4",
+        "targetHandle": "bottom",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group2" }
+      },
+      {
+        "id": "e4-7",
+        "source": "4",
+        "target": "7",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group3" }
+      },
+      {
+        "id": "7",
+        "type": "custom",
+        "data": { "group": "group3", "labels": ["Mastectomy (+-", "Reconstruction) & SLNB"] },
+        "position": { "x": 850, "y": -120 }
+      },
+      {
+        "id": "e4-8",
+        "source": "4",
+        "target": "8",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group4" }
+      },
+      {
+        "id": "8",
+        "type": "custom",
+        "data": { "group": "group4", "labels": ["Breast Conservation", "Surgery & SLNB"] },
+        "position": { "x": 850, "y": -20 }
+      },
+      {
+        "id": "e8-9",
+        "source": "8",
+        "target": "9",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group4" }
+      },
+      {
+        "id": "9",
+        "type": "custom",
+        "data": { "group": "group4", "labels": ["Clear Surgical Margins"] },
+        "position": { "x": 1050, "y": -9 }
+      },
+      {
+        "id": "e2-10",
+        "source": "2",
+        "target": "10",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group5", "text": "Yes" }
+      },
+      {
+        "id": "10",
+        "type": "custom",
+        "data": {
+          "group": "group5",
+          "labels": ["Consider", "Staging CT Chest/", "Abdomen/ Pelvis &", "Bone Scan"],
+          "popover": {
+            "header": "Consider Staging CT Chest/ Abdomen/ Pelvis and Whole Body Bone Scan",
+            "body": "Staging investigations are performed for those women with evidence of 4 or more lymph nodes demonstrating breast cancer involvement."
+          }
+        },
+        "position": { "x": 500, "y": 200 }
+      },
+      {
+        "id": "e10-11",
+        "source": "10",
+        "target": "11",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group5" }
+      },
+      {
+        "id": "11",
+        "type": "custom",
+        "data": {
+          "group": "group5",
+          "labels": ["Evidence of breast", "cancer spread beyond", "axillary lmyph nodes"]
+        },
+        "position": { "x": 700, "y": 211 }
+      },
+      {
+        "id": "e11-12",
+        "source": "11",
+        "target": "12",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group6", "text": "No" }
+      },
+      {
+        "id": "12",
+        "type": "invisible",
+        "data": { "group": "group6" },
+        "position": { "x": 950, "y": 200 }
+      },
+      {
+        "id": "e12-13",
+        "source": "12",
+        "target": "13",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group7" }
+      },
+      {
+        "id": "13",
+        "type": "custom",
+        "data": { "group": "group7", "labels": ["Primary Endocrine", "Therapy"] },
+        "position": { "x": 1000, "y": 100 }
+      },
+      {
+        "id": "e12-14",
+        "source": "12",
+        "target": "14",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group8" }
+      },
+      {
+        "id": "14",
+        "type": "custom",
+        "data": {
+          "group": "group8",
+          "labels": ["Surgery"],
+          "popover": {
+            "header": "Surgery",
+            "body": "Surgical treatment is often well tolerated in  older aged women diagnosed with breast cancer, and should not be under-utilised."
+          }
+        },
+        "position": { "x": 1000, "y": 200 }
+      },
+      {
+        "id": "e14-15",
+        "source": "14",
+        "target": "15",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group8" }
+      },
+      {
+        "id": "15",
+        "type": "custom",
+        "data": { "group": "group8", "labels": ["Auxillary Lymph Node", "Dissection combined with:"] },
+        "position": { "x": 1120, "y": 189 }
+      },
+      {
+        "id": "e15-16",
+        "source": "15",
+        "target": "16",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group9" }
+      },
+      {
+        "id": "16",
+        "type": "custom",
+        "data": { "group": "group9", "labels": ["Breast Conservation", "Surgery"] },
+        "position": { "x": 1370, "y": 150 }
+      },
+      {
+        "id": "e16-17",
+        "source": "16",
+        "target": "17",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group9" }
+      },
+      {
+        "id": "17",
+        "type": "custom",
+        "data": { "group": "group9", "labels": ["Surgical Margins", "Clear?"] },
+        "position": { "x": 1580, "y": 150 }
+      },
+      {
+        "id": "e17-17A",
+        "source": "17",
+        "target": "17A",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group9", "text": "Yes" }
+      },
+      {
+        "id": "17A",
+        "type": "invisible",
+        "data": { "group": "group9" },
+        "position": { "x": 1780, "y": 220 }
+      },
+      {
+        "id": "e17A-20",
+        "source": "17A",
+        "target": "20",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group9" }
+      },
+      {
+        "id": "e17-19",
+        "source": "17",
+        "target": "19",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group9", "text": "No" }
+      },
+      {
+        "id": "19",
+        "type": "custom",
+        "data": { "group": "group9", "labels": ["Consider further", "breast surgery"] },
+        "position": { "x": 1780, "y": 120 }
+      },
+      {
+        "id": "e15-18",
+        "source": "15",
+        "target": "18",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group10" }
+      },
+      {
+        "id": "18",
+        "type": "custom",
+        "data": { "group": "group10", "labels": ["Mastectomy (+-", "Reconstruction)"] },
+        "position": { "x": 1370, "y": 250 }
+      },
+      {
+        "id": "e18-20",
+        "source": "18",
+        "target": "20",
+        "arrowHeadType": "arrow",
+        "targetHandle": "bottom",
+        "type": "custom",
+        "data": { "group": "group10" }
+      },
+      {
+        "id": "20",
+        "type": "custom",
+        "data": { "group": "group12", "labels": [" "] },
+        "position": { "x": 2500, "y": 200 }
+      },
+      {
+        "id": "e9-21",
+        "source": "9",
+        "target": "21",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group13", "text": "No" }
+      },
+      {
+        "id": "21",
+        "type": "custom",
+        "data": { "group": "group13", "labels": ["Consider furthuer", "breast surgery"] },
+        "position": { "x": 1270, "y": -50 }
+      },
+      {
+        "id": "e21-22",
+        "source": "21",
+        "target": "22",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group13" }
+      },
+      {
+        "id": "22",
+        "type": "custom",
+        "data": {
+          "group": "group13",
+          "labels": ["Post-operative evidence", "of cancer spread to", "axillary lmyph nodes"]
+        },
+        "position": { "x": 1450, "y": -80 }
+      },
+      {
+        "id": "e22-23",
+        "source": "22",
+        "target": "23",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group14", "text": "Yes" }
+      },
+      {
+        "id": "23",
+        "type": "custom",
+        "data": {
+          "group": "group14",
+          "labels": ["Lymph node", "involvement low?"]
+        },
+        "position": { "x": 1680, "y": 0 }
+      },
+      {
+        "id": "e22-24",
+        "source": "22",
+        "target": "24",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group15", "text": "No" }
+      },
+      {
+        "id": "24",
+        "type": "custom",
+        "data": {
+          "group": "group15",
+          "labels": ["Surgical treatment", "complete"]
+        },
+        "position": { "x": 1900, "y": -130 }
+      },
+      {
+        "id": "e24-20",
+        "source": "24",
+        "target": "20",
+        "arrowHeadType": "arrow",
+        "targetHandle": "top",
+        "type": "custom",
+        "data": { "group": "group15" }
+      },
+      {
+        "id": "e23-25",
+        "source": "23",
+        "target": "25",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group16", "text": "No" }
+      },
+      {
+        "id": "25",
+        "type": "custom",
+        "data": {
+          "group": "group16",
+          "labels": ["Discuss completion Axillary", "lymph Node Dissection", "(ALND)"]
+        },
+        "position": { "x": 1880, "y": -50 }
+      },
+      {
+        "id": "e25-26",
+        "source": "25",
+        "target": "26",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group16" }
+      },
+      {
+        "id": "26",
+        "type": "custom",
+        "data": {
+          "group": "group16",
+          "labels": ["Consider", "Staging CT Chest/", "Abdomen/ Pelvis and", "Whole Body Bone Scan"]
+        },
+        "position": { "x": 2130, "y": -61 }
+      },
+      {
+        "id": "e26-20",
+        "source": "26",
+        "target": "20",
+        "arrowHeadType": "arrow",
+        "targetHandle": "top",
+        "type": "custom",
+        "data": { "group": "group16" }
+      },
+      {
+        "id": "e23-27",
+        "source": "23",
+        "target": "27",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group17", "text": "Yes" }
+      },
+      {
+        "id": "27",
+        "type": "custom",
+        "data": {
+          "group": "group17",
+          "labels": ["Discuss Radiotherapy", "to the axilla"]
+        },
+        "position": { "x": 1880, "y": 50 }
+      },
+      {
+        "id": "e27-20",
+        "source": "27",
+        "target": "20",
+        "arrowHeadType": "arrow",
+        "targetHandle": "top",
+        "type": "custom",
+        "data": { "group": "group17" }
+      },
+      {
+        "id": "e11-28",
+        "source": "11",
+        "target": "28",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group18", "text": "Yes" }
+      },
+      {
+        "id": "28",
+        "type": "custom",
+        "data": { "group": "group18", "labels": ["Stage IV Breast Cancer"] },
+        "position": { "x": 1000, "y": 300 }
+      },
+      {
+        "id": "e20-29",
+        "source": "20",
+        "target": "29",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group19" }
+      },
+      {
+        "id": "29",
+        "type": "custom",
+        "data": {
+          "group": "group19",
+          "labels": ["Discuss post-operative", "Radiotherapy to breast", "or chest wall"]
+        },
+        "position": { "x": 3000, "y": -250 }
+      },
+      {
+        "id": "e29-30",
+        "source": "29",
+        "target": "30",
+        "targetHandle": "top",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group19" }
+      },
+      {
+        "id": "30",
+        "type": "custom",
+        "data": { "group": "group20", "labels": [" "] },
+        "position": { "x": 3600, "y": 150 }
+      },
+      {
+        "id": "e20-31",
+        "source": "20",
+        "target": "31",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group21" }
+      },
+      {
+        "id": "31",
+        "type": "custom",
+        "data": { "group": "group21", "labels": ["Discuss Adjuvant", "Systemic Therapy"] },
+        "position": { "x": 2600, "y": 260 }
+      },
+      {
+        "id": "e31-32",
+        "source": "31",
+        "target": "32",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group22" }
+      },
+      {
+        "id": "32",
+        "type": "custom",
+        "data": { "group": "group22", "labels": ["Hormone Positive", "Her-2 Negative", "Breast Cancer"] },
+        "position": { "x": 2800, "y": 80 }
+      },
+      {
+        "id": "e32-36",
+        "source": "32",
+        "target": "36",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group22" }
+      },
+      {
+        "id": "36",
+        "type": "custom",
+        "data": { "group": "group22", "labels": ["Discuss Adjuvant", "Bisphosphonate Therapy"] },
+        "position": { "x": 3300, "y": -120 }
+      },
+      {
+        "id": "e36-30",
+        "source": "36",
+        "target": "30",
+        "targetHandle": "top",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group22" }
+      },
+      {
+        "id": "e32-37",
+        "source": "32",
+        "target": "37",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group22" }
+      },
+      {
+        "id": "37",
+        "type": "custom",
+        "data": { "group": "group22", "labels": ["Discuss Adjuvant", "Hormone Therapy"] },
+        "position": { "x": 3300, "y": 0 }
+      },
+      {
+        "id": "e37-30",
+        "source": "37",
+        "target": "30",
+        "targetHandle": "top",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group22" }
+      },
+      {
+        "id": "e32-38",
+        "source": "32",
+        "target": "38",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group22" }
+      },
+      {
+        "id": "38",
+        "type": "custom",
+        "data": { "group": "group22", "labels": ["Consider Genetic", "Profile Testing"] },
+        "position": { "x": 3300, "y": 120 }
+      },
+      {
+        "id": "e38-30",
+        "source": "38",
+        "target": "30",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group22" }
+      },
+      {
+        "id": "e38-35",
+        "source": "38",
+        "target": "35",
+        "targetHandle": "top",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group22" }
+      },
+      {
+        "id": "e31-33",
+        "source": "31",
+        "target": "33",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group23" }
+      },
+      {
+        "id": "33",
+        "type": "custom",
+        "data": { "group": "group23", "labels": ["Her-2 Positive", "Breast Cancer"] },
+        "position": { "x": 2800, "y": 250 }
+      },
+      {
+        "id": "e33-39",
+        "source": "33",
+        "target": "39",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group23" }
+      },
+      {
+        "id": "39",
+        "type": "custom",
+        "data": {
+          "group": "group23",
+          "labels": ["Discuss HER-2", "Targeted Therapy"],
+          "popover": {
+            "header": "Discuss HER-2 Targeted Therapy",
+            "body": "HER-2 targeted therapy (medications such as trastuzumab and pertuzumab) are only used for those breast cancers which are HER-2 receptor positive. This treatment is usually given in combination with chemotherapy."
+          }
+        },
+        "position": { "x": 2980, "y": 250 }
+      },
+      {
+        "id": "e39-35",
+        "source": "39",
+        "target": "35",
+        "sourceHandle": "bottom",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group23" }
+      },
+      {
+        "id": "e39-40",
+        "source": "39",
+        "target": "40",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group23" }
+      },
+      {
+        "id": "40",
+        "type": "custom",
+        "data": { "group": "group23", "labels": ["HER-2 Positive", "Hormone Positive", "Breast Cancer"] },
+        "position": { "x": 3180, "y": 239 }
+      },
+      {
+        "id": "e40-30",
+        "source": "40",
+        "target": "30",
+        "targetHandle": "bottom",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group23" }
+      },
+      {
+        "id": "e40-36",
+        "source": "40",
+        "target": "36",
+        "sourceHandle": "top",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group23" }
+      },
+      {
+        "id": "e40-37",
+        "source": "40",
+        "target": "37",
+        "sourceHandle": "top",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group23" }
+      },
+      {
+        "id": "e31-34",
+        "source": "31",
+        "target": "34",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group24" }
+      },
+      {
+        "id": "34",
+        "type": "custom",
+        "data": {
+          "group": "group24",
+          "labels": ["Hormone Negative", "Her-2 Negative", "Breast Cancer"],
+          "popover": {
+            "header": "Hormone Negative HER-2 Negative Breast Cancer",
+            "body": "Also known ass 'Triple Negative Breast Cancer' because all three receptors tested on the breast cancer are negative (oestrogen receptor negative, progesterone receptor negative, HER-2 receptor negative). <br/><br/>These tumours have only one systemic therapy option, which is chemotherapy."
+          }
+        },
+        "position": { "x": 2800, "y": 400 }
+      },
+      {
+        "id": "e34-35",
+        "source": "34",
+        "target": "35",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group24" }
+      },
+      {
+        "id": "35",
+        "type": "custom",
+        "data": { "group": "group24", "labels": ["Discuss Adjuvant", "Chemotherapy"] },
+        "position": { "x": 3400, "y": 411 }
+      },
+      {
+        "id": "e35-30",
+        "source": "35",
+        "target": "30",
+        "targetHandle": "bottom",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group24" }
+      },
+      {
+        "id": "e30-41",
+        "source": "30",
+        "target": "41",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group25" }
+      },
+      {
+        "id": "41",
+        "type": "custom",
+        "data": {
+          "group": "group25",
+          "labels": ["5-years", "Mammographic", "Surveillance"],
+          "style": { "backgroundColor": "#179c67", "color": "#e8ebea" }
+        },
+        "position": { "x": 3700, "y": 0 }
+      },
+      {
+        "id": "e30-42",
+        "source": "30",
+        "target": "42",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group25" }
+      },
+      {
+        "id": "42",
+        "type": "custom",
+        "data": {
+          "group": "group25",
+          "labels": ["Regular self-", "examination"],
+          "style": { "backgroundColor": "#179c67", "color": "#e8ebea" }
+        },
+        "position": { "x": 3700, "y": 128 }
+      },
+      {
+        "id": "e30-43",
+        "source": "30",
+        "target": "43",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group25" }
+      },
+      {
+        "id": "43",
+        "type": "custom",
+        "data": {
+          "group": "group25",
+          "labels": ["Optimize Lifestyle", "Factors"],
+          "style": { "backgroundColor": "#179c67", "color": "#e8ebea" }
+        },
+        "position": { "x": 3700, "y": 230 }
+      }
+    ]
+  },
+  "new_diagnosis_pregnancy": {
+    "group_ancestors": {
+      "group2": "group1",
+      "group3": "group2",
+      "group4": "group2",
+      "group5": "group2",
+      "group6": "group1",
+      "group7": "group6",
+      "group8": "group6",
+      "group9": "group1",
+      "group10": "group9",
+      "group11": "group9"
+    },
+    "data_elements": [
+      {
+        "id": "1",
+        "type": "custom",
+        "data": {
+          "group": "group1",
+          "labels": ["Pregnancy-Associated", "Breast Cancer"],
+          "popover": {
+            "header": "Pregnancy-Associated Breast Cancer",
+            "body": "This pathway gives you an idea of the treatment options available to you for a new breast cancer diagnosis in pregnancy. You can then apply these options to the breast cancer pathway for 'younger age'. <br/><br/>Breast cancer is the most commonly diagnosed cancer in pregnancy. Treatment has advanced over the past twenty year making the possibility of a safe pregnancy and effective breast cancer treatment more and more feasible."
+          }
+        },
+        "position": { "x": 0, "y": 0 }
+      },
+      {
+        "id": "e1-2",
+        "source": "1",
+        "target": "2",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group1" }
+      },
+      {
+        "id": "2",
+        "type": "custom",
+        "data": {
+          "group": "group1",
+          "labels": ["Multi-Disciplinary", "Team Care"],
+          "popover": {
+            "header": "Multi-Disciplinary Team Care",
+            "body": "For all women diagnosed with breast cancer during pregnancy, your care will be provided by an extended team of specialists to ensure your treatment is as safe as possible for both you and the baby. <br/><br/>This will usually include not only your breast surgeon and oncologist, but also an obstetrician as well as possible a neonatologist (a paediatrician who specialises in caring for babies)."
+          }
+        },
+        "position": { "x": 220, "y": 0 }
+      },
+      {
+        "id": "e2-3",
+        "source": "2",
+        "target": "3",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group2" }
+      },
+      {
+        "id": "3",
+        "type": "custom",
+        "data": {
+          "group": "group2",
+          "labels": ["Diagnosis in", "First Trimester"],
+          "popover": {
+            "header": "First Trimester",
+            "body": "This is defined as weeks 0 to 12 of your pregnancy. <br/><br/>This period is when the foetus is developing its body structure and organs, and therefore is most vulnerable. Therefore unfortunately there are very limited intervention options for breast cancer during this period."
+          }
+        },
+        "position": { "x": 445, "y": -200 }
+      },
+      {
+        "id": "e3-4",
+        "source": "3",
+        "target": "4",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group3" }
+      },
+      {
+        "id": "4",
+        "type": "custom",
+        "data": {
+          "group": "group3",
+          "labels": ["First Trimester Surgery"],
+          "popover": {
+            "header": "First Trimester Surgery",
+            "body": "The most that can be offered during the first trimester as treatment for breast cancer, in some circumstances, is surgery by way of a mastectomy and axillary lymph node staging. This would entail close monitoring of the foetal heart beat during surgery. Surgery does however pose the  greatest risk of miscarriage during the first trimester for the foetus. <br/><br/>There is no evidence that it is safe to perform a sentinel lymph node biopsy during first trimester pregnancy. If the lymph nodes appear normal at diagnosis, an axillary node sample will be performed (4 lymph nodes removed at random from lower axilla). If there is evidence of lymph node involvement at diagnosis, an axillary lymph node dissection will be offered."
+          }
+        },
+        "position": { "x": 645, "y": -300 }
+      },
+      {
+        "id": "e4-5",
+        "source": "4",
+        "target": "5",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group3" }
+      },
+      {
+        "id": "5",
+        "type": "custom",
+        "data": {
+          "group": "group3",
+          "labels": ["Mastectomy and Axillary", "Node Sample or Axillary", "Nymph Node Dissection", "(ALND)"],
+          "popover": {
+            "header": "Axillary Lymph Node Dissection",
+            "body": "For those who have evidence of lymph node involvement at diagnosis, an axillary lymph node dissection will be offered."
+          }
+        },
+        "position": { "x": 860, "y": -333 }
+      },
+      {
+        "id": "e3-6",
+        "source": "3",
+        "target": "6",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group4" }
+      },
+      {
+        "id": "6",
+        "type": "custom",
+        "data": {
+          "group": "group4",
+          "labels": ["Delay treatment untiol", "Second Trimester"],
+          "popover": {
+            "header": "Delay treatment until Second Trimester",
+            "body": "For some women, it is possible to delay treatment until the first trimester is complete. This is particularly true for very early stage breast cancer at diagnosis."
+          }
+        },
+        "position": { "x": 645, "y": -200 }
+      },
+      {
+        "id": "e3-7",
+        "source": "3",
+        "target": "7",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group5" }
+      },
+      {
+        "id": "7",
+        "type": "custom",
+        "data": {
+          "group": "group5",
+          "labels": ["Patient choice to end", "pregnancy and proceed to", "standard care"],
+          "popover": {
+            "header": "Patient choice to end pregnancy and proceed to standard care",
+            "body": "In some situations however it is necessary to discuss with your surgeon or oncologist whether or not to continue with the pregnancy. Should an aggressive or advanced breast cancer be diagnosed very early in pregnancy, this may be the safest option."
+          }
+        },
+        "position": { "x": 645, "y": -100 }
+      },
+      {
+        "id": "e7-8",
+        "source": "7",
+        "target": "8",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group5" }
+      },
+      {
+        "id": "8",
+        "type": "custom",
+        "data": {
+          "group": "group5",
+          "labels": ["Go to 'New Diagnosis of", "Breast Cancer in the", "Younger Patient'"],
+          "style": { "background": "linear-gradient(70deg, #f3f5a6 1%, #c8a6f5 99% )", "color": "#000000" },
+          "onClickGoTo": 3
+        },
+        "position": { "x": 880, "y": -100 }
+      },
+      {
+        "id": "e2-9",
+        "source": "2",
+        "target": "9",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group6" }
+      },
+      {
+        "id": "9",
+        "type": "custom",
+        "data": {
+          "group": "group6",
+          "labels": ["Diagnosis in", "Second Trimester"],
+          "popover": {
+            "header": "Second Trimester",
+            "body": "This is defined as weeks13  to 27 of your pregnancy. <br/><br/>Options for treatment of breast cancer in the second and third trimesters open up considerably."
+          }
+        },
+        "position": { "x": 445, "y": 80 }
+      },
+      {
+        "id": "e9-10",
+        "source": "9",
+        "target": "10",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group7" }
+      },
+      {
+        "id": "10",
+        "type": "custom",
+        "data": { "group": "group7", "labels": ["Adjuvant", "Chemotherapy"] },
+        "position": { "x": 645, "y": 20 }
+      },
+      {
+        "id": "e9-11",
+        "source": "9",
+        "target": "11",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group8" }
+      },
+      {
+        "id": "11",
+        "type": "custom",
+        "data": { "group": "group8", "labels": ["Surgery"] },
+        "position": { "x": 645, "y": 120 }
+      },
+      {
+        "id": "e11-12",
+        "source": "11",
+        "target": "12",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group8" }
+      },
+      {
+        "id": "12",
+        "type": "custom",
+        "data": {
+          "group": "group8",
+          "labels": ["Mastectomy"],
+          "popover": {
+            "header": "Mastectomy",
+            "body": "A mastectomy is possible during any trimester of pregnancy. Immediate reconstruction however is avoided to reduce the duration of time under general anaesthetic and therefore risk to foetus. <br/><br/>Delayed reconstruction options can be discussed with your surgeon."
+          }
+        },
+        "position": { "x": 825, "y": 95 }
+      },
+      {
+        "id": "e11-13",
+        "source": "11",
+        "target": "13",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group8" }
+      },
+      {
+        "id": "13",
+        "type": "custom",
+        "data": {
+          "group": "group8",
+          "labels": ["Breast Conservation", "Surgery (BCS)"],
+          "popover": {
+            "header": "Breast Conservation Surgery (BCS)",
+            "body": "BCS is possible during the second trimester of pregnancy if treatment plan includes adjuvant chemotherapy, or during the third trimester irrespective of chemotherapy. <br/><br/>This is because BCS is followed by radiotherapy, which can only be given post-delivery. <br/><br/>One must be aware however that this does pose the small risk (around 15-20% of cases) of having positive margins on post-operative assessment and then requiring further surgery with additional small risk to foetus should a second general anaesthetic be required."
+          }
+        },
+        "position": { "x": 800, "y": 160 }
+      },
+      {
+        "id": "e12-14",
+        "source": "12",
+        "target": "14",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group8" }
+      },
+      {
+        "id": "e13-14",
+        "source": "13",
+        "target": "14",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group8" }
+      },
+      {
+        "id": "14",
+        "type": "custom",
+        "data": { "group": "group8", "labels": ["Combined", "with"] },
+        "position": { "x": 1000, "y": 110 }
+      },
+      {
+        "id": "e14-15",
+        "source": "14",
+        "target": "15",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group8" }
+      },
+      {
+        "id": "15",
+        "type": "custom",
+        "data": {
+          "group": "group8",
+          "labels": ["Sentinel Lymph", "Node Biopsy"],
+          "popover": {
+            "header": "Sentinel Lymph Node Biopsy",
+            "body": "Sentinel node biopsy is a surgical technique to assess the lymph nodes in the axilla for those patients who are deemed to have normal lymph nodes on assessment. <br/><br/>It is traditionally carried out using two localising agents - radioactive isotope and blue dye. Whilst it remains unclear whether it is safe to use the latter, there is growing evidence on the safety of radioactive isotope for use in second and third trimesters. <br/><br/>This enables SLNB to be performed for these stages of pregnancy, with the understanding that there is a slightly higher chance of the single agent not localising the correct lymph node(s), in which circumstance, an axillary lymph node sample would be performed (4 lymph nodes removed at random from the lower axilla)."
+          }
+        },
+        "position": { "x": 1140, "y": 80 }
+      },
+      {
+        "id": "e14-16",
+        "source": "14",
+        "target": "16",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group8" }
+      },
+      {
+        "id": "16",
+        "type": "custom",
+        "data": { "group": "group8", "labels": ["Axillary Lymph Node", "Dissection"] },
+        "position": { "x": 1140, "y": 160 }
+      },
+      {
+        "id": "e2-17",
+        "source": "2",
+        "target": "17",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group9" }
+      },
+      {
+        "id": "17",
+        "type": "custom",
+        "data": {
+          "group": "group9",
+          "labels": ["Diagnosis in", "Third Trimester"],
+          "popover": {
+            "header": "Third Trimester",
+            "body": "This is defined as weeks 28 to 40 of your pregnancy. <br/><br/>Options for treatment of breast cancer in the second and third trimesters open up considerably."
+          }
+        },
+        "position": { "x": 445, "y": 290 }
+      },
+      {
+        "id": "e17-18",
+        "source": "17",
+        "target": "18",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group10" }
+      },
+      {
+        "id": "18",
+        "type": "custom",
+        "data": {
+          "group": "group10",
+          "labels": ["Radiotherapy", "(post-delivery)"],
+          "popover": {
+            "header": "Radiotherapy",
+            "body": "There remains no evidence that radiotherapy is safe during pregnancy. <br/><br/>However for women who undergo surgery during their third trimester, or surgery during second trimester followed by adjuvant chemotherapy, it may be possible to radiotherapy following delivery of the baby, within a safe time interval. <br/><br/>Radiotherapy is usually given 4-6 weeks following completion of surgery if adjuvant chemotherapy is not planned, or 4-6 weeks following completion of chemotherapy if it is."
+          }
+        },
+        "position": { "x": 650, "y": 230 }
+      },
+      {
+        "id": "e17-19",
+        "source": "17",
+        "target": "19",
+        "arrowHeadType": "arrow",
+        "type": "custom",
+        "data": { "group": "group11" }
+      },
+      {
+        "id": "19",
+        "type": "custom",
+        "data": {
+          "group": "group11",
+          "labels": ["Adjuvant Hormone", "Therapy", "(post-delivery)"],
+          "popover": {
+            "header": "Adjuvant Hormone Therapy",
+            "body": "This is appropriate for those with hormone sensitive breast cancer only. This treatment is commenced once all other breast cancer treatment is complete. <br/><br/>It is not safe to take whilst breast-feeding therefore this will need to be taken into consideration following completion of your above treatment."
+          }
+        },
+        "position": { "x": 650, "y": 340 }
+      }
+    ]
+  }
+}

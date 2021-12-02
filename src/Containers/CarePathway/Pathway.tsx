@@ -4,6 +4,7 @@ import Controls from "Containers/TabNavigation/Controls";
 import Carousel from "react-material-ui-carousel";
 
 import { useAppSelector } from "Store/appStore";
+import { useFetchPathwayDataQuery } from "Store/services/carePathway";
 import { selectPathwayAgeRange, selectPathwayActiveChapter } from "Store/slices/carePathway";
 
 const riskAsessStyle = {
@@ -23,6 +24,7 @@ const pregCancerStyle = {
 };
 
 export default function Pathway() {
+  const { data, isError, isFetching } = useFetchPathwayDataQuery();
   const activeChapter = useAppSelector(selectPathwayActiveChapter);
   const ageRange = useAppSelector(selectPathwayAgeRange);
 
@@ -32,42 +34,28 @@ export default function Pathway() {
     </div>
   );
 
+  if (isFetching) return <div>Loading...</div>;
+  if (isError) return <div>Something went wrong, please try again.</div>;
+
   return (
     <div>
       <Controls />
       <Carousel index={activeChapter} autoPlay={false} animation="slide" navButtonsAlwaysInvisible={true} swipe={false}>
         <div style={riskAsessStyle}>
-          <PathwayDiagram
-            // data={props.pathwayData}
-            data={require("./pathway1.json")}
-            dataKey="data_elements"
-          />
+          <PathwayDiagram data={data?.risk_assessment} />
         </div>
 
         <div style={clinicalAssessStyle}>
-          <PathwayDiagram
-            // data={props.pathwayData}
-            data={require("./pathway2.json")}
-            dataKey="data_elements"
-          />
+          <PathwayDiagram data={data?.clinical_assessment} />
         </div>
 
         <div style={dcisStyle}>
-          <PathwayDiagram
-            // data={props.pathwayData}
-            data={require("./pathway3.json")}
-            dataKey="data_elements"
-          />
+          <PathwayDiagram data={data?.new_diagnosis_dcis} />
         </div>
 
         <div style={breastCancerStyle}>
           {ageRange ? (
-            <PathwayDiagram
-              // data={props.pathwayData}
-              data={require("./pathway4.json")}
-              dataKey="data_elements"
-              transform={{ x: 100, y: 250, zoom: 1 }}
-            />
+            <PathwayDiagram data={data?.new_diagnosis_young} transform={{ x: 100, y: 250, zoom: 1 }} />
           ) : (
             ageSelector
           )}
@@ -75,12 +63,7 @@ export default function Pathway() {
 
         <div style={breastCancerStyle}>
           {ageRange ? (
-            <PathwayDiagram
-              // data={props.pathwayData}
-              data={require("./pathway5.json")}
-              dataKey="data_elements"
-              transform={{ x: 100, y: 250, zoom: 1 }}
-            />
+            <PathwayDiagram data={data?.new_diagnosis_average} transform={{ x: 100, y: 250, zoom: 1 }} />
           ) : (
             ageSelector
           )}
@@ -88,23 +71,14 @@ export default function Pathway() {
 
         <div style={breastCancerStyle}>
           {ageRange ? (
-            <PathwayDiagram
-              // data={props.pathwayData}
-              data={require("./pathway6.json")}
-              dataKey="data_elements"
-              transform={{ x: 100, y: 250, zoom: 1 }}
-            />
+            <PathwayDiagram data={data?.new_diagnosis_old} transform={{ x: 100, y: 250, zoom: 1 }} />
           ) : (
             ageSelector
           )}
         </div>
 
         <div style={pregCancerStyle}>
-          <PathwayDiagram
-            // data={props.pathwayData}
-            data={require("./pathway7.json")}
-            dataKey="data_elements"
-          />
+          <PathwayDiagram data={data?.new_diagnosis_pregnancy} />
         </div>
       </Carousel>
     </div>

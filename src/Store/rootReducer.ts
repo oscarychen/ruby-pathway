@@ -1,7 +1,7 @@
 import { combineReducers } from "@reduxjs/toolkit";
 import { persistReducer } from "redux-persist";
 import localStorage from "redux-persist/lib/storage";
-// import { exampleAction } from "./services/carePathway";
+import { pathwayDataApi } from "./services/carePathway";
 import { carePathwayinitialState, carePathwaySlice } from "./slices/carePathway";
 
 const rootPersistConfig = {
@@ -22,7 +22,7 @@ export const initialRootState = {
 
 const combinedReducer = combineReducers({
   carePathway: persistReducer(carePathwayPersistConfig, carePathwaySlice.reducer),
-  // [exampleAction.reducerPath]: exampleAction.reducer,
+  [pathwayDataApi.reducerPath]: pathwayDataApi.reducer,
 });
 
 export const rootReducer = persistReducer(rootPersistConfig, combinedReducer);
