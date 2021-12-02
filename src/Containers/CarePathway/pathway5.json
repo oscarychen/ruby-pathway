@@ -114,7 +114,14 @@
     {
       "id": "5",
       "type": "custom",
-      "data": { "group": "group2", "labels": ["Consider Genetic", "Profile Testing"] },
+      "data": {
+        "group": "group2",
+        "labels": ["Consider Genetic", "Profile Testing"],
+        "popover": {
+          "header": "Consider Tumour Profile Testing",
+          "body": "Tumour profile tests such as Oncotype DX can be performed for hormone receptor positive, HER-2 negative breast cancers to assess the benefit of chemotherapy in addition to hormone therapy, in terms of risk of breast cancer recurrence and long-term survival. <br/><br/>It is suitable for those breast cancers as described above that have no evidence of spread to lymph nodes and are at least 10mm in diameter (occasionally suitable for 5-9mm tumours with other poor prognostic signs). <br/><br/>Oncotype DX produces a recurrence score 0-100: <ul><li>Women aged > 50 with a recurrence score of 0-25 have no benefit from the addition of chemotherapy.</li><li>Women aged >50 with a recurrence score of 26-100 do benefit from the addition of chemotherapy.</li></ul>This test can be performed either on the tumour biopsy if Neo-adjuvant chemotherapy is being consider or (more commonly) on the post-surgery tumour specimen.<br/><br/>Your oncologist will discuss this test with you if it is suitable to your specific type of breast cancer."
+        }
+      },
       "position": { "x": 600, "y": 50 }
     },
     {
@@ -142,7 +149,14 @@
     {
       "id": "7",
       "type": "custom",
-      "data": { "group": "group2", "labels": ["Neo-adjuvant", "Hormone Therapy"] },
+      "data": {
+        "group": "group2",
+        "labels": ["Neo-adjuvant", "Hormone Therapy"],
+        "popover": {
+          "header": "Neo-adjuvant Hormone Therapy",
+          "body": "This can be a successful treatment option for those with larger breast cancers, in a bid to reduce their size and make breast conservation surgery possible. <br/><br/>Typical duration of treatment is 3-6 months, and whilst a 'complete pathological response' is rarely seen (when all of the tumour regresses due to treatment), around 50% of cancers do undergo significant reduction in size making BCS more amenable. <br/><br/>Response to treatment will be assessed regularly during the 3-6 month period, this is also a useful tool to assess the tumour response to this therapy which would be continued post-operative. <br/><br/>A metal clip will need to be placed in the breast cancer prior to commencing this treatment, so that should the tumour regress to the point it is no longer visible on imaging, the tumour bed site can still be located for surgical excision."
+        }
+      },
       "position": { "x": 600, "y": -25 }
     },
     {
@@ -928,7 +942,11 @@
       "type": "custom",
       "data": {
         "group": "group30",
-        "labels": ["5-years", "Mammographic", "Survveillance"]
+        "labels": ["5-years", "Mammographic", "Survveillance"],
+        "popover": {
+          "header": "5 years mammography surveillance",
+          "body": "For those patients who have not undergone bilateral mastectomy. <br/><br/>Consider alternative imaging (for example Annual Breast MRI) if original breast cancer was not visible on standard imaging."
+        }
       },
       "position": { "x": 3650, "y": -140 }
     },

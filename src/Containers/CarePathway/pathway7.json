@@ -15,7 +15,14 @@
     {
       "id": "1",
       "type": "custom",
-      "data": { "group": "group1", "labels": ["Pregnancy-Associated", "Breast Cancer"] },
+      "data": {
+        "group": "group1",
+        "labels": ["Pregnancy-Associated", "Breast Cancer"],
+        "popover": {
+          "header": "Pregnancy-Associated Breast Cancer",
+          "body": "This pathway gives you an idea of the treatment options available to you for a new breast cancer diagnosis in pregnancy. You can then apply these options to the breast cancer pathway for 'younger age'. <br/><br/>Breast cancer is the most commonly diagnosed cancer in pregnancy. Treatment has advanced over the past twenty year making the possibility of a safe pregnancy and effective breast cancer treatment more and more feasible."
+        }
+      },
       "position": { "x": 0, "y": 0 }
     },
     {
@@ -29,7 +36,14 @@
     {
       "id": "2",
       "type": "custom",
-      "data": { "group": "group1", "labels": ["Multi-Disciplinary", "Team Care"] },
+      "data": {
+        "group": "group1",
+        "labels": ["Multi-Disciplinary", "Team Care"],
+        "popover": {
+          "header": "Multi-Disciplinary Team Care",
+          "body": "For all women diagnosed with breast cancer during pregnancy, your care will be provided by an extended team of specialists to ensure your treatment is as safe as possible for both you and the baby. <br/><br/>This will usually include not only your breast surgeon and oncologist, but also an obstetrician as well as possible a neonatologist (a paediatrician who specialises in caring for babies)."
+        }
+      },
       "position": { "x": 220, "y": 0 }
     },
     {
@@ -43,7 +57,14 @@
     {
       "id": "3",
       "type": "custom",
-      "data": { "group": "group2", "labels": ["Diagnosis in", "First Trimester"] },
+      "data": {
+        "group": "group2",
+        "labels": ["Diagnosis in", "First Trimester"],
+        "popover": {
+          "header": "First Trimester",
+          "body": "This is defined as weeks 0 to 12 of your pregnancy. <br/><br/>This period is when the foetus is developing its body structure and organs, and therefore is most vulnerable. Therefore unfortunately there are very limited intervention options for breast cancer during this period."
+        }
+      },
       "position": { "x": 445, "y": -200 }
     },
     {
@@ -57,7 +78,14 @@
     {
       "id": "4",
       "type": "custom",
-      "data": { "group": "group3", "labels": ["First Trimester Surgery"] },
+      "data": {
+        "group": "group3",
+        "labels": ["First Trimester Surgery"],
+        "popover": {
+          "header": "First Trimester Surgery",
+          "body": "The most that can be offered during the first trimester as treatment for breast cancer, in some circumstances, is surgery by way of a mastectomy and axillary lymph node staging. This would entail close monitoring of the foetal heart beat during surgery. Surgery does however pose the  greatest risk of miscarriage during the first trimester for the foetus. <br/><br/>There is no evidence that it is safe to perform a sentinel lymph node biopsy during first trimester pregnancy. If the lymph nodes appear normal at diagnosis, an axillary node sample will be performed (4 lymph nodes removed at random from lower axilla). If there is evidence of lymph node involvement at diagnosis, an axillary lymph node dissection will be offered."
+        }
+      },
       "position": { "x": 645, "y": -300 }
     },
     {
@@ -73,7 +101,11 @@
       "type": "custom",
       "data": {
         "group": "group3",
-        "labels": ["Mastectomy and Axillary", "Node Sample or Axillary", "Nymph Node Dissection", "(ALND)"]
+        "labels": ["Mastectomy and Axillary", "Node Sample or Axillary", "Nymph Node Dissection", "(ALND)"],
+        "popover": {
+          "header": "Axillary Lymph Node Dissection",
+          "body": "For those who have evidence of lymph node involvement at diagnosis, an axillary lymph node dissection will be offered."
+        }
       },
       "position": { "x": 860, "y": -333 }
     },
@@ -88,7 +120,14 @@
     {
       "id": "6",
       "type": "custom",
-      "data": { "group": "group4", "labels": ["Delay treatment untiol", "Second Trimester"] },
+      "data": {
+        "group": "group4",
+        "labels": ["Delay treatment untiol", "Second Trimester"],
+        "popover": {
+          "header": "Delay treatment until Second Trimester",
+          "body": "For some women, it is possible to delay treatment until the first trimester is complete. This is particularly true for very early stage breast cancer at diagnosis."
+        }
+      },
       "position": { "x": 645, "y": -200 }
     },
     {
@@ -102,7 +141,14 @@
     {
       "id": "7",
       "type": "custom",
-      "data": { "group": "group5", "labels": ["Patient choice to end", "pregnancy and proceed to", "standard care"] },
+      "data": {
+        "group": "group5",
+        "labels": ["Patient choice to end", "pregnancy and proceed to", "standard care"],
+        "popover": {
+          "header": "Patient choice to end pregnancy and proceed to standard care",
+          "body": "In some situations however it is necessary to discuss with your surgeon or oncologist whether or not to continue with the pregnancy. Should an aggressive or advanced breast cancer be diagnosed very early in pregnancy, this may be the safest option."
+        }
+      },
       "position": { "x": 645, "y": -100 }
     },
     {
@@ -130,7 +176,14 @@
     {
       "id": "9",
       "type": "custom",
-      "data": { "group": "group6", "labels": ["Diagnosis in", "Second Trimester"] },
+      "data": {
+        "group": "group6",
+        "labels": ["Diagnosis in", "Second Trimester"],
+        "popover": {
+          "header": "Second Trimester",
+          "body": "This is defined as weeks13  to 27 of your pregnancy. <br/><br/>Options for treatment of breast cancer in the second and third trimesters open up considerably."
+        }
+      },
       "position": { "x": 445, "y": 80 }
     },
     {
@@ -172,7 +225,14 @@
     {
       "id": "12",
       "type": "custom",
-      "data": { "group": "group8", "labels": ["Mastectomy"] },
+      "data": {
+        "group": "group8",
+        "labels": ["Mastectomy"],
+        "popover": {
+          "header": "Mastectomy",
+          "body": "A mastectomy is possible during any trimester of pregnancy. Immediate reconstruction however is avoided to reduce the duration of time under general anaesthetic and therefore risk to foetus. <br/><br/>Delayed reconstruction options can be discussed with your surgeon."
+        }
+      },
       "position": { "x": 825, "y": 95 }
     },
     {
@@ -186,7 +246,14 @@
     {
       "id": "13",
       "type": "custom",
-      "data": { "group": "group8", "labels": ["Breast Conservation", "Surgery (BCS)"] },
+      "data": {
+        "group": "group8",
+        "labels": ["Breast Conservation", "Surgery (BCS)"],
+        "popover": {
+          "header": "Breast Conservation Surgery (BCS)",
+          "body": "BCS is possible during the second trimester of pregnancy if treatment plan includes adjuvant chemotherapy, or during the third trimester irrespective of chemotherapy. <br/><br/>This is because BCS is followed by radiotherapy, which can only be given post-delivery. <br/><br/>One must be aware however that this does pose the small risk (around 15-20% of cases) of having positive margins on post-operative assessment and then requiring further surgery with additional small risk to foetus should a second general anaesthetic be required."
+        }
+      },
       "position": { "x": 800, "y": 160 }
     },
     {
@@ -222,7 +289,14 @@
     {
       "id": "15",
       "type": "custom",
-      "data": { "group": "group8", "labels": ["Sentinel Lymph", "Node Biopsy"] },
+      "data": {
+        "group": "group8",
+        "labels": ["Sentinel Lymph", "Node Biopsy"],
+        "popover": {
+          "header": "Sentinel Lymph Node Biopsy",
+          "body": "Sentinel node biopsy is a surgical technique to assess the lymph nodes in the axilla for those patients who are deemed to have normal lymph nodes on assessment. <br/><br/>It is traditionally carried out using two localising agents - radioactive isotope and blue dye. Whilst it remains unclear whether it is safe to use the latter, there is growing evidence on the safety of radioactive isotope for use in second and third trimesters. <br/><br/>This enables SLNB to be performed for these stages of pregnancy, with the understanding that there is a slightly higher chance of the single agent not localising the correct lymph node(s), in which circumstance, an axillary lymph node sample would be performed (4 lymph nodes removed at random from the lower axilla)."
+        }
+      },
       "position": { "x": 1140, "y": 80 }
     },
     {
@@ -250,7 +324,14 @@
     {
       "id": "17",
       "type": "custom",
-      "data": { "group": "group9", "labels": ["Diagnosis in", "Third Trimester"] },
+      "data": {
+        "group": "group9",
+        "labels": ["Diagnosis in", "Third Trimester"],
+        "popover": {
+          "header": "Third Trimester",
+          "body": "This is defined as weeks 28 to 40 of your pregnancy. <br/><br/>Options for treatment of breast cancer in the second and third trimesters open up considerably."
+        }
+      },
       "position": { "x": 445, "y": 290 }
     },
     {
@@ -264,7 +345,14 @@
     {
       "id": "18",
       "type": "custom",
-      "data": { "group": "group10", "labels": ["Radiotherapy", "(post-delivery)"] },
+      "data": {
+        "group": "group10",
+        "labels": ["Radiotherapy", "(post-delivery)"],
+        "popover": {
+          "header": "Radiotherapy",
+          "body": "There remains no evidence that radiotherapy is safe during pregnancy. <br/><br/>However for women who undergo surgery during their third trimester, or surgery during second trimester followed by adjuvant chemotherapy, it may be possible to radiotherapy following delivery of the baby, within a safe time interval. <br/><br/>Radiotherapy is usually given 4-6 weeks following completion of surgery if adjuvant chemotherapy is not planned, or 4-6 weeks following completion of chemotherapy if it is."
+        }
+      },
       "position": { "x": 650, "y": 230 }
     },
     {
@@ -278,7 +366,14 @@
     {
       "id": "19",
       "type": "custom",
-      "data": { "group": "group11", "labels": ["Adjuvant Hormone", "Therapy", "(post-delivery)"] },
+      "data": {
+        "group": "group11",
+        "labels": ["Adjuvant Hormone", "Therapy", "(post-delivery)"],
+        "popover": {
+          "header": "Adjuvant Hormone Therapy",
+          "body": "This is appropriate for those with hormone sensitive breast cancer only. This treatment is commenced once all other breast cancer treatment is complete. <br/><br/>It is not safe to take whilst breast-feeding therefore this will need to be taken into consideration following completion of your above treatment."
+        }
+      },
       "position": { "x": 650, "y": 340 }
     }
   ]

@@ -2,6 +2,7 @@ import { memo, CSSProperties } from "react";
 import { Handle, Position, NodeComponentProps } from "react-flow-renderer";
 import Interweave from "interweave";
 import PopCard from "Containers/PopCard/PopCard";
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 /**
  * Inject two new attributes to the NodeComponentProps
  * isActive: is switched true/false when user clicks on the node
@@ -46,6 +47,9 @@ const makeNodeContent = (props: CustomNodeComponentProps) => (
       borderColor: props.data?.isActive ? "#5793ab" : "#9faba2",
     }}
   >
+    {props.data.popover ? (
+      <InfoOutlinedIcon style={{ position: "absolute", right: 3, top: 3, width: 12, height: 12 }} />
+    ) : null}
     {makeMultiLineLabels(props.data?.labels)}
     <Handle type="target" position={Position.Left} style={handleStyle} />
     <Handle type="source" position={Position.Right} style={handleStyle} />

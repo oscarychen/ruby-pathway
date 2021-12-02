@@ -118,7 +118,14 @@
     {
       "id": "5",
       "type": "custom",
-      "data": { "group": "group2", "labels": ["Primary Endocrine", "Therapy"] },
+      "data": {
+        "group": "group2",
+        "labels": ["Primary Endocrine", "Therapy"],
+        "popover": {
+          "header": "Primary Endocrine Therapy",
+          "body": "<b>For hormone sensitive breast cancers only.</b><br/><br/>This should only be considered for women  who have significant medical health conditions that would make standard surgical treatment for their breast cancer more unsafe than the breast cancer risk posed in itself. <br/><br/>Age alone should <b>not</b> be a factor in omitting breast cancer treatment. <br/><br/>If primary endocrine therapy is agreed, response to treatment is monitored and should there be evidence of disease progression despite hormone treatment, risk: benefit of surgical intervention should be reassessed. <br/><br/>One should emphasise that surgical risks usually increase as one gets older, rather than diminish, therefore if risk of surgery is deemed acceptable at initial diagnosis, then standard treatment pathways should be followed."
+        }
+      },
       "position": { "x": 650, "y": -150 }
     },
     {
@@ -132,7 +139,14 @@
     {
       "id": "6",
       "type": "custom",
-      "data": { "group": "group2", "labels": ["Neo-adjuvant", "Hormone Therapy"] },
+      "data": {
+        "group": "group2",
+        "labels": ["Neo-adjuvant", "Hormone Therapy"],
+        "popover": {
+          "header": "Neo-adjuvant Hormone Therapy",
+          "body": "This can be a successful treatment option for those with larger breast cancers, in a bid to reduce their size and make breast conservation surgery possible. <br/><br/>Typical duration of treatment is 3-6 months, and whilst a 'complete pathological response' is rarely seen (when all of the tumour regresses due to treatment), around 50% of cancers do undergo significant reduction in size making BCS more amenable. <br/><br/>Response to treatment will be assessed regularly during the 3-6 month period, this is also a useful tool to assess the tumour response to this therapy which would be continued post-operative. <br/><br/>A metal clip will need to be placed in the breast cancer prior to commencing this treatment, so that should the tumour regress to the point it is no longer visible on imaging, the tumour bed site can still be located for surgical excision."
+        }
+      },
       "position": { "x": 500, "y": 0 }
     },
     {
@@ -197,7 +211,14 @@
     {
       "id": "10",
       "type": "custom",
-      "data": { "group": "group5", "labels": ["Consider", "Staging CT Chest/", "Abdomen/ Pelvis &", "Bone Scan"] },
+      "data": {
+        "group": "group5",
+        "labels": ["Consider", "Staging CT Chest/", "Abdomen/ Pelvis &", "Bone Scan"],
+        "popover": {
+          "header": "Consider Staging CT Chest/ Abdomen/ Pelvis and Whole Body Bone Scan",
+          "body": "Staging investigations are performed for those women with evidence of 4 or more lymph nodes demonstrating breast cancer involvement."
+        }
+      },
       "position": { "x": 500, "y": 200 }
     },
     {
@@ -253,7 +274,14 @@
     {
       "id": "14",
       "type": "custom",
-      "data": { "group": "group8", "labels": ["Surgery"] },
+      "data": {
+        "group": "group8",
+        "labels": ["Surgery"],
+        "popover": {
+          "header": "Surgery",
+          "body": "Surgical treatment is often well tolerated in  older aged women diagnosed with breast cancer, and should not be under-utilised."
+        }
+      },
       "position": { "x": 1000, "y": 200 }
     },
     {
@@ -679,7 +707,14 @@
     {
       "id": "39",
       "type": "custom",
-      "data": { "group": "group23", "labels": ["Discuss HER-2", "Targeted Therapy"] },
+      "data": {
+        "group": "group23",
+        "labels": ["Discuss HER-2", "Targeted Therapy"],
+        "popover": {
+          "header": "Discuss HER-2 Targeted Therapy",
+          "body": "HER-2 targeted therapy (medications such as trastuzumab and pertuzumab) are only used for those breast cancers which are HER-2 receptor positive. This treatment is usually given in combination with chemotherapy."
+        }
+      },
       "position": { "x": 2980, "y": 250 }
     },
     {
@@ -743,7 +778,14 @@
     {
       "id": "34",
       "type": "custom",
-      "data": { "group": "group24", "labels": ["Hormone Negative", "Her-2 Negative", "Breast Cancer"] },
+      "data": {
+        "group": "group24",
+        "labels": ["Hormone Negative", "Her-2 Negative", "Breast Cancer"],
+        "popover": {
+          "header": "Hormone Negative HER-2 Negative Breast Cancer",
+          "body": "Also known ass 'Triple Negative Breast Cancer' because all three receptors tested on the breast cancer are negative (oestrogen receptor negative, progesterone receptor negative, HER-2 receptor negative). <br/><br/>These tumours have only one systemic therapy option, which is chemotherapy."
+        }
+      },
       "position": { "x": 2800, "y": 400 }
     },
     {

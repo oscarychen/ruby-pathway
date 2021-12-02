@@ -20,7 +20,7 @@ export default function Controls() {
   };
 
   return (
-    <Box sx={{ maxWidth: "80%", bgcolor: "background.paper" }}>
+    <Box sx={{ bgcolor: "background.paper" }}>
       <Tabs
         value={activeChapter}
         onChange={handleChange}
