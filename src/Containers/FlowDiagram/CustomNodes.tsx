@@ -42,9 +42,10 @@ const makeNodeContent = (props: CustomNodeComponentProps) => (
   <div
     style={{
       ...makeNodeStyle(props.data?.style),
-      filter: props.data?.isActive || props.data?.preview ? "" : "blur(1px)",
-      opacity: props.data?.isActive || props.data?.preview ? 1 : 0.5,
-      borderColor: props.data?.isActive ? "#5793ab" : "#9faba2",
+      // filter: props.data?.isActive || props.data?.preview ? "" : "blur(1px)",
+      opacity: props.data?.isActive || props.data?.preview ? 1 : 0.6,
+      borderColor: props.data?.isActive ? "#5793ab" : props.data?.preview ? "green" : "#9faba2",
+      boxShadow: props.data?.isActive ? "3px 3px 3px #5793ab" : props.data?.preview ? "3px 3px 3px #9faba2" : "",
     }}
   >
     {props.data.popover ? (
