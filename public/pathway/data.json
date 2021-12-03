@@ -181,9 +181,7 @@
             "body": "Annual breast MRI from age 30 (TP53 mutation carriers - from age 20) up to minimum age 40.<br/><br/>Annual Mammogram from age 40 for a minimum of ten years until qualify for National Screening Programme (excluding TP53 mutation carriers)."
           }
         },
-        "position": { "x": 1000, "y": 220 },
-        "targetPosition": "left",
-        "sourcePosition": "right"
+        "position": { "x": 1000, "y": 220 }
       },
 
       { "id": "e7-11", "source": "7", "target": "11", "type": "custom", "data": { "group": "group6" } },
@@ -219,9 +217,7 @@
             "body": "Discussion with your breast and plastics surgeon the options of risk reduction surgery with or without reconstruction.<br/><br/>This is a long process that requires careful work up, including a minimum of two appointments with your operating surgeon, an appointment with a clinical psychochologist as well as approval from the entire breast surgery multi-disciplinary team."
           }
         },
-        "position": { "x": 1000, "y": 400 },
-        "targetPosition": "left",
-        "sourcePosition": "right"
+        "position": { "x": 1000, "y": 400 }
       },
 
       { "id": "p1-e7-13", "source": "7", "target": "13", "type": "custom", "data": { "group": "group8" } },
@@ -236,9 +232,7 @@
             "body": "Genetic counselling will be offered with no obligation, but the option, to undergo genetic testing on completion of this, should the patient wish it. This is not required to proceed to the next tabs."
           }
         },
-        "position": { "x": 1000, "y": 500 },
-        "targetPosition": "left",
-        "sourcePosition": "right"
+        "position": { "x": 1000, "y": 500 }
       },
       { "id": "e8-14", "source": "8", "target": "14", "arrowHeadType": "arrow", "type": "custom" },
       {
@@ -283,9 +277,7 @@
           "style": { "background": "linear-gradient(70deg, #66CCE7 1%, #91edab 99% )", "color": "#000000" },
           "onClickGoTo": 1
         },
-        "position": { "x": 1400, "y": 400 },
-        "targetPosition": "left",
-        "sourcePosition": "right"
+        "position": { "x": 1400, "y": 400 }
       }
     ]
   },
