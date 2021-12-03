@@ -7,8 +7,8 @@ import { z } from "zod";
 const PathDataElementSchema = z.object({
   id: z.string(),
   type: z.string(),
-  data: z.array(z.object({})),
-  position: z.object({ x: z.number(), y: z.number() }),
+  data: z.record(z.any()).optional(),
+  position: z.object({ x: z.number(), y: z.number() }).optional(),
   targetPosition: z.string().optional(),
   sourcePosition: z.string().optional(),
   source: z.string().optional(),
@@ -19,14 +19,12 @@ const PathDataElementSchema = z.object({
 /**
  * Schema for 'data_elements' of each pathway diagram data
  */
-const CarePathwayDataElementsSchema = z.record(z.array(PathDataElementSchema));
+const CarePathwayDataElementsSchema = z.array(PathDataElementSchema);
 
 /**
  * Schema for 'group_ancestors' of each pathway diagram data
  */
-const PathElementGroupRelationSchema = z.object({
-  group_ancestors: z.object({}),
-});
+const PathElementGroupRelationSchema = z.record(z.any());
 
 /**
  * The data schema for each pathway diagram.
@@ -62,6 +60,8 @@ export const pathwayDataApi = createApi({
   endpoints: (build) => ({
     fetchPathwayData: build.query<PathwayData, void>({
       query: () => "data.json",
+      //checks received response against schema
+      transformResponse: (response) => PathwayDataSchema.parse(response),
     }),
   }),
 });
