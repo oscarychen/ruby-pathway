@@ -6,11 +6,6 @@ import Box from "@mui/material/Box";
 import { useAppDispatch, useAppSelector } from "Store/appStore";
 import { selectPathwayActiveChapter, setPathwayChapter } from "Store/slices/carePathway";
 
-const tabStyles = {
-  paddingLeft: 10,
-  paddingRight: 10,
-};
-
 export default function Controls() {
   const dispatch = useAppDispatch();
   const activeChapter = useAppSelector(selectPathwayActiveChapter);
@@ -33,13 +28,13 @@ export default function Controls() {
           },
         }}
       >
-        <Tab label="Risk Asessment" style={tabStyles} />
-        <Tab label="Clinical Assessment" style={tabStyles} />
-        <Tab label="New Diagnosis of DCIS" style={tabStyles} />
-        <Tab label="New Diagnosis of Young Age Breast Cancer" style={tabStyles} />
-        <Tab label="New Diagnosis of Average Age Breast Cancer" style={tabStyles} />
-        <Tab label="New Diagnosis of Older Age Breast Cancer" style={tabStyles} />
-        <Tab label="Pregnancy-Associated Breast Cancer" style={tabStyles} />
+        <Tab label="Risk Asessment" />
+        <Tab label="Clinical Assessment" />
+        <Tab label="New Diagnosis of DCIS" />
+        <Tab label="New Diagnosis of Young Age Breast Cancer" />
+        <Tab label="New Diagnosis of Average Age Breast Cancer" />
+        <Tab label="New Diagnosis of Older Age Breast Cancer" />
+        <Tab label="Pregnancy-Associated Breast Cancer" />
       </Tabs>
     </Box>
   );
