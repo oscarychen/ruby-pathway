@@ -5,7 +5,6 @@ import ReactFlow, {
   FlowElement,
   ReactFlowProvider,
   OnLoadParams,
-  isNode,
   FlowTransform,
   MiniMap,
   Controls,
@@ -131,13 +130,13 @@ export default function PathwayDiagram(props: PropsType) {
   /**
    * Focus canvas on a given Node
    */
-  const transformToNode = (element: FlowElement | null, delay: number = 0) => {
-    if (element && isNode(element)) {
-      const newX = -element.position.x / 2;
-      const newY = -element.position.y / 2;
-      transform({ x: newX, y: newY }, delay);
-    }
-  };
+  // const transformToNode = (element: FlowElement | null, delay: number = 0) => {
+  //   if (element && isNode(element)) {
+  //     const newX = -element.position.x / 2;
+  //     const newY = -element.position.y / 2;
+  //     transform({ x: newX, y: newY }, delay);
+  //   }
+  // };
 
   /**
    * transform to given x,y coordinates and zoom
